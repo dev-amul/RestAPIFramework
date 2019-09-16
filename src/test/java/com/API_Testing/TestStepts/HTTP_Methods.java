@@ -72,7 +72,16 @@ public class HTTP_Methods
 		
 	}
 	
-	public void delete_Request() {
+	public Response delete_Request( String delete_URI) 
+	{
+		Response deleteRequest_response = 
+				
+				given()
+				.contentType(ContentType.JSON)
+				.when()
+				.delete(pr.getProperty(delete_URI));
+		
+				return deleteRequest_response; 
 		
 	}
 
