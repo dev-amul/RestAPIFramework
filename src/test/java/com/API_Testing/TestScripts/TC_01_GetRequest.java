@@ -12,6 +12,7 @@ import java.util.Properties;
 
 import org.testng.annotations.Test;
 
+import com.API_Tesing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStepts.HTTP_Methods;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 
@@ -26,15 +27,13 @@ public class TC_01_GetRequest
 		 
 		 HTTP_Methods getRequestMethod = new HTTP_Methods(getProperties);
 		 
-		 
 		 Response getResponse = getRequestMethod.get_Request("baseURL");
 		 
-		 int getStatuscode= getResponse.getStatusCode();
+		 ResponseDataValidation.responseCodeValidation(200, getResponse.getStatusCode());
 		 
 		 String getdata = getResponse.asString();
 		 
-		 System.out.println(getStatuscode);
-		 System.out.println(getdata);
+		 System.out.println("Response Data is \t:\t"+getdata);
 	}
 
 }
