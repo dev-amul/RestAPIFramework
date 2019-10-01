@@ -9,10 +9,8 @@ package com.API_Testing.TestScripts;
 
 import java.io.IOException;
 import java.util.Properties;
-
 import org.json.JSONObject;
 import org.testng.annotations.Test;
-
 import com.API_Tesing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStepts.HTTP_Methods;
 import com.API_Testing.utilities.Laod_PropertiestFile;
@@ -23,15 +21,14 @@ public class TC_01_PostRequest
 {
 	public JSONObject employeeData() 
 	{
-		
 		JSONObject body = new JSONObject(); 
 		
-		body.put("id", 1);
-		body.put("First Name", "Sachin");
-		body.put("Last Name", "Teotia");
-		body.put("Designation", "Self Employed");
+		body.put("id", "EMP_02");
+		body.put("First Name", "Sumsdfit ");
+		body.put("Last Name", "dfsdKumar");
+		body.put("Designation", "Software Test Engineer");
 		body.put("Gender", "Male");
-		body.put("Experience", "3 Years");
+		body.put("Experience", "2.6 Years");
 		body.put("Age", "28");
 		
 		return body;
@@ -46,18 +43,15 @@ public class TC_01_PostRequest
 		
 		JSONObject dataBody = employeeData();
 		
-		Response response = postMethod.post_Request(dataBody.toString(), "baseURL", "Simple_Json");
+		Response response = postMethod.post_Request(dataBody.toString(), "baseURL", "endPointURI1");
 		
 		System.out.println("##############----POST REQUEST RESPONSE CODE----#############\n");
 
 		ResponseDataValidation.responseCodeValidation(201, response.getStatusCode());
 		
 		System.out.println("##############----POST REQUEST RESPONSE DATA----#############\n");
-
-		
 		System.out.println("Response Data is \t:\t"+response.asString());
-		
-		
+			
 	}
 
 }

@@ -29,7 +29,7 @@ public class HTTP_Methods
 				.contentType(ContentType.JSON)
 				.body(dataForPost)
 				.when()
-				.post(pr.getProperty(postBaseURI)+"/"+URIendpoint);
+				.post(pr.getProperty(postBaseURI)+"/"+pr.getProperty(URIendpoint));
 		
 		return postRequestResponse;
 		
@@ -41,11 +41,11 @@ public class HTTP_Methods
 				given()
 				.contentType(ContentType.JSON)
 				.when()
-				.get(pr.getProperty(baseURI)+"/"+gerFromURI);
+				.get(pr.getProperty(baseURI)+"/"+pr.getProperty(gerFromURI));
 				
 				return fetchDataFromURI;
 	}
-	public Response put_Request(String payLoad, String uriForPut) {
+	public Response put_Request(String payLoad, String baseuriForPut, String putEndURI) {
 		
 		Response putRequest_Respose = 
 				
@@ -53,12 +53,12 @@ public class HTTP_Methods
 				.contentType(ContentType.JSON)
 				.body(payLoad)
 				.when()
-				.put(pr.getProperty(uriForPut));
+				.put(pr.getProperty(baseuriForPut)+"/"+pr.getProperty(putEndURI));
 				
 				
 				return putRequest_Respose;
 	}
-	public Response patch_Request(String existingData, String updateOnURI) {
+	public Response patch_Request(String existingData, String updateOnBaseURI, String endRUI) {
 		
 		Response patchRequestResponse = 
 				
@@ -66,20 +66,20 @@ public class HTTP_Methods
 				.contentType(ContentType.JSON)
 				.body(existingData)
 				.when()
-				.patch(pr.getProperty(updateOnURI));
+				.patch(pr.getProperty(updateOnBaseURI)+"/"+pr.getProperty(endRUI));
 		
 		return patchRequestResponse; 
 		
 	}
 	
-	public Response delete_Request( String delete_URI) 
+	public Response delete_Request( String delete_BaseURI, String endURI, String id) 
 	{
 		Response deleteRequest_response = 
 				
 				given()
 				.contentType(ContentType.JSON)
 				.when()
-				.delete(pr.getProperty(delete_URI));
+				.delete(pr.getProperty(delete_BaseURI)+"/"+pr.getProperty(endURI)+"/"+id);
 		
 				return deleteRequest_response; 
 		

@@ -27,7 +27,7 @@ public class TC_02_GetRequest
 		 
 		 HTTP_Methods getRequestMethod = new HTTP_Methods(getProperties);
 		 
-		 Response getResponse = getRequestMethod.get_Request("baseURL", "Simple_Json");
+		 Response getResponse = getRequestMethod.get_Request("baseURL", "endPointURI1");
 
 		 System.out.println("##############----GET REQUEST RESPONSE CODE----#############\n");
 
