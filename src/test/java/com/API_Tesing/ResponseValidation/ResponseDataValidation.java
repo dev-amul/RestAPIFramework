@@ -19,7 +19,7 @@ public class ResponseDataValidation
 		
 		if (expectedStatusCode==actualStatusCode)
 		{
-			System.out.println("Expected Code is match with actual Code and status code is \t:\t"+actualStatusCode);
+			System.out.println("Expected Status Code is similar to Actual Status code \t:\t"+actualStatusCode);
 		}
 		else
 		{

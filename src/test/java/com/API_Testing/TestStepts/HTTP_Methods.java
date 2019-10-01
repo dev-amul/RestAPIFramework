@@ -22,26 +22,26 @@ public class HTTP_Methods
 		this.pr=pr;
 	}
 	
-	public Response post_Request(String dataForPost, String postOnURI) 
+	public Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) 
 	{
 		Response postRequestResponse = 
 				given()
 				.contentType(ContentType.JSON)
 				.body(dataForPost)
 				.when()
-				.post(pr.getProperty(postOnURI));
+				.post(pr.getProperty(postBaseURI)+"/"+URIendpoint);
 		
 		return postRequestResponse;
 		
 	}
-	public Response get_Request(String getFromURI) {
+	public Response get_Request(String baseURI, String gerFromURI) {
 		
 		Response fetchDataFromURI = 
 				
 				given()
 				.contentType(ContentType.JSON)
 				.when()
-				.get(pr.getProperty(getFromURI));
+				.get(pr.getProperty(baseURI)+"/"+gerFromURI);
 				
 				return fetchDataFromURI;
 	}
