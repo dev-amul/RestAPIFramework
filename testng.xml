@@ -3,9 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.API_Testing.TestScripts.TC_02_GetRequest"/>
       <class name="com.API_Testing.TestScripts.TC_01_PostRequest"/>
-      <class name="com.API_Testing.TestScripts.TC_03_DeleteRequestData"/>
+      <class name="com.API_Testing.TestScripts.TC_02_GetRequest"/>
+      <class name="com.API_Testing.TestScripts.TC_03_PUTRequest"/>
+      <class name="com.API_Testing.TestScripts.TC_04_DeleteRequestData"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

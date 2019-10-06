@@ -1,12 +1,13 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 02-Oct-2019
- *  FILE NAME  		: 	 TC_03_DeleteRequestData.java
+ *  FILE NAME  		: 	 TC_04_DeleteRequestData.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
 package com.API_Testing.TestScripts;
 
+import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
@@ -19,7 +20,7 @@ import com.API_Testing.utilities.Laod_PropertiestFile;
 
 import io.restassured.response.Response;
 
-public class TC_03_DeleteRequestData
+public class TC_04_DeleteRequestData
 {
 	@Test
 	public void deleteData() throws IOException 

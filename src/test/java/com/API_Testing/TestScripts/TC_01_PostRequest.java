@@ -8,6 +8,7 @@
 package com.API_Testing.TestScripts;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 import org.json.JSONObject;
@@ -25,11 +26,11 @@ public class TC_01_PostRequest
 		JSONObject body = new JSONObject(); 
 		
 		body.put("id", "EMP_02");
-		body.put("First Name", "Sumsdfit ");
-		body.put("Last Name", "dfsdKumar");
-		body.put("Designation", "Software Test Engineer");
+		body.put("First Name", "Sachin");
+		body.put("Last Name", "Teotiar");
+		body.put("Designation", "Self Employeed");
 		body.put("Gender", "Male");
-		body.put("Experience", "2.6 Years");
+		body.put("Experience", "4 Years");
 		body.put("Age", "28");
 		
 		return body;

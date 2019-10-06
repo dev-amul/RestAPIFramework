@@ -8,6 +8,7 @@
 package com.API_Testing.TestScripts;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 

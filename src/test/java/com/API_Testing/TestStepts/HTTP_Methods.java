@@ -45,7 +45,7 @@ public class HTTP_Methods
 				
 				return fetchDataFromURI;
 	}
-	public Response put_Request(String payLoad, String baseuriForPut, String putEndURI) {
+	public Response put_Request(String payLoad, String baseuriForPut, String endURL, String expectedID) {
 		
 		Response putRequest_Respose = 
 				
@@ -53,7 +53,7 @@ public class HTTP_Methods
 				.contentType(ContentType.JSON)
 				.body(payLoad)
 				.when()
-				.put(pr.getProperty(baseuriForPut)+"/"+pr.getProperty(putEndURI));
+				.put(pr.getProperty(baseuriForPut)+"/"+pr.getProperty(endURL)+"/"+expectedID);
 				
 				
 				return putRequest_Respose;
