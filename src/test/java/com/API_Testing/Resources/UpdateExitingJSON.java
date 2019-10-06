@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 public class UpdateExitingJSON 
 {
-	public static String fetchAndUdateData(String jsonBody, String srcArrKey, String srhKey, String srhValue,String NewKey, String newData) 
+	public static String fetchAndUdateData(String jsonBody, String srcArrKey, String srhKey, String srhValue,String NewKey, String newValue) 
 	{
 		// Get the jSon body and store in jSon object 
 		JSONObject jsonData = new JSONObject(jsonBody);
@@ -35,7 +35,7 @@ public class UpdateExitingJSON
 				if(getObject.get(srhKey).equals(srhValue)) 
 				{
 					//add new object in existing object on data
-					getObject.put(NewKey, newData);
+					getObject.put(NewKey, newValue);
 					break;
 				}	
 			}	
