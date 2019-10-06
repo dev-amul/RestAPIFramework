@@ -12,8 +12,9 @@ import java.io.IOException;
 import java.util.Properties;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
-import com.API_Tesing.Resources.AlltypeDataRead;
-import com.API_Tesing.ResponseValidation.ResponseDataValidation;
+
+import com.API_Testing.Resources.AlltypeDataRead;
+import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStepts.HTTP_Methods;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 
@@ -37,9 +38,7 @@ public class TC_03_PUTRequest
 		ResponseDataValidation.responseCodeValidation(200, updatedData.getStatusCode());
 		
 		System.out.println("##############----PUT REQUEST RESPONSE DATA----#############\n");
-		System.out.println("Response Data is \t:\t"+updatedData.asString());
-
-		
+		System.out.println("Response Data is \t:\t"+updatedData.asString());	
 	}
 
 }

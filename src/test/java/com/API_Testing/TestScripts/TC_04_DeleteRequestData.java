@@ -14,7 +14,7 @@ import java.util.Properties;
 
 import org.testng.annotations.Test;
 
-import com.API_Tesing.ResponseValidation.ResponseDataValidation;
+import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStepts.HTTP_Methods;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 

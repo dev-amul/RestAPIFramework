@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Tesing.ResponseValidation;
+package com.API_Testing.ResponseValidation;
 
 import org.testng.Assert;
 

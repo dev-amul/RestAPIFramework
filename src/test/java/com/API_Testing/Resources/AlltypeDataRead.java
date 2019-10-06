@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Tesing.Resources;
+package com.API_Testing.Resources;
 
 
 import java.io.FileNotFoundException;
