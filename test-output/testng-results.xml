@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-06T14:53:59Z" name="Default suite" finished-at="2019-10-06T14:53:59Z" duration-ms="83">
+  <suite started-at="2019-10-06T18:15:46Z" name="Default suite" finished-at="2019-10-06T18:15:46Z" duration-ms="76">
     <groups>
     </groups>
-    <test started-at="2019-10-06T14:53:59Z" name="Default test" finished-at="2019-10-06T14:53:59Z" duration-ms="83">
-      <class name="com.API_Testing.TestScripts.TC_05_GetDatabyKey">
-        <test-method signature="fetchValuedata()[pri:0, instance:com.API_Testing.TestScripts.TC_05_GetDatabyKey@574b560f]" started-at="2019-10-06T14:53:59Z" name="fetchValuedata" finished-at="2019-10-06T14:53:59Z" duration-ms="24" status="PASS">
+    <test started-at="2019-10-06T18:15:46Z" name="Default test" finished-at="2019-10-06T18:15:46Z" duration-ms="76">
+      <class name="com.API_Testing.TestScripts.TC_06_AddValueInExsitingData">
+        <test-method signature="addValueExsitingData()[pri:0, instance:com.API_Testing.TestScripts.TC_06_AddValueInExsitingData@574b560f]" started-at="2019-10-06T18:15:46Z" name="addValueExsitingData" finished-at="2019-10-06T18:15:46Z" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fetchValuedata -->
-      </class> <!-- com.API_Testing.TestScripts.TC_05_GetDatabyKey -->
+        </test-method> <!-- addValueExsitingData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_06_AddValueInExsitingData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
