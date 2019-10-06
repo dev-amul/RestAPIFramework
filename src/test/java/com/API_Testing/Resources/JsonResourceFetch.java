@@ -12,58 +12,37 @@ import org.json.JSONObject;
 
 public class JsonResourceFetch
 {
-	/**/
-	public static String jsonBodysample = "{\n" + 
-			"  \"firstName\": \"John\",\n" + 
-			"  \"lastName\" : \"doe\",\n" + 
-			"  \"age\"      : 26,\n" + 
-			"  \"address\"  : {\n" + 
-			"    \"streetAddress\": \"naist street\",\n" + 
-			"    \"city\"         : \"Nara\",\n" + 
-			"    \"postalCode\"   : \"630-0192\"\n" + 
-			"  },\n" + 
-			"  \"phoneNumbers\": [\n" + 
-			"    {\n" + 
-			"      \"type\"  : \"iPhone\",\n" + 
-			"      \"number\": \"0123-4567-8888\"\n" + 
-			"    },\n" + 
-			"    {\n" + 
-			"      \"type\"  : \"home\",\n" + 
-			"      \"number\": \"0123-4567-8910\"\n" + 
-			"    }\n" + 
-			"  ]\n" + 
-			"}";
-	
 	public static String fetchDatafromJSON(String jsonBody, String srcArrKey, String srhKey, String srhValue, String gtExtData) 
 	{
+		// Get the jSon body and store in jSon object 
 		JSONObject jsonData = new JSONObject(jsonBody);
 		
+		//Fetch the array value on behalf search key and store in array variable 
 		JSONArray getArray = jsonData.getJSONArray(srcArrKey);
 		
+		//Taking here one more jSON Object variable for further use
+		
+		JSONObject getObject=null;
+		//run the loop end of the array length
 		for (int i=0 ; i<getArray.length(); i++) {
 				
-			JSONObject getObject = getArray.getJSONObject(i);
-			
+			//get the all object inner on array 
+			getObject = getArray.getJSONObject(i);
+			//run the loop end of the object length 
 			for(int j=0; j<getObject.length(); j++) 
 			{
+				// compare the value on behalf of key 
 				if(getObject.get(srhKey).equals(srhValue)) {
-					
-					String getExactData = getObject.get(gtExtData).toString();
+					//exit from the loop
 					break;
 				}
 				
 			}
 			
 		}
-		return gtExtData;
+		//get the expected data on behalf search key and value and store in jSon object variable which i taking and  befor run the loop and convert in string  data type
+		return  getObject.get(gtExtData).toString();
 		
 	}
-	
-	public static void main(String[] args) 
-	{
-		String getDatafinal= fetchDatafromJSON(jsonBodysample, "phoneNumbers", "type", "iPhone", "number");
-		
-		System.out.println(getDatafinal);
-		
-	}
+
 }
