@@ -34,7 +34,7 @@ public class GetjSOnObjectKey
 		// taking iterator for getting all element from the hash_Set array one by one
 		Iterator bodyVariable = hash_Set.iterator();
 		String obj=null; 
-		System.out.println("**********************Keys and Variables from the json body*******************************\n");
+		System.out.println("********************** Keys and Variables from the json body *******************************\n");
 		// Run while loop for getting array elements one by one. 
 		while(bodyVariable.hasNext())
 		{
