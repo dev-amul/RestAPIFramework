@@ -14,16 +14,9 @@ public class JsonVariableReplacer
 {
 	public static void replaceVariable(String jsonBody, String expectedVariable, String replacement)
 	{
-		jsonBody=jsonBody.replaceAll(Pattern.quote(expectedVariable), replacement);
-		
+		jsonBody=jsonBody.replaceAll(Pattern.quote(expectedVariable), replacement);	
 	}
 	
-	public static void main(String[] args) throws FileNotFoundException 
-	{
-		String keys = GetjSOnObjectKey.getKeyobjectFromJsondata("../RestAPI_Framework/DataFile/dynamicVariableBody.json");
-		
-		System.out.println(keys);
-		
-	}
+	
 
 }
