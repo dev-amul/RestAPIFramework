@@ -1,7 +1,7 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 08-Oct-2019
- *  FILE NAME  		: 	 GetjSOnObjectKey.java
+ *  FILE NAME  		: 	 ReplaceVariablesValuesAsperkeys.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
@@ -13,12 +13,12 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 import org.json.JSONObject;
-public class GetjSOnObjectKey
+public class ReplaceVariablesValuesAsperkeys
 {
-	public static void main(String[] args) throws FileNotFoundException
+	public static String replaceVariablesAsPerKeys(String jsonFileURL, String enterReplacementValues) throws FileNotFoundException
 	{
 		// Call the jSon file reader method 
-		JSONObject storeJsonobj= AlltypeDataRead.readJsonFile("../RestAPI_Framework/DataFile/dynamicVariableBody.json");		
+		JSONObject storeJsonobj= AlltypeDataRead.readJsonFile(jsonFileURL);		
 		
 		Iterator getjSOnKeys= storeJsonobj.keys();
 		
@@ -35,11 +35,13 @@ public class GetjSOnObjectKey
 			String getVariables=storeJsonobj.getString(jSonKeys).toString();
 		//	System.out.println(s1);
 			System.out.print(jSonKeys+"\t:\t");			
-			String replacement=sc.next();
-			jsonBody=jsonBody.replaceAll(Pattern.quote(getVariables), replacement);
+			enterReplacementValues=sc.next();
+			jsonBody=jsonBody.replaceAll(Pattern.quote(getVariables), enterReplacementValues);
 			s3=jsonBody;
 		}
 		System.out.println("********** Json before replace the variable ********** \n"+storeJsonobj.toString());
-		System.out.println("********** json after replace the variable  ********** \n"+s3);
+		System.out.println("********** json after replace the variable  ********** \n");
+		
+		return s3;
 	}
 }
