@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-06T18:15:46Z" name="Default suite" finished-at="2019-10-06T18:15:46Z" duration-ms="76">
+  <suite started-at="2019-10-09T03:45:53Z" name="Default suite" finished-at="2019-10-09T03:45:59Z" duration-ms="6015">
     <groups>
     </groups>
-    <test started-at="2019-10-06T18:15:46Z" name="Default test" finished-at="2019-10-06T18:15:46Z" duration-ms="76">
-      <class name="com.API_Testing.TestScripts.TC_06_AddValueInExsitingData">
-        <test-method signature="addValueExsitingData()[pri:0, instance:com.API_Testing.TestScripts.TC_06_AddValueInExsitingData@574b560f]" started-at="2019-10-06T18:15:46Z" name="addValueExsitingData" finished-at="2019-10-06T18:15:46Z" duration-ms="39" status="PASS">
+    <test started-at="2019-10-09T03:45:53Z" name="Default test" finished-at="2019-10-09T03:45:59Z" duration-ms="6015">
+      <class name="com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles">
+        <test-method signature="replaceVarialbes()[pri:0, instance:com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles@574b560f]" started-at="2019-10-09T03:45:53Z" name="replaceVarialbes" finished-at="2019-10-09T03:45:59Z" duration-ms="5964" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addValueExsitingData -->
-      </class> <!-- com.API_Testing.TestScripts.TC_06_AddValueInExsitingData -->
+        </test-method> <!-- replaceVarialbes -->
+      </class> <!-- com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

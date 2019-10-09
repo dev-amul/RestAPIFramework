@@ -39,7 +39,8 @@ public class ReplaceVariablesValuesAsperkeys
 			jsonBody=jsonBody.replaceAll(Pattern.quote(getVariables), enterReplacementValues);
 			s3=jsonBody;
 		}
-		System.out.println("********** Json before replace the variable ********** \n"+storeJsonobj.toString());
+		System.out.println("********** Json before replace the variable ********** \n");
+		System.out.println(storeJsonobj.toString());
 		System.out.println("********** json after replace the variable  ********** \n");
 		
 		return s3;
