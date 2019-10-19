@@ -19,23 +19,27 @@ public class ReplaceVariablesValuesAsperkeys
 	{
 		// Call the jSon file reader method 
 		JSONObject storeJsonobj= AlltypeDataRead.readJsonFile(jsonFileURL);		
-		
+		//Get the keys from from jSon file and store in iterator Variable
 		Iterator getjSOnKeys= storeJsonobj.keys();
-		
+		//Convert jSon data in string and store in variables.
 		String jsonBody = storeJsonobj.toString();
 		
 		String s3=null;
-		
+		//Using scanner class for taking input from console for replace all values as per variable of the jSOn file 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter replacement values as correspondence to variables");
-		
+		// Run the while loops to get all keys one by one 
 		while(getjSOnKeys.hasNext()) 
 		{
+			//stores all values in string variable
 			String jSonKeys=getjSOnKeys.next().toString();
+			//get variables from jSon data as per keys 
 			String getVariables=storeJsonobj.getString(jSonKeys).toString();
-		//	System.out.println(s1);
-			System.out.print(jSonKeys+"\t:\t");			
+			
+			System.out.print(jSonKeys+"\t:\t");	
+			//Taking 
 			enterReplacementValues=sc.next();
+			//Replace the variable values 
 			jsonBody=jsonBody.replaceAll(Pattern.quote(getVariables), enterReplacementValues);
 			s3=jsonBody;
 		}

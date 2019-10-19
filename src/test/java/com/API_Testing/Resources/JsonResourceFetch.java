@@ -40,7 +40,7 @@ public class JsonResourceFetch
 			}
 			
 		}
-		//get the expected data on behalf search key and value and store in jSon object variable which i taking and  befor run the loop and convert in string  data type
+		//get the expected data on behalf search key and value and store in jSon object variable which i taking and  before run the loop and convert in string  data type
 		return  getObject.get(gtExtData).toString();
 		
 	}
