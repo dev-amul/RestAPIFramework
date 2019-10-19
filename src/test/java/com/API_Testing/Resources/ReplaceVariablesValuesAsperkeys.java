@@ -46,7 +46,6 @@ public class ReplaceVariablesValuesAsperkeys
 		System.out.println("********** Json before replace the variable ********** \n");
 		System.out.println(storeJsonobj.toString());
 		System.out.println("********** json after replace the variable  ********** \n");
-		
 		return s3;
 	}
 }
