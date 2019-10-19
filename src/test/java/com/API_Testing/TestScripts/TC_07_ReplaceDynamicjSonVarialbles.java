@@ -19,7 +19,9 @@ public class TC_07_ReplaceDynamicjSonVarialbles
 	public void replaceVarialbes() throws FileNotFoundException
 	{
 		String enterReplacementValues=null;
-		String replaceVaules= ReplaceVariablesValuesAsperkeys.replaceVariablesAsPerKeys("../RestAPI_Framework/DataFile/dynamicVariableBody.json", enterReplacementValues);
+		String replaceVaules= 
+		
+		ReplaceVariablesValuesAsperkeys.replaceVariablesAsPerKeys("../RestAPI_Framework/DataFile/dynamicVariableBody.json", enterReplacementValues);
 		
 		System.out.println(replaceVaules);
 		
