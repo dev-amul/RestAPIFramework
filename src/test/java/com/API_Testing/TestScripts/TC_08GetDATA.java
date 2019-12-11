@@ -12,9 +12,14 @@ import java.io.FileNotFoundException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
+<<<<<<< HEAD
 import com.API_Testing.utilities.AlltypeDataRead;
 import com.API_Testing.utilities.FetchDataMethodFromJson;
 import com.API_Testing.utilities.JsonResourceFetch;
+=======
+import com.API_Testing.Resources.AlltypeDataRead;
+import com.API_Testing.Resources.JsonResourceFetch;
+>>>>>>> 117778ca740fe583442d95d0ee765be00686ee8c
 
 public class TC_08GetDATA {
 	
