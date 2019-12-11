@@ -5,14 +5,18 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.Resources;
+package com.API_Testing.utilities;
 
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
+import org.json.XML;
+
+import io.restassured.RestAssured;
 
 public class AlltypeDataRead 
 {
@@ -26,6 +30,15 @@ public class AlltypeDataRead
 		
 		return convertToJSonObject;
 		
+		 
 	}
+	
+    public static void xmlFileRead (String fileURL) throws FileNotFoundException
+    {
+    	
+		FileReader readFile = new FileReader(fileURL);
+		
+    	
+    }
 
 }

@@ -11,7 +11,8 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import org.testng.annotations.Test;
-import com.API_Testing.Resources.ReplaceVariablesValuesAsperkeys;
+
+import com.API_Testing.utilities.ReplaceVariablesValuesAsperkeys;
 
 public class TC_07_ReplaceDynamicjSonVarialbles
 {
