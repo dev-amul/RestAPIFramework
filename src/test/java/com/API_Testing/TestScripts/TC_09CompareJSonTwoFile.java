@@ -22,8 +22,8 @@ public class TC_09CompareJSonTwoFile
 		
 		String expectedJson = AlltypeDataRead.readJsonFile("../RestAPI_Framework/DataFile/CoremrkData.json").toString();
 		String actualJson = AlltypeDataRead.readJsonFile("../RestAPI_Framework/DataFile/jsonBodydumm.json").toString();
-		JSONAssert.assertEquals("Match",expectedJson, actualJson, JSONCompareMode.STRICT);
 		
+		JSONAssert.assertEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
 	}
 
 }
