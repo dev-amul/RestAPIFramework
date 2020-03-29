@@ -18,7 +18,7 @@ public class Laod_PropertiestFile
 	public static Properties getPropertyFile() throws IOException
 	{
 		
-		FileInputStream getFile = new FileInputStream("../RestAPI_Framework/Environment_URI.properties");
+		FileInputStream getFile = new FileInputStream("../restassuredautomation_framwork/Environment_URI.properties");
 		
 		Properties pr = new Properties();
 		
