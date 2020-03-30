@@ -1,55 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-03T16:05:48Z" name="Default suite" finished-at="2019-12-03T16:05:48Z" duration-ms="81">
+  <suite name="Default suite" duration-ms="7675" started-at="2020-03-29T09:17:15Z" finished-at="2020-03-29T09:17:22Z">
     <groups>
     </groups>
-    <test started-at="2019-12-03T16:05:48Z" name="Default test" finished-at="2019-12-03T16:05:48Z" duration-ms="81">
-      <class name="com.API_Testing.TestScripts.TC_08GetDATA">
-        <test-method signature="fetchValuedata()[pri:0, instance:com.API_Testing.TestScripts.TC_08GetDATA@574b560f]" started-at="2019-12-03T16:05:48Z" name="fetchValuedata" finished-at="2019-12-03T16:05:48Z" duration-ms="31" status="FAIL">
-          <exception class="org.json.JSONException">
-            <message>
-              <![CDATA[JSONObject["NotificationList"] not found.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.json.JSONException: JSONObject["NotificationList"] not found.
-at org.json.JSONObject.get(JSONObject.java:473)
-at org.json.JSONObject.getJSONArray(JSONObject.java:555)
-at com.API_Testing.Resources.FetchDataMethodFromJson.dataFetch(FetchDataMethodFromJson.java:21)
-at com.API_Testing.TestScripts.TC_08GetDATA.fetchValuedata(TC_08GetDATA.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.json.JSONException -->
+    <test name="Default test" duration-ms="7675" started-at="2020-03-29T09:17:15Z" finished-at="2020-03-29T09:17:22Z">
+      <class name="com.API_Testing.TestScripts.TC_01_PostRequest">
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_01_PostRequest@146ba0ac]" name="createData" duration-ms="7609" started-at="2020-03-29T09:17:15Z" finished-at="2020-03-29T09:17:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fetchValuedata -->
-      </class> <!-- com.API_Testing.TestScripts.TC_08GetDATA -->
+        </test-method> <!-- createData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_01_PostRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

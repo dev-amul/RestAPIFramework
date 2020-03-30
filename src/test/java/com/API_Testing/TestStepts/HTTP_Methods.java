@@ -45,6 +45,17 @@ public class HTTP_Methods
 				
 				return fetchDataFromURI;
 	}
+ public Response get_PerticularID_Request(String baseURI, String gerFromURI, String dataId) {
+		
+		Response fetchDataFromId = 
+				
+				given()
+				.contentType(ContentType.JSON)
+				.when()
+				.get(pr.getProperty(baseURI)+"/"+pr.getProperty(gerFromURI)+"/"+dataId);
+				
+				return fetchDataFromId;
+	}
 	public Response put_Request(String payLoad, String baseuriForPut, String endURL, String expectedID) {
 		
 		Response putRequest_Respose = 
