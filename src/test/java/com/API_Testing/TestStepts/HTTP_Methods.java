@@ -45,7 +45,7 @@ public class HTTP_Methods
 				
 				return fetchDataFromURI;
 	}
- public Response get_PerticularID_Request(String baseURI, String gerFromURI, String dataId) {
+	public Response get_PerticularID_Request(String baseURI, String gerFromURI, String dataId) {
 		
 		Response fetchDataFromId = 
 				
