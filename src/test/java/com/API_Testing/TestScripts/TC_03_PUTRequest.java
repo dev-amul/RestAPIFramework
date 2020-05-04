@@ -20,18 +20,25 @@ import com.API_Testing.utilities.Laod_PropertiestFile;
 
 import io.restassured.response.Response;
 
-public class TC_03_PUTRequest 
+public class TC_03_PUTRequest extends TC_01_PostMethods
 {
 	@Test
 	public void updateRecord() throws IOException 
 	{
-		JSONObject jsonFileData= AlltypeDataRead.readJsonFile("../RestAPI_Framework/DataFile/jsonFILE.json");
+		JSONObject updateData = new JSONObject(); 
+		updateData.put("id", idValue);
+		updateData.put("First Name", "Sumit");
+		updateData.put("Last Name", "Kumar Chaudhary"); //update name
+		updateData.put("Designation", "Software QA Engineer");//update designm
+		updateData.put("Gender", "Male");
+		updateData.put("Experience", "3 Years");
+		updateData.put("Age", "29");
 		
 		Properties properTies = Laod_PropertiestFile.getPropertyFile();
 		
 		HTTP_Methods putRequestMethod = new HTTP_Methods(properTies);
 		
-		Response updatedData = putRequestMethod.put_Request(jsonFileData.toString(), "baseURL", "endPointURI1","EMP_01");
+		Response updatedData = putRequestMethod.put_Request(updateData.toString(), "baseURL", "endPointURI1", TC_01_PostMethods.idValue);
 
 		System.out.println("##############----PUT REQUEST RESPONSE CODE----#############\n");
 

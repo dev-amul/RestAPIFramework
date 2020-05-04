@@ -20,7 +20,7 @@ import com.API_Testing.utilities.Laod_PropertiestFile;
 
 import io.restassured.response.Response;
 
-public class TC_04_DeleteRequestData
+public class TC_04_DeleteRequestData extends TC_01_PostMethods
 {
 	@Test
 	public void deleteData() throws IOException 
@@ -29,7 +29,7 @@ public class TC_04_DeleteRequestData
 		
 		HTTP_Methods deleteRequest = new HTTP_Methods(pr);
 		
-		Response response= deleteRequest.delete_Request("baseURL", "endPointURI1", "EMP_02");
+		Response response= deleteRequest.delete_Request("baseURL", "endPointURI1", idValue);
 		
 		System.out.println("##############----DELETE REQUEST RESPONSE CODE----#############\n");
 		

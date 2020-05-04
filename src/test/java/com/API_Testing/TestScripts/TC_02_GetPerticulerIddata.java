@@ -7,8 +7,15 @@
  */
 package com.API_Testing.TestScripts;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
+
+import org.apache.http.impl.conn.Wire;
+import org.json.JSONObject;
+import org.testng.annotations.Test;
 
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStepts.HTTP_Methods;
@@ -18,6 +25,7 @@ import io.restassured.response.Response;
 
 public class TC_02_GetPerticulerIddata extends TC_01_PostMethods
 {
+	@Test
 	public  void getIDData() throws IOException
 	{
 		 Properties getProperties= Laod_PropertiestFile.getPropertyFile();
@@ -37,8 +45,7 @@ public class TC_02_GetPerticulerIddata extends TC_01_PostMethods
 		 
 		 System.out.println("Response Data is \t:\t"+getdata);
 		 
-		 
-
+			 	
 	}
 
 }

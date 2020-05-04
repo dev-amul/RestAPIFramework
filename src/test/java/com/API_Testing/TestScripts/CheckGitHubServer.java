@@ -16,8 +16,6 @@ import io.restassured.response.Response;
 
 public class CheckGitHubServer 
 {
-	
-		
 		public static void main(String[] args) {
 			
 			JSONObject body = new JSONObject(); 

@@ -9,7 +9,12 @@ package com.API_Testing.TestScripts;
 
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
+
 import org.json.JSONObject;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 import com.API_Testing.TestStepts.HTTP_Methods;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 import com.API_Testing.utilities.ResponseDataparsing;
@@ -17,26 +22,31 @@ import io.restassured.response.Response;
 public class TC_01_PostMethods
 {
 	static String idValue; //Global Variable 
-	public JSONObject employeeData() //body payload
-	{
-		JSONObject body = new JSONObject(); 
-		body.put("id", "EMP_05");
-		body.put("First Name", "Sachin");
-		body.put("Last Name", "Teotiar");
-		body.put("Designation", "Self Employeed");
-		body.put("Gender", "Male");
-		body.put("Experience", "4 Years");
-		body.put("Age", "28");
-		return body;
-	}
+	
+	@Test
 	public void createData() throws IOException// Methods for create a data on json file. 
 	//public void createData() throws IOException
 	{
+		Random randomeNumber= new Random();   // To generate random id
+		Integer convertedIntegerID= randomeNumber.nextInt();
+
+		String emp = convertedIntegerID.toString();
+		
+		JSONObject body = new JSONObject(); 
+		body.put("id", emp);
+		body.put("First Name", "Sumit");
+		body.put("Last Name", "Kumar");
+		body.put("Designation", "Software Test Engineer");
+		body.put("Gender", "Male");
+		body.put("Experience", "3 Years");
+		body.put("Age", "29");
+	
 		Properties pr = Laod_PropertiestFile.getPropertyFile();
 		HTTP_Methods postMethod = new HTTP_Methods(pr);
-		TC_01_PostMethods dataBody = new TC_01_PostMethods();//create a class object 
+		
 		//call the post method and pass the body payload using class reference variable 
-		Response response = postMethod.post_Request(dataBody.employeeData().toString(), "baseURL", "endPointURI1");
+		Response response = postMethod.post_Request(body.toString(), "baseURL", "endPointURI1");
+		
 		idValue=ResponseDataparsing.responseDataParse(response, "id");//store the data id in global variable 
 		System.out.println("##############----POST REQUEST RESPONSE CODE----#############\n");
 		System.out.println(response.statusCode());//pring the Post method status code
