@@ -7,6 +7,8 @@
  */
 package com.API_Testing.TestScripts;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -22,7 +24,7 @@ public class TC_07_ReplaceDynamicjSonVarialbles
 		String enterReplacementValues=null;
 		String replaceVaules= 
 		
-		ReplaceVariablesValuesAsperkeys.replaceVariablesAsPerKeys("../RestAPI_Framework/DataFile/dynamicVariableBody.json", enterReplacementValues);
+		ReplaceVariablesValuesAsperkeys.replaceVariablesAsPerKeys("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dynamicVariableBody.json", enterReplacementValues);
 		
 		System.out.println(replaceVaules);
 		

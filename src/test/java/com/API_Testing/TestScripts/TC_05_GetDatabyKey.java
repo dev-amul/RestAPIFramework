@@ -7,6 +7,8 @@
  */
 package com.API_Testing.TestScripts;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 
 import org.json.JSONObject;
@@ -20,7 +22,7 @@ public class TC_05_GetDatabyKey
 	@Test
 	public void fetchValuedata() throws FileNotFoundException
 	{
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../RestAPI_Framework/DataFile/jsonBodydumm.json");
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
 		
 		String getDatafinal= JsonResourceFetch.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number");
 		

@@ -1,21 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2606" started-at="2020-05-04T12:46:39Z" finished-at="2020-05-04T12:46:42Z">
+  <suite name="Suite" duration-ms="29565" started-at="2020-05-04T13:17:00Z" finished-at="2020-05-04T13:17:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2606" started-at="2020-05-04T12:46:39Z" finished-at="2020-05-04T12:46:42Z">
-      <class name="com.API_Testing.TestScripts.TC_04_DeleteRequestData">
-        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_04_DeleteRequestData@31ef45e3]" name="createData" duration-ms="2473" started-at="2020-05-04T12:46:39Z" finished-at="2020-05-04T12:46:42Z">
+    <test name="Test" duration-ms="29565" started-at="2020-05-04T13:17:00Z" finished-at="2020-05-04T13:17:30Z">
+      <class name="com.API_Testing.TestScripts.TC_03_PUTRequest">
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@7085bdee]" name="createData" duration-ms="58" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createData -->
-        <test-method status="PASS" signature="deleteData()[pri:0, instance:com.API_Testing.TestScripts.TC_04_DeleteRequestData@31ef45e3]" name="deleteData" duration-ms="80" started-at="2020-05-04T12:46:42Z" finished-at="2020-05-04T12:46:42Z">
+        <test-method status="PASS" signature="updateRecord()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@7085bdee]" name="updateRecord" duration-ms="32" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateRecord -->
+      </class> <!-- com.API_Testing.TestScripts.TC_03_PUTRequest -->
+      <class name="com.API_Testing.TestScripts.TC_04_DeleteRequestData">
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_04_DeleteRequestData@6500df86]" name="createData" duration-ms="2345" started-at="2020-05-04T13:17:00Z" finished-at="2020-05-04T13:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+        <test-method status="PASS" signature="deleteData()[pri:0, instance:com.API_Testing.TestScripts.TC_04_DeleteRequestData@6500df86]" name="deleteData" duration-ms="56" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteData -->
       </class> <!-- com.API_Testing.TestScripts.TC_04_DeleteRequestData -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles">
+        <test-method status="PASS" signature="replaceVarialbes()[pri:0, instance:com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles@1ce92674]" name="replaceVarialbes" duration-ms="26448" started-at="2020-05-04T13:17:04Z" finished-at="2020-05-04T13:17:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- replaceVarialbes -->
+      </class> <!-- com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles -->
+      <class name="com.API_Testing.TestScripts.TC_02_GetPerticulerIddata">
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_02_GetPerticulerIddata@3fee9989]" name="createData" duration-ms="62" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+        <test-method status="PASS" signature="getIDData()[pri:0, instance:com.API_Testing.TestScripts.TC_02_GetPerticulerIddata@3fee9989]" name="getIDData" duration-ms="37" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIDData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_02_GetPerticulerIddata -->
+      <class name="com.API_Testing.TestScripts.TC_01_PostMethods">
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_01_PostMethods@73ad2d6]" name="createData" duration-ms="52" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_01_PostMethods -->
+      <class name="com.API_Testing.TestScripts.TC_08GetDATA">
+        <test-method status="PASS" signature="fetchValuedata()[pri:0, instance:com.API_Testing.TestScripts.TC_08GetDATA@42dafa95]" name="fetchValuedata" duration-ms="25" started-at="2020-05-04T13:17:00Z" finished-at="2020-05-04T13:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchValuedata -->
+      </class> <!-- com.API_Testing.TestScripts.TC_08GetDATA -->
+      <class name="com.API_Testing.TestScripts.TC_10_PostDataUsingPojo">
+        <test-method status="PASS" signature="pojoPostTest()[pri:0, instance:com.API_Testing.TestScripts.TC_10_PostDataUsingPojo@4cf777e8]" name="pojoPostTest" duration-ms="347" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pojoPostTest -->
+      </class> <!-- com.API_Testing.TestScripts.TC_10_PostDataUsingPojo -->
+      <class name="com.API_Testing.TestScripts.TC_06_AddValueInExsitingData">
+        <test-method status="PASS" signature="addValueExsitingData()[pri:0, instance:com.API_Testing.TestScripts.TC_06_AddValueInExsitingData@59ec2012]" name="addValueExsitingData" duration-ms="4" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addValueExsitingData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_06_AddValueInExsitingData -->
+      <class name="com.API_Testing.TestScripts.TC_05_GetDatabyKey">
+        <test-method status="PASS" signature="fetchValuedata()[pri:0, instance:com.API_Testing.TestScripts.TC_05_GetDatabyKey@402a079c]" name="fetchValuedata" duration-ms="4" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchValuedata -->
+      </class> <!-- com.API_Testing.TestScripts.TC_05_GetDatabyKey -->
+      <class name="com.API_Testing.TestScripts.TC_09CompareJSonTwoFile">
+        <test-method status="PASS" signature="comparetoJson()[pri:0, instance:com.API_Testing.TestScripts.TC_09CompareJSonTwoFile@2f686d1f]" name="comparetoJson" duration-ms="11" started-at="2020-05-04T13:17:03Z" finished-at="2020-05-04T13:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparetoJson -->
+      </class> <!-- com.API_Testing.TestScripts.TC_09CompareJSonTwoFile -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.API_Testing.TestScripts.TC_02_GetPerticulerIddata">
+      <class name="com.API_Testing.TestScripts.TC_05_GetDatabyKey">
         <methods>
-          <include name="getIDData"/>
+          <include name="fetchValuedata"/>
         </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_02_GetPerticulerIddata -->
+      </class> <!-- com.API_Testing.TestScripts.TC_05_GetDatabyKey -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

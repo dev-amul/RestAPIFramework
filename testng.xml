@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.API_Testing.TestScripts.TC_08GetDATA"/>
+      <class name="com.API_Testing.TestScripts.TC_04_DeleteRequestData"/>
+      <class name="com.API_Testing.TestScripts.TC_05_GetDatabyKey"/>
+      <class name="com.API_Testing.TestScripts.TC_06_AddValueInExsitingData"/>
+      <class name="com.API_Testing.TestScripts.TC_10_PostDataUsingPojo"/>
+      <class name="com.API_Testing.TestScripts.TC_09CompareJSonTwoFile"/>
+      <class name="com.API_Testing.TestScripts.TC_02_GetPerticulerIddata"/>
+      <class name="com.API_Testing.TestScripts.TC_01_PostMethods"/>
+      <class name="com.API_Testing.TestScripts.TC_03_PUTRequest"/>
+      <class name="com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

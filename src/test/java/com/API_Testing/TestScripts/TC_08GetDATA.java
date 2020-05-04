@@ -7,6 +7,8 @@
  */
 package com.API_Testing.TestScripts;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 
 import org.json.JSONObject;
@@ -19,7 +21,7 @@ public class TC_08GetDATA {
 	@Test
 	public void fetchValuedata() throws FileNotFoundException
 	{
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../RestAPI_Framework/DataFile/CoremrkData.json");
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/CoremrkData.json");
 		
 		//String getDatafinal= FetchDataMethodFromJson.dataFetch(jsondummydata.toString(), "NotificationList", "keyValuePairList", "key", "AmountDue", "value");
 		System.out.println("#######Expected Data###########\n");
