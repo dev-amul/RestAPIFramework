@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3159" started-at="2020-05-05T18:00:01 IST" finished-at="2020-05-05T18:00:04 IST">
+  <suite name="Default suite" duration-ms="30071" started-at="2020-05-05T20:39:18 IST" finished-at="2020-05-05T20:39:48 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3159" started-at="2020-05-05T18:00:01 IST" finished-at="2020-05-05T18:00:04 IST">
-      <class name="com.API_Testing.TestScripts.TC_08_PatchRequest">
-        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_08_PatchRequest@6acdbdf5]" name="createData" duration-ms="3015" started-at="2020-05-05T18:00:01 IST" finished-at="2020-05-05T18:00:04 IST">
+    <test name="Default test" duration-ms="30071" started-at="2020-05-05T20:39:18 IST" finished-at="2020-05-05T20:39:48 IST">
+      <class name="com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles">
+        <test-method status="PASS" signature="replaceVarialbes()[pri:0, instance:com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles@15d0c81b]" name="replaceVarialbes" duration-ms="29952" started-at="2020-05-05T20:39:18 IST" finished-at="2020-05-05T20:39:48 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createData -->
-        <test-method status="PASS" signature="updateDatausingPatch()[pri:0, instance:com.API_Testing.TestScripts.TC_08_PatchRequest@6acdbdf5]" name="updateDatausingPatch" duration-ms="63" started-at="2020-05-05T18:00:04 IST" finished-at="2020-05-05T18:00:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateDatausingPatch -->
-      </class> <!-- com.API_Testing.TestScripts.TC_08_PatchRequest -->
+        </test-method> <!-- replaceVarialbes -->
+      </class> <!-- com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

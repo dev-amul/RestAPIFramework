@@ -45,7 +45,7 @@ public class TC_01_PostMethods
 		body.put("Age", "29");
 	
 		Properties pr = Laod_PropertiestFile.getPropertyFile();
-		HTTP_Methods postMethod = new HTTP_Methods(pr);
+		HTTP_Methods postMethod = new HTTP_Methods(pr);//call the method here 
 		
 		//call the post method and pass the body payload using class reference variable 
 		Response response = postMethod.post_Request(body.toString(), "baseURL", "endPointURI1");

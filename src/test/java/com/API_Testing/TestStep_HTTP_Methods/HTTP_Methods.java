@@ -93,7 +93,6 @@ public class HTTP_Methods
 	public Response delete_Request( String delete_BaseURI, String endURI, String id) 
 	{
 		Response deleteRequest_response = 
-				
 				given()
 				.contentType(ContentType.JSON)
 				.when()

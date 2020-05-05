@@ -31,7 +31,7 @@ public class TC_03_PUTRequest extends TC_01_PostMethods
 		updateData.put("id", idValue);
 		updateData.put("First Name", "Sumit");
 		updateData.put("Last Name", "Kumar Chaudhary"); //update name
-		updateData.put("Designation", "Software QA Engineer");//update designm
+		updateData.put("Designation", "Software autmation");//update designm
 		updateData.put("Gender", "Male");
 		updateData.put("Experience", "3 Years");
 		updateData.put("Age", "29");
