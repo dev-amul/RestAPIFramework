@@ -16,7 +16,7 @@ import org.json.JSONObject;
 import org.testng.annotations.Test;
 
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
-import com.API_Testing.TestStepts.HTTP_Methods;
+import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
 import com.API_Testing.utilities.AlltypeDataRead;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 

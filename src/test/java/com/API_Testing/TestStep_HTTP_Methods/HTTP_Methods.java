@@ -1,11 +1,11 @@
 /**
- * @author 			:	 sumitkumar
+  * @author 			:	 sumitkumar
  *	DATE       		:	 15-Sep-2019
  *  FILE NAME  		: 	 HTTP_Methods.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.TestStepts;
+package com.API_Testing.TestStep_HTTP_Methods;
 
 import java.util.Properties;
 

@@ -17,7 +17,8 @@ import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.API_Testing.TestStepts.HTTP_Methods;
+import com.API_Testing.ResponseValidation.ResponseDataValidation;
+import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 import com.API_Testing.utilities.ResponseDataparsing;
 import io.restassured.response.Response;
@@ -51,7 +52,10 @@ public class TC_01_PostMethods
 		
 		idValue=ResponseDataparsing.responseDataParse(response, "id");//store the data id in global variable 
 		System.out.println("##############----POST REQUEST RESPONSE CODE----#############\n");
-		System.out.println(response.statusCode());//pring the Post method status code
+		System.out.println(response.statusCode());//Printing the Post method status code
+		
+		ResponseDataValidation.responseCodeValidation(201, response.getStatusCode());//compare the status code
+		
 		System.out.println("##############----Posted Data id is----#############\n");
 		System.out.println("Data Id "+idValue);//Print data id to evaluate is correct or not 
 		System.out.println("##############----POST REQUEST RESPONSE DATA----#############\n");
