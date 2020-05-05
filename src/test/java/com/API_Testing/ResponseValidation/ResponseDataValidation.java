@@ -13,10 +13,10 @@ import io.restassured.response.Response;
 
 public class ResponseDataValidation 
 {
-	
+	//Methods for campare the status code of the passed data. 
 	public static void responseCodeValidation (int expectedStatusCode, int actualStatusCode) {
 		
-		
+		//passing two string data for comparing 
 		if (expectedStatusCode==actualStatusCode)
 		{
 			System.out.println("Expected Status Code is similar to Actual Status code \t:\t"+actualStatusCode);
@@ -27,9 +27,4 @@ public class ResponseDataValidation
 		}
 	}
 	
-	public static void responseDataValidation (String expectedResponseData, int actualResponseData) {
-		
-		
-		Assert.assertEquals(expectedResponseData, actualResponseData, "Data is not correct");
-	}
 }

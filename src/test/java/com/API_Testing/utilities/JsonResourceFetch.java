@@ -12,6 +12,7 @@ import org.json.JSONObject;
 
 public class JsonResourceFetch
 {
+	//generic method for fetch the data as per pass key 
 	public static String fetchDatafromJSON(String jsonBody, String srcArrKey, String srhKey, String srhValue, String gtExtData) 
 	{
 		// Get the jSon body and store in jSon object 

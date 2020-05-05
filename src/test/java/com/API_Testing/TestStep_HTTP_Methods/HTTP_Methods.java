@@ -16,25 +16,29 @@ import static io.restassured.RestAssured.*;
 
 public class HTTP_Methods 
 {
+	//Properties variable to pass the properties file read data. 
 	Properties pr; 
-	//Creating
+	//Creating constructor for pass the variable to all test cases. 
 	public HTTP_Methods(Properties pr) {
 		
 		this.pr=pr;
 	}
 	
+	//Post method for create record. Method required 3  parameter 
+	//dataForPost -- require the the data string in format, postBaseURI --require the base URL of the resource , URIendpoint -- require point of the url 
 	public Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) 
 	{
-		Response postRequestResponse = 
-				given()
-				.contentType(ContentType.JSON)
-				.body(dataForPost)
+		Response postRequestResponse = //Store all the response 
+				given() 
+				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format. 
+				.body(dataForPost) // pass the expected data 
 				.when()
-				.post(pr.getProperty(postBaseURI)+"/"+pr.getProperty(URIendpoint));
+				.post(pr.getProperty(postBaseURI)+"/"+pr.getProperty(URIendpoint)); // method require the URL where we want to post the data. 
 		
 		return postRequestResponse;
 		
 	}
+	//Method for fetch the all data as per the given URL 
 	public Response get_Request(String baseURI, String gerFromURI) {
 		
 		Response fetchDataFromURI = 
@@ -46,6 +50,8 @@ public class HTTP_Methods
 				
 				return fetchDataFromURI;
 	}
+	
+	// Method for fetch the data as per given particular id or end url. 
 	public Response get_PerticularID_Request(String baseURI, String gerFromURI, String dataId) {
 		
 		Response fetchDataFromId = 
@@ -54,23 +60,22 @@ public class HTTP_Methods
 				.contentType(ContentType.JSON)
 				.when()
 				.get(pr.getProperty(baseURI)+"/"+pr.getProperty(gerFromURI)+"/"+dataId);
-				
 				return fetchDataFromId;
 	}
+	
+	//Method for modify the existing data as per the given id or end url. 
 	public Response put_Request(String payLoad, String baseuriForPut, String endURL, String expectedID) {
 		
 		Response putRequest_Respose = 
-				
 				given()
 				.contentType(ContentType.JSON)
 				.body(payLoad)
 				.when()
 				.put(pr.getProperty(baseuriForPut)+"/"+pr.getProperty(endURL)+"/"+expectedID);
-				
-				
 				return putRequest_Respose;
 	}
 	
+	//Method for update the data as per given id or end point. 
 	public Response patch_Request(String existingData, String updateOnBaseURI, String endRUI) {
 		
 		Response patchRequestResponse = 
@@ -84,7 +89,7 @@ public class HTTP_Methods
 		return patchRequestResponse; 
 		
 	}
-	
+	//Method for delete the data from the given url. 
 	public Response delete_Request( String delete_BaseURI, String endURI, String id) 
 	{
 		Response deleteRequest_response = 
@@ -94,8 +99,6 @@ public class HTTP_Methods
 				.when()
 				.delete(pr.getProperty(delete_BaseURI)+"/"+pr.getProperty(endURI)+"/"+id);
 		
-				return deleteRequest_response; 
-		
+				return deleteRequest_response; 	
 	}
-
 }

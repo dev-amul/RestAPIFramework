@@ -16,9 +16,10 @@ import org.json.JSONObject;
 public class FetchDataMethodFromJson 
 
 {
+	//method for get the data as per passed key. this method is for exploring how we can fetch methods from json file. 
 	public static String getValueFromJson(String srhObj, String srhArray, String srchArray, String srchKey, String srchValu, String gtExtData) throws FileNotFoundException
 	{
-		JSONObject jsonBody = AlltypeDataRead.readJsonFile("../RestAPI_Framework/DataFile/CoremrkData.json");
+		JSONObject jsonBody = AlltypeDataRead.readJsonFile("give file ");
 		JSONObject fetchedObject= jsonBody.getJSONObject(srhObj);//get the first Object value because jSon starting from jSon
 		JSONArray getOptionalArr= fetchedObject.optJSONArray(srhArray);//here i'm assume as array but get the key value  
 		JSONObject getNewObject = null; 

@@ -15,16 +15,17 @@ import java.util.Properties;
 
 public class Laod_PropertiestFile 
 {
+	//Returnable method for read the properties file and provide the data as per key. Read all value from the given environment file. 
 	public static Properties getPropertyFile() throws IOException
 	{
-		
+		//Passing the properties file path in fileInpustream object.  
 		FileInputStream getFile = new FileInputStream("../restassuredautomation_framwork/src/test/java/com/API_Testing/EnvironmentFiles/Environment_URI.properties");
-		
+		//Initialize   the properties class variable 
 		Properties pr = new Properties();
-		
+		//pass the file object which store the file path 
 		pr.load(getFile);
 		
-		return pr;
+		return pr;//return the data 
 	}
 	
 	

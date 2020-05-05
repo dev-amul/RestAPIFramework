@@ -20,25 +20,18 @@ import io.restassured.RestAssured;
 
 public class AlltypeDataRead 
 {
+	//Methods for read json file 
 	public static JSONObject readJsonFile (String fileURL) throws FileNotFoundException 
 	{
-		FileReader getFile = new FileReader(fileURL);
+		FileReader getFile = new FileReader(fileURL);//fetch the json file as per given path
 		
-		JSONTokener parseFileToJSOn = new JSONTokener(getFile);
+		JSONTokener parseFileToJSOn = new JSONTokener(getFile);//parse the string data in to json format. Because file get the data in string format. 
 		
-		JSONObject convertToJSonObject = new JSONObject(parseFileToJSOn);
+		JSONObject convertToJSonObject = new JSONObject(parseFileToJSOn);// convert to the json object. 
 		
-		return convertToJSonObject;
-		
-		 
+		return convertToJSonObject;		//return the data  
 	}
 	
-    public static void xmlFileRead (String fileURL) throws FileNotFoundException
-    {
-    	
-		FileReader readFile = new FileReader(fileURL);
-		
-    	
-    }
+  
 
 }
