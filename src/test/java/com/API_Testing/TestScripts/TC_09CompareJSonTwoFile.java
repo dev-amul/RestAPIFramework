@@ -23,8 +23,8 @@ public class TC_09CompareJSonTwoFile
 	public  void comparetoJson() throws FileNotFoundException {
 		
 		
-		String expectedJson = AlltypeDataRead.readJsonFile("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/CoremrkData.json").toString();
-		String actualJson = AlltypeDataRead.readJsonFile("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/CoremrkData.json").toString();
+		String expectedJson = AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/EmployeeAddress.json").toString();
+		String actualJson = AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/EmployeeAddress.json").toString();
 		
 		JSONAssert.assertEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
 	}

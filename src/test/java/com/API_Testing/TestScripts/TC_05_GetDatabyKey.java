@@ -22,7 +22,7 @@ public class TC_05_GetDatabyKey
 	@Test
 	public void fetchValuedata() throws FileNotFoundException
 	{
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
 		
 		String getDatafinal= JsonResourceFetch.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number");
 		

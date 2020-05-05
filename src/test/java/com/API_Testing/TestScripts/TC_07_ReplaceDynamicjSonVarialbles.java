@@ -24,7 +24,7 @@ public class TC_07_ReplaceDynamicjSonVarialbles
 		String enterReplacementValues=null;
 		String replaceVaules= 
 		
-		ReplaceVariablesValuesAsperkeys.replaceVariablesAsPerKeys("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dynamicVariableBody.json", enterReplacementValues);
+		ReplaceVariablesValuesAsperkeys.replaceVariablesAsPerKeys("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dynamicVariableBody.json", enterReplacementValues);
 		
 		System.out.println(replaceVaules);
 		

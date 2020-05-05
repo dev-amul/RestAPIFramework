@@ -17,6 +17,7 @@ import static io.restassured.RestAssured.*;
 public class HTTP_Methods 
 {
 	Properties pr; 
+	//Creating
 	public HTTP_Methods(Properties pr) {
 		
 		this.pr=pr;

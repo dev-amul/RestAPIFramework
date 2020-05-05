@@ -22,7 +22,7 @@ public class TC_06_AddValueInExsitingData
 	@Test
 	public void addValueExsitingData() throws FileNotFoundException {
 		
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
 		
 		String str= UpdateExitingJSON.fetchAndUdateData(jsondummydata.toString(), "phoneNumbers", "type", "home", "emailId", "dummy@gmai.com");
 		

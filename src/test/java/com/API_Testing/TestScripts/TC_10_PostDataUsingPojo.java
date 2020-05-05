@@ -12,6 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.testng.annotations.Test;
 
 import com.API_Testing.Resources.BodyPojo;
@@ -26,17 +27,16 @@ public class TC_10_PostDataUsingPojo
 	@Test
 	public void pojoPostTest() throws IOException {
 		
-		JSONObject address= AlltypeDataRead.readJsonFile("/Users/docquity/git/restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/EmployeeAddress.json");
+		JSONObject address= AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/EmployeeAddress.json");
 		
 		BodyPojo pojoBodyEmployeeData = new BodyPojo();
 		
-		pojoBodyEmployeeData.setId("Pojo_02");
+		pojoBodyEmployeeData.setId("Pojo_0202");
 		pojoBodyEmployeeData.setEmployeeName("Sumit Chaudhary");
 		pojoBodyEmployeeData.setEmployeGender("Male");
 		pojoBodyEmployeeData.setEmployeProfession("Software Test Engineer");
 		pojoBodyEmployeeData.setEmployeAge("29");
 		pojoBodyEmployeeData.setAddress(address.toString());
-		
 		
 		Response res=
 				
