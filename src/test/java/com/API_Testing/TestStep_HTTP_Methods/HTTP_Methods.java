@@ -9,6 +9,8 @@ package com.API_Testing.TestStep_HTTP_Methods;
 
 import java.util.Properties;
 
+import com.jayway.restassured.specification.RequestSpecification;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -76,30 +78,16 @@ public class HTTP_Methods
 	}
 	
 	//Method for update the data as per given id or end point. 
-	public Response patch_Request(String existingData, String updateOnBaseURI, String endRUI) {
-		
-		Response patchRequestResponse = 
-				
+	public Response patch_UpdateData (String updateData, String baseuriForPut, String endURL, String expectedID)
+	{
+		 
+		Response res = 
 				given()
 				.contentType(ContentType.JSON)
-				.body(existingData)
 				.when()
-				.patch(pr.getProperty(updateOnBaseURI)+"/"+pr.getProperty(endRUI));
-		
-		return patchRequestResponse; 
-		
-	}
-	
-	public Response patch_UpdateData (String updateData, String updateOnBaseURI, String endRUI)
-	{
-		Response patch_Res = 
-		given()
-		.body(updateData)
-		.when()
-		.contentType(ContentType.JSON)
-		.patch(pr.getProperty(updateOnBaseURI)+"/"+pr.getProperty(endRUI));
-		
-		return patch_Res;
+				.body(updateData.toString())
+				.patch(pr.getProperty(baseuriForPut)+"/"+pr.getProperty(endURL)+"/"+expectedID);
+		return res;
 	}
 	//Method for delete the data from the given url. 
 	public Response delete_Request( String delete_BaseURI, String endURI, String id) 

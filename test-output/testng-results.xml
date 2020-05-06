@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2770" started-at="2020-05-06T17:16:59 IST" finished-at="2020-05-06T17:17:02 IST">
+  <suite name="Default suite" duration-ms="2575" started-at="2020-05-06T19:45:20 IST" finished-at="2020-05-06T19:45:23 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2770" started-at="2020-05-06T17:16:59 IST" finished-at="2020-05-06T17:17:02 IST">
-      <class name="com.API_Testing.TestScripts.TC_4_PatchRequest">
-        <test-method status="PASS" signature="dataForUpdate()[pri:0, instance:com.API_Testing.TestScripts.TC_4_PatchRequest@2d8f65a4]" name="dataForUpdate" is-config="true" duration-ms="11" started-at="2020-05-06T17:16:59 IST" finished-at="2020-05-06T17:16:59 IST">
+    <test name="Default test" duration-ms="2575" started-at="2020-05-06T19:45:20 IST" finished-at="2020-05-06T19:45:23 IST">
+      <class name="com.API_Testing.TestScripts.TC_10_PostDataUsingPojo">
+        <test-method status="PASS" signature="createPojoBody()[pri:0, instance:com.API_Testing.TestScripts.TC_10_PostDataUsingPojo@2d8f65a4]" name="createPojoBody" is-config="true" duration-ms="12" started-at="2020-05-06T19:45:20 IST" finished-at="2020-05-06T19:45:20 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataForUpdate -->
-        <test-method status="PASS" signature="updateSpecificData()[pri:0, instance:com.API_Testing.TestScripts.TC_4_PatchRequest@2d8f65a4]" name="updateSpecificData" duration-ms="2691" started-at="2020-05-06T17:16:59 IST" finished-at="2020-05-06T17:17:02 IST">
+        </test-method> <!-- createPojoBody -->
+        <test-method status="PASS" signature="pojoPostTest()[pri:0, instance:com.API_Testing.TestScripts.TC_10_PostDataUsingPojo@2d8f65a4]" name="pojoPostTest" duration-ms="2504" started-at="2020-05-06T19:45:20 IST" finished-at="2020-05-06T19:45:23 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateSpecificData -->
-      </class> <!-- com.API_Testing.TestScripts.TC_4_PatchRequest -->
+        </test-method> <!-- pojoPostTest -->
+      </class> <!-- com.API_Testing.TestScripts.TC_10_PostDataUsingPojo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

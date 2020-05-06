@@ -8,26 +8,24 @@
 package com.API_Testing.TestScripts;
 
 import org.testng.annotations.Test;
-
 import com.API_Testing.Payloads.AlltypeDataRead;
-
 import java.io.FileNotFoundException;
-
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import org.testng.annotations.Test;
 
-
+/**Test Case for compare two JSON***/
 public class TC_09CompareJSonTwoFile 
 {
 	@Test
 	public  void comparetoJson() throws FileNotFoundException {
 		
 		
-		String expectedJson = AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/EmployeeAddress.json").toString();
-		String actualJson = AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/EmployeeAddress.json").toString();
+		String expectedJson = AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/JSONforCompare1.json").toString();
+		String actualJson = AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/JSONforCompare2.json").toString();
+	
+		JSONAssert.assertNotEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
 		
-		JSONAssert.assertEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
+		
 	}
 
 }

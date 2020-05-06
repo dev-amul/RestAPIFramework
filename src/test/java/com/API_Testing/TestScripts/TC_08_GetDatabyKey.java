@@ -1,34 +1,32 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 06-Oct-2019
- *  FILE NAME  		: 	 TC_05_GetDatabyKey.java
+ *  FILE NAME  		: 	 TC_08_GetDatabyKey.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
 package com.API_Testing.TestScripts;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
-
 import org.json.JSONObject;
-import org.testng.annotations.Test;
-
 import com.API_Testing.Payloads.AlltypeDataRead;
 import com.API_Testing.utilities.JsonResourceFetch;
 
-public class TC_05_GetDatabyKey 
+/****Test case for fetch the data as per given key******/
+public class TC_08_GetDatabyKey 
 {
+	
 	@Test
 	public void fetchValuedata() throws FileNotFoundException
 	{
+		//call the json file static method from the ALLtpeDataRead class and pass the json file.
 		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
-		
-		String getDatafinal= JsonResourceFetch.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number");
-		
+
 		System.out.println("#######Expected Data###########\n");
 		
-		System.out.println("The Data is \t:\t"+getDatafinal);
+		//Print the desire data 
+		System.out.println("The Data is \t:\t"+JsonResourceFetch.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number"));
 		
 	}
 

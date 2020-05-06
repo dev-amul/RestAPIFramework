@@ -17,6 +17,7 @@ import org.json.JSONObject;
 import com.API_Testing.Payloads.AlltypeDataRead;
 public class ReplaceVariablesValuesAsperkeys
 {
+	//Method use for replace the value on dynamic json file. 
 	public static String replaceVariablesAsPerKeys(String jsonFileURL, String enterReplacementValues) throws FileNotFoundException
 	{
 		// Call the jSon file reader method 

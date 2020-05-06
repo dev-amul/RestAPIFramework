@@ -18,7 +18,7 @@ import com.API_Testing.Payloads.AlltypeDataRead;
 public class FetchDataMethodFromJson 
 
 {
-	//method for get the data as per passed key. this method is for exploring how we can fetch methods from json file. 
+	//Method fetch data as per key from json file. JSON must be start from Object. 
 	public static String getValueFromJson(String srhObj, String srhArray, String srchArray, String srchKey, String srchValu, String gtExtData) throws FileNotFoundException
 	{
 		JSONObject jsonBody = AlltypeDataRead.readJsonFile("give file ");
@@ -44,6 +44,7 @@ public class FetchDataMethodFromJson
 		}
 		return  getNewObject.get(gtExtData).toString();
 	}
+	
 	public static void main(String[] args) throws FileNotFoundException
 	{
 		String expData= FetchDataMethodFromJson.getValueFromJson("Request", "NotificationList", "keyValuePairList", "key", "MobilePhoneNumber", "value");

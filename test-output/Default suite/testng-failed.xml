@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.API_Testing.TestScripts.TC_01_PostMethods">
+      <class name="com.API_Testing.TestScripts.TC_10_PostDataUsingPojo">
         <methods>
-          <include name="createData"/>
+          <include name="createPojoBody"/>
         </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_01_PostMethods -->
+      </class> <!-- com.API_Testing.TestScripts.TC_10_PostDataUsingPojo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

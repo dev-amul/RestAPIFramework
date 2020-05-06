@@ -58,11 +58,11 @@ public class TC_01_PostMethods
 		
 		//fetch the id for further use and store the id in global variable
 		idValue=ResponseDataparsing.responseDataParse(response, "id"); 
-		
+		System.out.println("##############----POST REQUEST RESPONSE DATA----#############\n");
 		//compare the status code
 		ResponseDataValidation.responseCodeValidation(201, response.getStatusCode());
 		
-		System.out.println("##############----POST REQUEST RESPONSE DATA----#############\n");
+		
 		//Print the created data. 
 		System.out.println("Response Data is \t:\t"+response.asString());
 	}

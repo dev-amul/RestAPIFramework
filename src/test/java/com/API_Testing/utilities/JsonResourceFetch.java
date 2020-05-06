@@ -10,9 +10,10 @@ package com.API_Testing.utilities;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+/************generic method for fetch the data as per pass key. **************/
 public class JsonResourceFetch
 {
-	//generic method for fetch the data as per pass key 
+	//Method fetch data as per key from json file. JSON must be start from array. 
 	public static String fetchDatafromJSON(String jsonBody, String srcArrKey, String srhKey, String srhValue, String gtExtData) 
 	{
 		// Get the jSon body and store in jSon object 

@@ -1,0 +1,20 @@
+{
+  "firstName": "Sumit",
+  "lastName" : "kumar Chaudhary",
+  "age"      : 29,
+  "address"  : {
+    "streetAddress": "Neo Hospital",
+    "city"         : "Noida",
+    "postalCode"   : "201301"
+  },
+  "phoneNumbers": [
+    {
+      "type"  : "iPhone",
+      "number": "997145"
+    },
+    {
+      "type"  : "home",
+      "number": "7982727693"
+    }
+  ]
+}
