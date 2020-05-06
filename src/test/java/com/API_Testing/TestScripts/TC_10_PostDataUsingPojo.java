@@ -63,7 +63,7 @@ public class TC_10_PostDataUsingPojo
 		Response response = postMethod.post_Request(jsonData.toString(), "baseURL", "endPointURI1");
 				
 		//fetch the id for further use and store the id in global variable
-        System.out.println("##############----POST REQUEST RESPONSE DATA----#############\n");
+        System.out.println("##############---TC_10-POST REQUEST RESPONSE DATA----#############\n");
 		
         //compare the status code
 		ResponseDataValidation.responseCodeValidation(201, response.getStatusCode());

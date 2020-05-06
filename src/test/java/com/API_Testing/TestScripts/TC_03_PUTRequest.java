@@ -24,7 +24,7 @@ import com.API_Testing.utilities.Load_PropertiestFile;
 import io.restassured.response.Response;
 
 /***Test Case For Modify the records***/
-public class TC_03_PUTRequest extends TC_01_PostMethods
+public class TC_03_PUTRequest extends TC_02_GetPerticulerIddata
 {
 	/**Data for modify the records**/
 	JSONObject updateData;
@@ -49,7 +49,7 @@ public class TC_03_PUTRequest extends TC_01_PostMethods
 		
 		Response updatedData = putRequestMethod.put_Request(updateData.toString(), "baseURL", "endPointURI1", idValue);
 
-		System.out.println("##############----PUT REQUEST RESPONSE CODE----#############\n");
+		System.out.println("##############---TC_03-PUT REQUEST RESPONSE CODE----#############\n");
 
 		ResponseDataValidation.responseCodeValidation(200, updatedData.getStatusCode());
 		

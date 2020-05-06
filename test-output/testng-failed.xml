@@ -3,73 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.API_Testing.TestScripts.TC_06_GetALLData">
+      <class name="com.API_Testing.TestScripts.TC_12_CheckGitHubServer">
         <methods>
-          <include name="getAllRecords"/>
+          <include name="generateRecordOnGitServer"/>
+          <include name="dataForGenerate"/>
         </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_06_GetALLData -->
-      <class name="com.API_Testing.TestScripts.TC_09CompareJSonTwoFile">
-        <methods>
-          <include name="comparetoJson"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_09CompareJSonTwoFile -->
-      <class name="com.API_Testing.TestScripts.TC_02_GetPerticulerIddata">
-        <methods>
-          <include name="getIDData"/>
-          <include name="jsonBody"/>
-          <include name="createData"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_02_GetPerticulerIddata -->
-      <class name="com.API_Testing.TestScripts.TC_08_GetDatabyKey">
-        <methods>
-          <include name="fetchValuedata"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_08_GetDatabyKey -->
-      <class name="com.API_Testing.TestScripts.TC_05_DeleteRequestData">
-        <methods>
-          <include name="jsonBody"/>
-          <include name="createData"/>
-          <include name="deleteData"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_05_DeleteRequestData -->
-      <class name="com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles">
-        <methods>
-          <include name="replaceVarialbes"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles -->
-      <class name="com.API_Testing.TestScripts.TC_03_PUTRequest">
-        <methods>
-          <include name="jsonBody"/>
-          <include name="dataForUpdateExisitingRecords"/>
-          <include name="createData"/>
-          <include name="updateRecord"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_03_PUTRequest -->
-      <class name="com.API_Testing.TestScripts.TC_01_PostMethods">
-        <methods>
-          <include name="jsonBody"/>
-          <include name="createData"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_01_PostMethods -->
-      <class name="com.API_Testing.TestScripts.TC_04_PatchRequest">
-        <methods>
-          <include name="dataForUpdate"/>
-          <include name="jsonBody"/>
-          <include name="createData"/>
-          <include name="updateSpecificData"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_04_PatchRequest -->
-      <class name="com.API_Testing.TestScripts.TC_11_AddValueInExsitingData">
-        <methods>
-          <include name="addValueExsitingData"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_11_AddValueInExsitingData -->
-      <class name="com.API_Testing.TestScripts.TC_10_PostDataUsingPojo">
-        <methods>
-          <include name="createPojoBody"/>
-          <include name="pojoPostTest"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestScripts.TC_10_PostDataUsingPojo -->
+      </class> <!-- com.API_Testing.TestScripts.TC_12_CheckGitHubServer -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

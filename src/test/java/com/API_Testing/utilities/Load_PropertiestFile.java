@@ -20,7 +20,7 @@ public class Load_PropertiestFile
 	public static Properties getPropertyFile() throws IOException
 	{
 		//Passing the properties file path in fileInpustream object.  
-		FileInputStream getFile = new FileInputStream("../restassuredautomation_framwork/src/main/java/com/API_Testing/EnvironmentFiles/Environment_URI.properties");
+		FileInputStream getFile = new FileInputStream("../RestAPI_Automation_Framwork/src/main/java/com/API_Testing/EnvironmentFiles/Environment_URI.properties");
 		//Initialize   the properties class variable 
 		Properties pr = new Properties();
 		//pass the file object which store the file path 

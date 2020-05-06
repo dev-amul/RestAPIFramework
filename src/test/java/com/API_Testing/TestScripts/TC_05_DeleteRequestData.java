@@ -17,7 +17,7 @@ import io.restassured.response.Response;
 
 
 /**Test Case for delete the records**/
-public class TC_05_DeleteRequestData extends TC_01_PostMethods
+public class TC_05_DeleteRequestData extends TC_04_PatchRequest
 {
 	@Test
 	public void deleteData() throws IOException 
@@ -28,7 +28,7 @@ public class TC_05_DeleteRequestData extends TC_01_PostMethods
 		
 		Response response= deleteRequest.delete_Request("baseURL", "endPointURI1", idValue);
 		
-		System.out.println("##############----DELETE REQUEST RESPONSE CODE----#############\n");
+		System.out.println("##############---TC_05--DELETE REQUEST RESPONSE CODE----#############\n");
 		
 		ResponseDataValidation.responseCodeValidation(200, response.getStatusCode());
 		

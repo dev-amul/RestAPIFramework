@@ -25,7 +25,7 @@ public class TC_06_GetALLData
 		Properties pr = Load_PropertiestFile.getPropertyFile();
 		HTTP_Methods getAllData = new HTTP_Methods(pr);
 		
-		System.out.println("##############----GET ALL REQUEST RESPONSE DATA----#############\n");
+		System.out.println("##############---TC_06-GET ALL REQUEST RESPONSE DATA----#############\n");
 		
 		Response res= getAllData.get_Request("baseURL", "endPointURI1");
 		

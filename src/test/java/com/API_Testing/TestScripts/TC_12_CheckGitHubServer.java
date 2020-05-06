@@ -40,7 +40,7 @@ public class TC_12_CheckGitHubServer
 				.body(body.toString()).when()
 				.post("https://my-json-server.typicode.com/SumitKChaudhary/SumitChaudharyJSONserver/Simple_Json");
 					
-		System.out.println("##############----POST REQUEST RESPONSE DATA----#############\n");
+		System.out.println("##############----TC_12--POST REQUEST RESPONSE DATA----#############\n");
 	
 		//Git hub server return 200 response so I'm comparing with.
 		ResponseDataValidation.responseCodeValidation(200, res.getStatusCode());

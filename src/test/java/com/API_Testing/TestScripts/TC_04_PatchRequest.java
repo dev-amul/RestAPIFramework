@@ -1,7 +1,7 @@
 /**
  * @author 			:	 Sumit Kumar
  *	DATE       		:	 06-May-2020
- *  FILE NAME  		: 	 TC_4_PatchRequest.java
+ *  FILE NAME  		: 	 TC_04_PatchRequest.java
  *  PROJECT NAME 	:	 restassuredautomation_framwork
  * 
  */
@@ -18,7 +18,7 @@ import com.API_Testing.utilities.Load_PropertiestFile;
 import io.restassured.response.Response;
 
 /***Test Case for update specific record as per id ***/
-public class TC_04_PatchRequest extends TC_01_PostMethods {
+public class TC_04_PatchRequest extends TC_03_PUTRequest {
 	/*Specific data which we want to update*/
 	JSONObject specificData; 
 	@BeforeMethod
@@ -33,8 +33,9 @@ public class TC_04_PatchRequest extends TC_01_PostMethods {
 		Properties pr = Load_PropertiestFile.getPropertyFile();
 		HTTP_Methods patchMethods = new HTTP_Methods(pr);
 		Response res= patchMethods.patch_UpdateData(specificData.toString(), "baseURL", "endPointURI1", idValue);
+		System.out.println("##############---TC_04--PATCH REQUEST RESPONSE DATA----#############\n");
 		ResponseDataValidation.responseCodeValidation(200, res.statusCode());
-		System.out.println("##############----PATCH REQUEST RESPONSE DATA----#############\n");
+		
 		System.out.println(res.asString());
 	}
 }

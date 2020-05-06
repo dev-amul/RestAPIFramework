@@ -37,7 +37,7 @@ public class TC_02_GetPerticulerIddata extends TC_01_PostMethods
 		 
 		 Response getResponse = getIdRequestMethod.get_PerticularID_Request("baseURL", "endPointURI1", idValue);
 
-		 System.out.println("##############----GET REQUEST RESPONSE CODE----#############\n");
+		 System.out.println("##############----TC_02_GET REQUEST RESPONSE CODE----#############\n");
 
 		 ResponseDataValidation.responseCodeValidation(200, getResponse.getStatusCode());
 		 

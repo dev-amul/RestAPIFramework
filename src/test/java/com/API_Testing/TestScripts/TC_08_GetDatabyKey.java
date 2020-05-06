@@ -21,9 +21,10 @@ public class TC_08_GetDatabyKey
 	public void fetchValuedata() throws FileNotFoundException
 	{
 		//call the json file static method from the ALLtpeDataRead class and pass the json file.
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../restassuredautomation_framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../RestAPI_Automation_Framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
 
-		System.out.println("#######Expected Data###########\n");
+		System.out.println("##############---TC_08-Get Data key----#############\n");
+		
 		
 		//Print the desire data 
 		System.out.println("The Data is \t:\t"+JsonResourceFetch.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number"));
