@@ -50,7 +50,4 @@ public class BodyPojo
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
-
 }

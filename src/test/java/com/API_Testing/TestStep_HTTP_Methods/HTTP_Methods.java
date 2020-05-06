@@ -15,7 +15,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
-
+/**HTTP Method class responsible for all methods. **/
 public class HTTP_Methods 
 {
 	//Properties variable to pass the properties file read data. 
@@ -26,9 +26,8 @@ public class HTTP_Methods
 		this.pr=pr;
 	}
 	
-	//Post method for create record. Method required 3  parameter 
-	//dataForPost -- require the the data string in format, postBaseURI --require the base URL of the resource , URIendpoint -- require point of the url 
-	public Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) 
+	
+	public Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) //Post method for create record. Method required 3  parameters
 	{
 		Response postRequestResponse = //Store all the response 
 				given() 
@@ -40,6 +39,7 @@ public class HTTP_Methods
 		return postRequestResponse;
 		
 	}
+	
 	//Method for fetch the all data as per the given URL 
 	public Response get_Request(String baseURI, String gerFromURI) {
 		
@@ -89,6 +89,7 @@ public class HTTP_Methods
 				.patch(pr.getProperty(baseuriForPut)+"/"+pr.getProperty(endURL)+"/"+expectedID);
 		return res;
 	}
+	
 	//Method for delete the data from the given url. 
 	public Response delete_Request( String delete_BaseURI, String endURI, String id) 
 	{

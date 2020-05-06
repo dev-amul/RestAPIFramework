@@ -7,10 +7,6 @@
  */
 package com.API_Testing.ResponseValidation;
 
-import org.testng.Assert;
-
-import io.restassured.response.Response;
-
 public class ResponseDataValidation 
 {
 	/***Methods for compare the status codes and return the result. **/

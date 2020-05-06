@@ -15,33 +15,21 @@ public class UpdateExitingJSON
 {
 	public static String fetchAndUdateData(String jsonBody, String srcArrKey, String srhKey, String srhValue,String NewKey, String newValue) 
 	{
-		// Get the jSon body and store in jSon object 
-		JSONObject jsonData = new JSONObject(jsonBody);
-		
-		//Fetch the array value on behalf search key and store in array variable 
-		JSONArray getArray = jsonData.getJSONArray(srcArrKey);
-		
-		//Taking here one more jSON Object variable for further use
-		
-		JSONObject getObject=null;
-		//run the loop end of the array length
-		for (int i=0 ; i<getArray.length(); i++) 
+		JSONObject jsonData = new JSONObject(jsonBody); 		 		// Get the jSon body and store in jSon object 
+		JSONArray getArray = jsonData.getJSONArray(srcArrKey);			//Fetch the array value on behalf search key and store in array variable 
+		JSONObject getObject=null;										//Taking here one more jSON Object variable for further use
+		for (int i=0 ; i<getArray.length(); i++)					 	//run the loop end of the array length
 		{		
-			//get the all object inner on array 
-			getObject = getArray.getJSONObject(i);
-			//run the loop end of the object length 
-			for(int j=0; j<getObject.length(); j++) 
-			{
-				// compare the value on behalf of key 
-				if(getObject.get(srhKey).equals(srhValue)) 
-				{
-					//add new object in existing object on data
-					getObject.put(NewKey, newValue);
+			getObject = getArray.getJSONObject(i);						//get the all object inner on array 
+			for(int j=0; j<getObject.length(); j++) 					//run the loop end of the object length 
+			{ 
+				if(getObject.get(srhKey).equals(srhValue)) 				// compare the value on behalf of key
+				{	
+					getObject.put(NewKey, newValue);					//add new object in existing object on data
 					break;
 				}	
 			}	
-		}
-		// here return the percents data after update		
-		return  jsonData.toString();
+		}		
+		return  jsonData.toString();									// here return the percents data after update
 	}
 }
