@@ -3,14 +3,17 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.API_Testing.TestScripts.TC_11_AddValueInExsitingData"/>
       <class name="com.API_Testing.TestScripts.TC_01_PostMethods"/>
       <class name="com.API_Testing.TestScripts.TC_10_PostDataUsingPojo"/>
+      <class name="com.API_Testing.TestScripts.TC_08_GetDatabyKey"/>
       <class name="com.API_Testing.TestScripts.TC_03_PUTRequest"/>
       <class name="com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles"/>
-      <class name="com.API_Testing.TestScripts.TC_04_DeleteRequestData"/>
+      <class name="com.API_Testing.TestScripts.TC_06_GetALLData"/>
+      <class name="com.API_Testing.TestScripts.TC_12_CheckGitHubServer"/>
       <class name="com.API_Testing.TestScripts.TC_02_GetPerticulerIddata"/>
-      <class name="com.API_Testing.TestScripts.TC_06_AddValueInExsitingData"/>
-      <class name="com.API_Testing.TestScripts.TC_05_GetDatabyKey"/>
+      <class name="com.API_Testing.TestScripts.TC_05_DeleteRequestData"/>
+      <class name="com.API_Testing.TestScripts.TC_04_PatchRequest"/>
       <class name="com.API_Testing.TestScripts.TC_09CompareJSonTwoFile"/>
     </classes>
   </test> <!-- Test -->

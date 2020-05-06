@@ -25,7 +25,6 @@ public class TC_09CompareJSonTwoFile
 	
 		JSONAssert.assertNotEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
 		
-		
 	}
 
 }

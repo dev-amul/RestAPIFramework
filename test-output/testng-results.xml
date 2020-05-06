@@ -1,21 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2575" started-at="2020-05-06T19:45:20 IST" finished-at="2020-05-06T19:45:23 IST">
+  <suite name="Suite" duration-ms="40077" started-at="2020-05-06T20:21:08 IST" finished-at="2020-05-06T20:21:48 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2575" started-at="2020-05-06T19:45:20 IST" finished-at="2020-05-06T19:45:23 IST">
+    <test name="Test" duration-ms="40077" started-at="2020-05-06T20:21:08 IST" finished-at="2020-05-06T20:21:48 IST">
+      <class name="com.API_Testing.TestScripts.TC_03_PUTRequest">
+        <test-method status="PASS" signature="dataForUpdateExisitingRecords()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@5faeada1]" name="dataForUpdateExisitingRecords" is-config="true" duration-ms="1" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataForUpdateExisitingRecords -->
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@5faeada1]" name="jsonBody" is-config="true" duration-ms="0" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@5faeada1]" name="createData" duration-ms="56" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@5faeada1]" name="jsonBody" is-config="true" duration-ms="0" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="dataForUpdateExisitingRecords()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@5faeada1]" name="dataForUpdateExisitingRecords" is-config="true" duration-ms="1" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataForUpdateExisitingRecords -->
+        <test-method status="PASS" signature="updateRecord()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@5faeada1]" name="updateRecord" duration-ms="57" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateRecord -->
+      </class> <!-- com.API_Testing.TestScripts.TC_03_PUTRequest -->
+      <class name="com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles">
+        <test-method status="PASS" signature="replaceVarialbes()[pri:0, instance:com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles@528931cf]" name="replaceVarialbes" duration-ms="32837" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- replaceVarialbes -->
+      </class> <!-- com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles -->
+      <class name="com.API_Testing.TestScripts.TC_12_CheckGitHubServer">
+        <test-method status="PASS" signature="dataForGenerate()[pri:0, instance:com.API_Testing.TestScripts.TC_12_CheckGitHubServer@1563da5]" name="dataForGenerate" is-config="true" duration-ms="0" started-at="2020-05-06T20:21:45 IST" finished-at="2020-05-06T20:21:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataForGenerate -->
+        <test-method status="PASS" signature="generateRecordOnGitServer()[pri:0, instance:com.API_Testing.TestScripts.TC_12_CheckGitHubServer@1563da5]" name="generateRecordOnGitServer" duration-ms="3205" started-at="2020-05-06T20:21:45 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateRecordOnGitServer -->
+      </class> <!-- com.API_Testing.TestScripts.TC_12_CheckGitHubServer -->
+      <class name="com.API_Testing.TestScripts.TC_06_GetALLData">
+        <test-method status="PASS" signature="getAllRecords()[pri:0, instance:com.API_Testing.TestScripts.TC_06_GetALLData@ea1a8d5]" name="getAllRecords" duration-ms="56" started-at="2020-05-06T20:21:45 IST" finished-at="2020-05-06T20:21:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllRecords -->
+      </class> <!-- com.API_Testing.TestScripts.TC_06_GetALLData -->
+      <class name="com.API_Testing.TestScripts.TC_02_GetPerticulerIddata">
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_02_GetPerticulerIddata@2bbf4b8b]" name="jsonBody" is-config="true" duration-ms="1" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_02_GetPerticulerIddata@2bbf4b8b]" name="createData" duration-ms="45" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_02_GetPerticulerIddata@2bbf4b8b]" name="jsonBody" is-config="true" duration-ms="1" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="getIDData()[pri:0, instance:com.API_Testing.TestScripts.TC_02_GetPerticulerIddata@2bbf4b8b]" name="getIDData" duration-ms="31" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIDData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_02_GetPerticulerIddata -->
+      <class name="com.API_Testing.TestScripts.TC_08_GetDatabyKey">
+        <test-method status="PASS" signature="fetchValuedata()[pri:0, instance:com.API_Testing.TestScripts.TC_08_GetDatabyKey@7a1ebcd8]" name="fetchValuedata" duration-ms="4" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchValuedata -->
+      </class> <!-- com.API_Testing.TestScripts.TC_08_GetDatabyKey -->
+      <class name="com.API_Testing.TestScripts.TC_11_AddValueInExsitingData">
+        <test-method status="PASS" signature="addValueExsitingData()[pri:0, instance:com.API_Testing.TestScripts.TC_11_AddValueInExsitingData@458c1321]" name="addValueExsitingData" duration-ms="22" started-at="2020-05-06T20:21:08 IST" finished-at="2020-05-06T20:21:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addValueExsitingData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_11_AddValueInExsitingData -->
+      <class name="com.API_Testing.TestScripts.TC_01_PostMethods">
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_01_PostMethods@11438d26]" name="jsonBody" is-config="true" duration-ms="2" started-at="2020-05-06T20:21:08 IST" finished-at="2020-05-06T20:21:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_01_PostMethods@11438d26]" name="createData" duration-ms="3355" started-at="2020-05-06T20:21:08 IST" finished-at="2020-05-06T20:21:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_01_PostMethods -->
       <class name="com.API_Testing.TestScripts.TC_10_PostDataUsingPojo">
-        <test-method status="PASS" signature="createPojoBody()[pri:0, instance:com.API_Testing.TestScripts.TC_10_PostDataUsingPojo@2d8f65a4]" name="createPojoBody" is-config="true" duration-ms="12" started-at="2020-05-06T19:45:20 IST" finished-at="2020-05-06T19:45:20 IST">
+        <test-method status="PASS" signature="createPojoBody()[pri:0, instance:com.API_Testing.TestScripts.TC_10_PostDataUsingPojo@34cd072c]" name="createPojoBody" is-config="true" duration-ms="1" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPojoBody -->
-        <test-method status="PASS" signature="pojoPostTest()[pri:0, instance:com.API_Testing.TestScripts.TC_10_PostDataUsingPojo@2d8f65a4]" name="pojoPostTest" duration-ms="2504" started-at="2020-05-06T19:45:20 IST" finished-at="2020-05-06T19:45:23 IST">
+        <test-method status="PASS" signature="pojoPostTest()[pri:0, instance:com.API_Testing.TestScripts.TC_10_PostDataUsingPojo@34cd072c]" name="pojoPostTest" duration-ms="34" started-at="2020-05-06T20:21:12 IST" finished-at="2020-05-06T20:21:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pojoPostTest -->
       </class> <!-- com.API_Testing.TestScripts.TC_10_PostDataUsingPojo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.API_Testing.TestScripts.TC_05_DeleteRequestData">
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_05_DeleteRequestData@30a3107a]" name="jsonBody" is-config="true" duration-ms="1" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_05_DeleteRequestData@30a3107a]" name="createData" duration-ms="53" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_05_DeleteRequestData@30a3107a]" name="jsonBody" is-config="true" duration-ms="1" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="deleteData()[pri:0, instance:com.API_Testing.TestScripts.TC_05_DeleteRequestData@30a3107a]" name="deleteData" duration-ms="46" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteData -->
+      </class> <!-- com.API_Testing.TestScripts.TC_05_DeleteRequestData -->
+      <class name="com.API_Testing.TestScripts.TC_09CompareJSonTwoFile">
+        <test-method status="PASS" signature="comparetoJson()[pri:0, instance:com.API_Testing.TestScripts.TC_09CompareJSonTwoFile@34c4973]" name="comparetoJson" duration-ms="19" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparetoJson -->
+      </class> <!-- com.API_Testing.TestScripts.TC_09CompareJSonTwoFile -->
+      <class name="com.API_Testing.TestScripts.TC_04_PatchRequest">
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_04_PatchRequest@33c7e1bb]" name="jsonBody" is-config="true" duration-ms="5" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="dataForUpdate()[pri:0, instance:com.API_Testing.TestScripts.TC_04_PatchRequest@33c7e1bb]" name="dataForUpdate" is-config="true" duration-ms="3" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataForUpdate -->
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_04_PatchRequest@33c7e1bb]" name="createData" duration-ms="37" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_04_PatchRequest@33c7e1bb]" name="jsonBody" is-config="true" duration-ms="1" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="updateSpecificData()[pri:0, instance:com.API_Testing.TestScripts.TC_04_PatchRequest@33c7e1bb]" name="updateSpecificData" duration-ms="37" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateSpecificData -->
+        <test-method status="PASS" signature="dataForUpdate()[pri:0, instance:com.API_Testing.TestScripts.TC_04_PatchRequest@33c7e1bb]" name="dataForUpdate" is-config="true" duration-ms="0" started-at="2020-05-06T20:21:48 IST" finished-at="2020-05-06T20:21:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataForUpdate -->
+      </class> <!-- com.API_Testing.TestScripts.TC_04_PatchRequest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
