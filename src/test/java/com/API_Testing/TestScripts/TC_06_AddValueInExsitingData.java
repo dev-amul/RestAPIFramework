@@ -14,7 +14,7 @@ import java.io.FileNotFoundException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-import com.API_Testing.utilities.AlltypeDataRead;
+import com.API_Testing.Payloads.AlltypeDataRead;
 import com.API_Testing.utilities.UpdateExitingJSON;
 
 public class TC_06_AddValueInExsitingData 

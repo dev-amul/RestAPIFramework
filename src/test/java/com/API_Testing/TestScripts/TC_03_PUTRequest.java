@@ -7,6 +7,7 @@
  */
 package com.API_Testing.TestScripts;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -15,19 +16,21 @@ import java.util.Properties;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
+import com.API_Testing.Payloads.AlltypeDataRead;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.AlltypeDataRead;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 
 import io.restassured.response.Response;
 
+/***Test Case For Modify the records***/
 public class TC_03_PUTRequest extends TC_01_PostMethods
 {
-	@Test
-	public void updateRecord() throws IOException 
-	{
-		JSONObject updateData = new JSONObject(); 
+	/**Data for modify the records**/
+	JSONObject updateData;
+	@BeforeMethod
+	public void dataForUpdateExisitingRecords() {
+		updateData = new JSONObject(); 
 		updateData.put("id", idValue);
 		updateData.put("First Name", "Sumit");
 		updateData.put("Last Name", "Kumar Chaudhary"); //update name
@@ -35,12 +38,16 @@ public class TC_03_PUTRequest extends TC_01_PostMethods
 		updateData.put("Gender", "Male");
 		updateData.put("Experience", "3 Years");
 		updateData.put("Age", "29");
-		
+	}
+	
+	@Test
+	public void updateRecord() throws IOException 
+	{
 		Properties properTies = Laod_PropertiestFile.getPropertyFile();
 		
 		HTTP_Methods putRequestMethod = new HTTP_Methods(properTies);
 		
-		Response updatedData = putRequestMethod.put_Request(updateData.toString(), "baseURL", "endPointURI1", TC_01_PostMethods.idValue);
+		Response updatedData = putRequestMethod.put_Request(updateData.toString(), "baseURL", "endPointURI1", idValue);
 
 		System.out.println("##############----PUT REQUEST RESPONSE CODE----#############\n");
 

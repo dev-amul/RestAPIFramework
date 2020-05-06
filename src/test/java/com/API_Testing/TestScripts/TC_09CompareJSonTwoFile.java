@@ -8,13 +8,14 @@
 package com.API_Testing.TestScripts;
 
 import org.testng.annotations.Test;
+
+import com.API_Testing.Payloads.AlltypeDataRead;
+
 import java.io.FileNotFoundException;
 
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.testng.annotations.Test;
-
-import com.API_Testing.utilities.AlltypeDataRead;
 
 
 public class TC_09CompareJSonTwoFile 

@@ -15,8 +15,9 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.Test;
 
+import com.API_Testing.Payloads.AlltypeDataRead;
 import com.API_Testing.Resources.BodyPojo;
-import com.API_Testing.utilities.AlltypeDataRead;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 

@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30071" started-at="2020-05-05T20:39:18 IST" finished-at="2020-05-05T20:39:48 IST">
+  <suite name="Default suite" duration-ms="3222" started-at="2020-05-06T16:55:52 IST" finished-at="2020-05-06T16:55:55 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30071" started-at="2020-05-05T20:39:18 IST" finished-at="2020-05-05T20:39:48 IST">
-      <class name="com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles">
-        <test-method status="PASS" signature="replaceVarialbes()[pri:0, instance:com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles@15d0c81b]" name="replaceVarialbes" duration-ms="29952" started-at="2020-05-05T20:39:18 IST" finished-at="2020-05-05T20:39:48 IST">
+    <test name="Default test" duration-ms="3222" started-at="2020-05-06T16:55:52 IST" finished-at="2020-05-06T16:55:55 IST">
+      <class name="com.API_Testing.TestScripts.TC_03_PUTRequest">
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@536aaa8d]" name="jsonBody" is-config="true" duration-ms="11" started-at="2020-05-06T16:55:52 IST" finished-at="2020-05-06T16:55:52 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- replaceVarialbes -->
-      </class> <!-- com.API_Testing.TestScripts.TC_07_ReplaceDynamicjSonVarialbles -->
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="createData()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@536aaa8d]" name="createData" duration-ms="3098" started-at="2020-05-06T16:55:52 IST" finished-at="2020-05-06T16:55:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createData -->
+        <test-method status="PASS" signature="dataForUpdateExisitingRecords()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@536aaa8d]" name="dataForUpdateExisitingRecords" is-config="true" duration-ms="0" started-at="2020-05-06T16:55:52 IST" finished-at="2020-05-06T16:55:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataForUpdateExisitingRecords -->
+        <test-method status="PASS" signature="dataForUpdateExisitingRecords()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@536aaa8d]" name="dataForUpdateExisitingRecords" is-config="true" duration-ms="3" started-at="2020-05-06T16:55:55 IST" finished-at="2020-05-06T16:55:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataForUpdateExisitingRecords -->
+        <test-method status="PASS" signature="jsonBody()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@536aaa8d]" name="jsonBody" is-config="true" duration-ms="0" started-at="2020-05-06T16:55:55 IST" finished-at="2020-05-06T16:55:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonBody -->
+        <test-method status="PASS" signature="updateRecord()[pri:0, instance:com.API_Testing.TestScripts.TC_03_PUTRequest@536aaa8d]" name="updateRecord" duration-ms="48" started-at="2020-05-06T16:55:55 IST" finished-at="2020-05-06T16:55:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateRecord -->
+      </class> <!-- com.API_Testing.TestScripts.TC_03_PUTRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

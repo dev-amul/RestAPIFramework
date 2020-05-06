@@ -8,58 +8,63 @@
 package com.API_Testing.TestScripts;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.Random;
-
 import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 import com.API_Testing.utilities.ResponseDataparsing;
 import io.restassured.response.Response;
+
+/***Test case for Create data ***/
 public class TC_01_PostMethods
 {
-	static String idValue; //Global Variable 
-	
-	@Test
-	public void createData() throws IOException// Methods for create a data on json file. 
-	//public void createData() throws IOException
+	String idValue; //Global Variable 
+	JSONObject body; //taking JSONObject for creating the body in json formate. 
+	/***Create body to pass in post request***/
+	@BeforeMethod
+	public void jsonBody()
 	{
-		Random randomeNumber= new Random();   // To generate random id
-		Integer convertedIntegerID= randomeNumber.nextInt();
+		Random randomeNumber= new Random();   					// To generate random id
+		Integer convertedIntegerID= randomeNumber.nextInt();	// convert the random number into integer. 
 
-		String emp = convertedIntegerID.toString();
-		
-		JSONObject body = new JSONObject(); 
-		body.put("id", emp);
+		//JSON body 
+		body = new JSONObject(); 
+		body.put("id", convertedIntegerID.toString());
 		body.put("First Name", "Sumit");
 		body.put("Last Name", "Kumar");
 		body.put("Designation", "Software Test Engineer");
 		body.put("Gender", "Male");
 		body.put("Experience", "3 Years");
 		body.put("Age", "29");
+	}
 	
+	/** Methods for create the data**/
+	@Test
+	public void createData() throws IOException
+	//public void createData() throws IOException
+	{
+		//Load the properties file and pass in to variable. 
 		Properties pr = Laod_PropertiestFile.getPropertyFile();
+		
+		// Call the Main class. 
 		HTTP_Methods postMethod = new HTTP_Methods(pr);//call the method here 
 		
-		//call the post method and pass the body payload using class reference variable 
+		//Call the post method with help of HTTP_Methods class variable and pass the require paramerters.  
 		Response response = postMethod.post_Request(body.toString(), "baseURL", "endPointURI1");
 		
-		idValue=ResponseDataparsing.responseDataParse(response, "id");//store the data id in global variable 
-		System.out.println("##############----POST REQUEST RESPONSE CODE----#############\n");
-		System.out.println(response.statusCode());//Printing the Post method status code
+		//fetch the id for further use and store the id in global variable
+		idValue=ResponseDataparsing.responseDataParse(response, "id"); 
 		
-		ResponseDataValidation.responseCodeValidation(201, response.getStatusCode());//compare the status code
+		//compare the status code
+		ResponseDataValidation.responseCodeValidation(201, response.getStatusCode());
 		
-		System.out.println("##############----Posted Data id is----#############\n");
-		System.out.println("Data Id "+idValue);//Print data id to evaluate is correct or not 
 		System.out.println("##############----POST REQUEST RESPONSE DATA----#############\n");
-		System.out.println("Response Data is \t:\t"+response.asString());//Print the json which is saved on data file 
+		//Print the created data. 
+		System.out.println("Response Data is \t:\t"+response.asString());
 	}
 
 }

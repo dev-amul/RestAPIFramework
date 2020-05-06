@@ -13,6 +13,8 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 import org.json.JSONObject;
+
+import com.API_Testing.Payloads.AlltypeDataRead;
 public class ReplaceVariablesValuesAsperkeys
 {
 	public static String replaceVariablesAsPerKeys(String jsonFileURL, String enterReplacementValues) throws FileNotFoundException

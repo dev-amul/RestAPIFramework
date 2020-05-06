@@ -27,6 +27,7 @@ import io.restassured.response.Response;
 
 public class TC_02_GetPerticulerIddata extends TC_01_PostMethods
 {
+	/**Test case for get the data as per particular id ***/
 	@Test
 	public  void getIDData() throws IOException
 	{
@@ -34,9 +35,7 @@ public class TC_02_GetPerticulerIddata extends TC_01_PostMethods
 		 
 		 HTTP_Methods getIdRequestMethod = new HTTP_Methods(getProperties);
 		 
-		 Response getResponse = 
-				 getIdRequestMethod.get_PerticularID_Request("baseURL", 
-						 "endPointURI1", TC_01_PostMethods.idValue);
+		 Response getResponse = getIdRequestMethod.get_PerticularID_Request("baseURL", "endPointURI1", idValue);
 
 		 System.out.println("##############----GET REQUEST RESPONSE CODE----#############\n");
 

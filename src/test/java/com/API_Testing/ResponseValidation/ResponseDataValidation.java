@@ -13,17 +13,20 @@ import io.restassured.response.Response;
 
 public class ResponseDataValidation 
 {
-	//Methods for campare the status code of the passed data. 
+	/***Methods for compare the status codes and return the result. **/
 	public static void responseCodeValidation (int expectedStatusCode, int actualStatusCode) {
 		
 		//passing two string data for comparing 
 		if (expectedStatusCode==actualStatusCode)
 		{
-			System.out.println("Expected Status Code is similar to Actual Status code \t:\t"+actualStatusCode);
+			System.out.println("Expected Code is \t:\t "+expectedStatusCode);
+			System.out.println("Actual Code is   \t:\t "+actualStatusCode);
+			System.out.println("Expected Status code is successfully matching with actual");
+			
 		}
 		else
 		{
-			System.out.println("Expected code is not match with actual");
+			System.out.println("Oopes your expected code is not matching with actual please check again");
 		}
 	}
 	

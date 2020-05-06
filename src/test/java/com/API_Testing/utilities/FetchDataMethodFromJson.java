@@ -13,6 +13,8 @@ import java.util.Objects;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.API_Testing.Payloads.AlltypeDataRead;
+
 public class FetchDataMethodFromJson 
 
 {

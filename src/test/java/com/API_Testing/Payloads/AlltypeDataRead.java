@@ -5,12 +5,14 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.utilities;
+package com.API_Testing.Payloads;
 
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -32,6 +34,39 @@ public class AlltypeDataRead
 		return convertToJSonObject;		//return the data  
 	}
 	
-  
+
+	public static String convertJSON_TO_XML(String fileURL) throws IOException
+	{
+		
+		FileReader readFile = new FileReader(fileURL);
+		
+		JSONTokener parseFile = new JSONTokener(readFile);
+		
+		JSONObject storeObj = new JSONObject(parseFile);
+		
+		String xmlConvert = XML.toString(storeObj);
+		
+		return xmlConvert;
+		 
+	}
+	
+	public static JSONObject covertXML_TO_JSON (String fileURL) throws IOException 
+	{
+		FileReader readFile = new FileReader(fileURL);
+		
+		BufferedReader getFileData = new BufferedReader(readFile);
+		
+		String store ; 
+		String increaseData=null;
+		
+		while ((store=getFileData.readLine())!=null)
+		{
+			increaseData+=store;
+		}
+		JSONObject convertedJSOn = XML.toJSONObject(increaseData);
+		
+		return convertedJSOn;
+	}
+
 
 }
