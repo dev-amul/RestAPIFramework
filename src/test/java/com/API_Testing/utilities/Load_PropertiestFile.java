@@ -1,7 +1,7 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 15-Sep-2019
- *  FILE NAME  		: 	 Laod_PropertiestFile.java
+ *  FILE NAME  		: 	 Load_PropertiestFile.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 
-public class Laod_PropertiestFile 
+public class Load_PropertiestFile 
 {
 	//Returnable method for read the properties file and provide the data as per key. Read all value from the given environment file. 
 	public static Properties getPropertyFile() throws IOException

@@ -22,7 +22,7 @@ import com.API_Testing.Payloads.AlltypeDataRead;
 import com.API_Testing.Resources.BodyPojo;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.Laod_PropertiestFile;
+import com.API_Testing.utilities.Load_PropertiestFile;
 import com.API_Testing.utilities.ResponseDataparsing;
 
 import io.restassured.http.ContentType;
@@ -54,7 +54,7 @@ public class TC_10_PostDataUsingPojo
 	@Test
 	public void pojoPostTest() throws IOException {
 		
-		Properties pr = Laod_PropertiestFile.getPropertyFile();
+		Properties pr = Load_PropertiestFile.getPropertyFile();
 	
 		// Call the Main class. 
 		HTTP_Methods postMethod = new HTTP_Methods(pr);//call the method here 

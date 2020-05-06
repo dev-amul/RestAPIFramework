@@ -15,7 +15,7 @@ import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.Laod_PropertiestFile;
+import com.API_Testing.utilities.Load_PropertiestFile;
 import com.API_Testing.utilities.ResponseDataparsing;
 import io.restassured.response.Response;
 
@@ -48,7 +48,7 @@ public class TC_01_PostMethods
 	//public void createData() throws IOException
 	{
 		//Load the properties file and pass in to variable. 
-		Properties pr = Laod_PropertiestFile.getPropertyFile();
+		Properties pr = Load_PropertiestFile.getPropertyFile();
 		
 		// Call the Main class. 
 		HTTP_Methods postMethod = new HTTP_Methods(pr);//call the method here 

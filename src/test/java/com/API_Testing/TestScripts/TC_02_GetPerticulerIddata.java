@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.Laod_PropertiestFile;
+import com.API_Testing.utilities.Load_PropertiestFile;
 
 import io.restassured.response.Response;
 
@@ -31,7 +31,7 @@ public class TC_02_GetPerticulerIddata extends TC_01_PostMethods
 	@Test
 	public  void getIDData() throws IOException
 	{
-		 Properties getProperties= Laod_PropertiestFile.getPropertyFile();
+		 Properties getProperties= Load_PropertiestFile.getPropertyFile();
 		 
 		 HTTP_Methods getIdRequestMethod = new HTTP_Methods(getProperties);
 		 

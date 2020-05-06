@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.Laod_PropertiestFile;
+import com.API_Testing.utilities.Load_PropertiestFile;
 import io.restassured.response.Response;
 
 /***Test Case for update specific record as per id ***/
@@ -30,7 +30,7 @@ public class TC_04_PatchRequest extends TC_01_PostMethods {
 	@Test
 	public void updateSpecificData() throws IOException
 	{
-		Properties pr = Laod_PropertiestFile.getPropertyFile();
+		Properties pr = Load_PropertiestFile.getPropertyFile();
 		HTTP_Methods patchMethods = new HTTP_Methods(pr);
 		Response res= patchMethods.patch_UpdateData(specificData.toString(), "baseURL", "endPointURI1", idValue);
 		ResponseDataValidation.responseCodeValidation(200, res.statusCode());

@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 import com.API_Testing.Payloads.AlltypeDataRead;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.Laod_PropertiestFile;
+import com.API_Testing.utilities.Load_PropertiestFile;
 
 import io.restassured.response.Response;
 
@@ -43,7 +43,7 @@ public class TC_03_PUTRequest extends TC_01_PostMethods
 	@Test
 	public void updateRecord() throws IOException 
 	{
-		Properties properTies = Laod_PropertiestFile.getPropertyFile();
+		Properties properTies = Load_PropertiestFile.getPropertyFile();
 		
 		HTTP_Methods putRequestMethod = new HTTP_Methods(properTies);
 		
