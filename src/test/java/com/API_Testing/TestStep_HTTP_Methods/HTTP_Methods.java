@@ -89,6 +89,18 @@ public class HTTP_Methods
 		return patchRequestResponse; 
 		
 	}
+	
+	public Response patch_UpdateData (String updateData, String updateOnBaseURI, String endRUI)
+	{
+		Response patch_Res = 
+		given()
+		.body(updateData)
+		.when()
+		.contentType(ContentType.JSON)
+		.patch(pr.getProperty(updateOnBaseURI)+"/"+pr.getProperty(endRUI));
+		
+		return patch_Res;
+	}
 	//Method for delete the data from the given url. 
 	public Response delete_Request( String delete_BaseURI, String endURI, String id) 
 	{

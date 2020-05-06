@@ -21,7 +21,7 @@ import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
 import com.API_Testing.utilities.Laod_PropertiestFile;
 
 import io.restassured.response.Response;
-
+/**Test Case for delete the records**/
 public class TC_04_DeleteRequestData extends TC_01_PostMethods
 {
 	@Test
