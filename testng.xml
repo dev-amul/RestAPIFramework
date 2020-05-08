@@ -8,9 +8,9 @@
       <class name="com.API_Testing.TestCasesScripts.TC_03_PUTRequest"/>
       <class name="com.API_Testing.TestCasesScripts.TC_04_PatchRequest"/>
       <class name="com.API_Testing.TestCasesScripts.TC_05_DeleteRequestData"/>
-      <class name="com.API_Testing.TestCasesScripts.TC_09CompareJSonTwoFile"/>
-      <class name="com.API_Testing.TestCasesScripts.TC_08_GetDatabyKey"/>
+      <class name="com.API_Testing.TestCasesScripts.TC_08_CompareJSonTwoFile"/>
       <class name="com.API_Testing.TestCasesScripts.TC_06_GetALLData"/>
+      <class name="com.API_Testing.TestCasesScripts.TC_07_GetDatabyKey"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
