@@ -14,7 +14,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.Load_PropertiestFile;
+import com.API_Testing.Utilites.Load_PropertiestFile;
+
 import io.restassured.response.Response;
 
 /***Test Case for update specific record as per id ***/

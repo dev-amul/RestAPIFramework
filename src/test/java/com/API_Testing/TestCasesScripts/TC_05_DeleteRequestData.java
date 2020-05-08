@@ -12,7 +12,8 @@ import java.io.IOException;
 import java.util.Properties;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.Load_PropertiestFile;
+import com.API_Testing.Utilites.Load_PropertiestFile;
+
 import io.restassured.response.Response;
 
 

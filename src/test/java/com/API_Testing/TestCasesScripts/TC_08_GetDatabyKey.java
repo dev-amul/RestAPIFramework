@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 import org.json.JSONObject;
 import com.API_Testing.Payloads.AlltypeDataRead;
-import com.API_Testing.utilities.JsonResourceFetch;
+import com.API_Testing.Utilites.JsonResourceFetch;
 
 /****Test case for fetch the data as per given key******/
 public class TC_08_GetDatabyKey 
@@ -21,7 +21,7 @@ public class TC_08_GetDatabyKey
 	public void fetchValuedata() throws FileNotFoundException
 	{
 		//call the json file static method from the ALLtpeDataRead class and pass the json file.
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../RestAPI_Automation_Framwork/src/test/java/com/API_Testing/Resources/dummyJsonForkey.json");
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../RestAPI_Automation_Framwork/Resources/dummyJsonForkey.json");
 
 		System.out.println("##############---TC_08-Get Data key----#############\n");
 		

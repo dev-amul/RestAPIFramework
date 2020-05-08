@@ -15,8 +15,9 @@ import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.utilities.Load_PropertiestFile;
-import com.API_Testing.utilities.ResponseDataparsing;
+import com.API_Testing.Utilites.Load_PropertiestFile;
+import com.API_Testing.Utilites.ResponseDataparsing;
+
 import io.restassured.response.Response;
 
 /***Test case for Create data ***/

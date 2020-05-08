@@ -8,13 +8,14 @@
 package com.API_Testing.TestCasesScripts;
 
 import org.testng.annotations.Test;
+
+import com.API_Testing.Utilites.ReplaceVariablesValuesAsperkeys;
+
 import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import org.testng.annotations.Test;
-
-import com.API_Testing.utilities.ReplaceVariablesValuesAsperkeys;
 
 public class TC_07_ReplaceDynamicjSonVarialbles
 {
@@ -24,7 +25,7 @@ public class TC_07_ReplaceDynamicjSonVarialbles
 		String enterReplacementValues=null;
 		String replaceVaules= 
 		
-		ReplaceVariablesValuesAsperkeys.replaceVariablesAsPerKeys("../RestAPI_Automation_Framwork/src/test/java/com/API_Testing/Resources/dynamicVariableBody.json", enterReplacementValues);
+		ReplaceVariablesValuesAsperkeys.replaceVariablesAsPerKeys("../RestAPI_Automation_Framwork/Resources/dynamicVariableBody.json", enterReplacementValues);
 		System.out.println("##############---------TC07_Relace the data----------#######");
 		System.out.println(replaceVaules);
 		
