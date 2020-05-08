@@ -12,7 +12,7 @@ public class ResponseDataValidation
 	/***Methods for compare the status codes and return the result. **/
 	public static void responseCodeValidation (int expectedStatusCode, int actualStatusCode) {
 		
-		//passing two string data for comparing 
+		//Pass the ex 
 		if (expectedStatusCode==actualStatusCode)
 		{
 			System.out.println("Expected Code is \t:\t "+expectedStatusCode);
