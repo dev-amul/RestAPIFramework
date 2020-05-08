@@ -1,7 +1,7 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 04-Dec-2019
- *  FILE NAME  		: 	 TC_09CompareJSonTwoFile.java
+ *  FILE NAME  		: 	 TC_08_CompareJSonTwoFile.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
@@ -14,7 +14,7 @@ import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 
 /**Test Case for compare two JSON***/
-public class TC_09CompareJSonTwoFile 
+public class TC_08_CompareJSonTwoFile 
 {
 	@Test
 	public  void comparetoJson() throws FileNotFoundException {

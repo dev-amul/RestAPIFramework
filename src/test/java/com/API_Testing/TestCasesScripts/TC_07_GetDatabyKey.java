@@ -1,7 +1,7 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 06-Oct-2019
- *  FILE NAME  		: 	 TC_08_GetDatabyKey.java
+ *  FILE NAME  		: 	 TC_07_GetDatabyKey.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
@@ -14,7 +14,7 @@ import com.API_Testing.Payloads.AlltypeDataRead;
 import com.API_Testing.Utilites.JsonResourceFetch;
 
 /****Test case for fetch the data as per given key******/
-public class TC_08_GetDatabyKey 
+public class TC_07_GetDatabyKey 
 {
 	
 	@Test
