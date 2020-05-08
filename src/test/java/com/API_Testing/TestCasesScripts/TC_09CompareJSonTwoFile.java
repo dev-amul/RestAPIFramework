@@ -20,8 +20,8 @@ public class TC_09CompareJSonTwoFile
 	public  void comparetoJson() throws FileNotFoundException {
 		
 		
-		String expectedJson = AlltypeDataRead.readJsonFile("../RestAPI_Automation_Framwork/Resources/JSONforCompare1.json").toString();
-		String actualJson = AlltypeDataRead.readJsonFile("../RestAPI_Automation_Framwork/Resources/JSONforCompare2.json").toString();
+		String expectedJson = AlltypeDataRead.readJsonFile("../RestAPIFramework/Resources/JSONforCompare1.json").toString();
+		String actualJson = AlltypeDataRead.readJsonFile("../RestAPIFramework/Resources/JSONforCompare2.json").toString();
 		System.out.println("##############---TC_9 Compare json----#############\n");
 		
 		JSONAssert.assertNotEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);

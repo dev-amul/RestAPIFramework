@@ -8,12 +8,8 @@
 package com.API_Testing.TestStep_HTTP_Methods;
 
 import java.util.Properties;
-
-import com.jayway.restassured.specification.RequestSpecification;
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.*;
 /**HTTP Method class responsible for all methods. **/
 public class HTTP_Methods 

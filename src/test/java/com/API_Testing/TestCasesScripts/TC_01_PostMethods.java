@@ -23,7 +23,7 @@ import io.restassured.response.Response;
 /***Test case for Create data ***/
 public class TC_01_PostMethods
 {
-	String idValue; //Global Variable 
+	static String idValue; //Global Variable 
 	JSONObject body; //taking JSONObject for creating the body in json formate. 
 	/***Create body to pass in post request***/
 	@BeforeMethod

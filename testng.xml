@@ -5,13 +5,12 @@
     <classes>
       <class name="com.API_Testing.TestCasesScripts.TC_01_PostMethods"/>
       <class name="com.API_Testing.TestCasesScripts.TC_02_GetPerticulerIddata"/>
-      <class name="com.API_Testing.TestCasesScripts.TC_04_PatchRequest"/>
       <class name="com.API_Testing.TestCasesScripts.TC_03_PUTRequest"/>
+      <class name="com.API_Testing.TestCasesScripts.TC_04_PatchRequest"/>
       <class name="com.API_Testing.TestCasesScripts.TC_05_DeleteRequestData"/>
       <class name="com.API_Testing.TestCasesScripts.TC_09CompareJSonTwoFile"/>
       <class name="com.API_Testing.TestCasesScripts.TC_08_GetDatabyKey"/>
       <class name="com.API_Testing.TestCasesScripts.TC_06_GetALLData"/>
-      <class name="com.API_Testing.TestCasesScripts.TC_07_ReplaceDynamicjSonVarialbles"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
