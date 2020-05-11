@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
+import com.API_Testing.Utilites.APILOGCapture;
 import com.API_Testing.Utilites.Load_PropertiestFile;
 
 import io.restassured.response.Response;
@@ -37,6 +38,9 @@ public class TC_04_PatchRequest extends TC_03_PUTRequest {
 		System.out.println("##############---TC_04--PATCH REQUEST RESPONSE DATA----#############\n");
 		ResponseDataValidation.responseCodeValidation(200, res.statusCode());
 		
+		APILOGCapture.captureLog("TC_04_PATCH Request", "Status code matched");
 		System.out.println(res.asString());
+		APILOGCapture.captureLog("TC_04_PATCH Request", "ID "+idValue+" hase been updated successfully");
+
 	}
 }

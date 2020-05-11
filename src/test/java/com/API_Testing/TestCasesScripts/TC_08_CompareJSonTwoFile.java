@@ -9,6 +9,8 @@ package com.API_Testing.TestCasesScripts;
 
 import org.testng.annotations.Test;
 import com.API_Testing.Payloads.AlltypeDataRead;
+import com.API_Testing.Utilites.APILOGCapture;
+
 import java.io.FileNotFoundException;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
@@ -25,7 +27,7 @@ public class TC_08_CompareJSonTwoFile
 		System.out.println("##############---TC_9 Compare json----#############\n");
 		
 		JSONAssert.assertNotEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
-		
+		APILOGCapture.captureLog("TC_08_CompareJSON", "Both json file has compared");
 	}
 
 }

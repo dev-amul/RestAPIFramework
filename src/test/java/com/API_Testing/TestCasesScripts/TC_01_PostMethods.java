@@ -15,6 +15,7 @@ import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
+import com.API_Testing.Utilites.APILOGCapture;
 import com.API_Testing.Utilites.Load_PropertiestFile;
 import com.API_Testing.Utilites.ResponseDataparsing;
 
@@ -59,13 +60,17 @@ public class TC_01_PostMethods
 		
 		//fetch the id for further use and store the id in global variable
 		idValue=ResponseDataparsing.responseDataParse(response, "id"); 
+		
+		APILOGCapture.captureLog("TC_01_Post Request", idValue+"The expected id has get fetched");
 		System.out.println("##############---TC_01-POST REQUEST RESPONSE DATA----#############\n");
 		//compare the status code
 		ResponseDataValidation.responseCodeValidation(201, response.getStatusCode());
-		
+		APILOGCapture.captureLog("TC_01_Post Request", "The expected status code matched with actual.");
 		
 		//Print the created data. 
 		System.out.println("Response Data is \t:\t"+response.asString());
+		APILOGCapture.captureLog("TC_01_Post Request", "Successfully data has created with id \t:\t"+idValue);
+		
 	}
 
 }
