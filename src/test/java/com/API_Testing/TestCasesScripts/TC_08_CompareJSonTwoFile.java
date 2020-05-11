@@ -24,7 +24,7 @@ public class TC_08_CompareJSonTwoFile
 		
 		String expectedJson = AlltypeDataRead.readJsonFile("../RestAPIFramework/Resources/JSONforCompare1.json").toString();
 		String actualJson = AlltypeDataRead.readJsonFile("../RestAPIFramework/Resources/JSONforCompare2.json").toString();
-		System.out.println("##############---TC_9 Compare json----#############\n");
+		System.out.println("##############---TC_08 Compare json----#############\n");
 		
 		JSONAssert.assertNotEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
 		APILOGCapture.captureLog("TC_08_CompareJSON", "Both json file has compared");

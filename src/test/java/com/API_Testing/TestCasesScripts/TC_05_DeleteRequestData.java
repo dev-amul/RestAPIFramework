@@ -33,7 +33,8 @@ public class TC_05_DeleteRequestData extends TC_04_PatchRequest
 		System.out.println("##############---TC_05--DELETE REQUEST RESPONSE CODE----#############\n");
 		
 		ResponseDataValidation.responseCodeValidation(200, response.getStatusCode());
-		APILOGCapture.captureLog("TC_05_Delete Request Data", "Data successfully deleted as per id : "+idValue);
+		APILOGCapture.captureLog("TC_04_PATCH Request", " The expected status code matched with actual.");
+		APILOGCapture.captureLog("TC_05_Delete Request Data", " ID "+idValue+"Data has been successfully deleted");
 		
 	}
 

@@ -12,6 +12,7 @@ import java.util.Properties;
 import org.testng.annotations.Test;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
+import com.API_Testing.Utilites.APILOGCapture;
 import com.API_Testing.Utilites.Load_PropertiestFile;
 
 import io.restassured.response.Response;
@@ -31,7 +32,10 @@ public class TC_06_GetALLData
 		Response res= getAllData.get_Request("baseURL", "endPointURI1");
 		
 		ResponseDataValidation.responseCodeValidation(200, res.getStatusCode());
+		APILOGCapture.captureLog("TC_06_Get ALL Data", " The expected status code matched with actual.");
 		
 		System.out.println(res.asString());
+		
+		APILOGCapture.captureLog("TC_06_Get ALL Data", "All data has fetched from the given URL without any interruption");
 	}
 }

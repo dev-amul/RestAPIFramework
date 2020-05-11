@@ -1,0 +1,39 @@
+2020-05-11 20:44:09,307 INFO  [TC_01_Post Request] -1919195813The expected id has get fetched 
+2020-05-11 20:44:09,319 INFO  [TC_01_Post Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,330 INFO  [TC_01_Post Request] Successfully data has created with id 	:	-1919195813 
+2020-05-11 20:44:09,419 INFO  [TC_01_Post Request] -516870085The expected id has get fetched 
+2020-05-11 20:44:09,429 INFO  [TC_01_Post Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,439 INFO  [TC_01_Post Request] Successfully data has created with id 	:	-516870085 
+2020-05-11 20:44:09,549 INFO  [TC_02_Get Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,559 INFO  [TC_02_Get Request] -516870085	:	Data has been fetched successfully 
+2020-05-11 20:44:09,636 INFO  [TC_01_Post Request] -684993824The expected id has get fetched 
+2020-05-11 20:44:09,645 INFO  [TC_01_Post Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,653 INFO  [TC_01_Post Request] Successfully data has created with id 	:	-684993824 
+2020-05-11 20:44:09,685 INFO  [TC_02_Get Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,707 INFO  [TC_02_Get Request] -684993824	:	Data has been fetched successfully 
+2020-05-11 20:44:09,760 INFO  [TC_03_PUT Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,766 INFO  [TC_03_PUT Request] -684993824	:	 ID Data has been modified successfully 
+2020-05-11 20:44:09,809 INFO  [TC_01_Post Request] 399072904The expected id has get fetched 
+2020-05-11 20:44:09,816 INFO  [TC_01_Post Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,822 INFO  [TC_01_Post Request] Successfully data has created with id 	:	399072904 
+2020-05-11 20:44:09,860 INFO  [TC_02_Get Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,867 INFO  [TC_02_Get Request] 399072904	:	Data has been fetched successfully 
+2020-05-11 20:44:09,899 INFO  [TC_03_PUT Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,905 INFO  [TC_03_PUT Request] 399072904	:	 ID Data has been modified successfully 
+2020-05-11 20:44:09,940 INFO  [TC_04_PATCH Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,945 INFO  [TC_04_PATCH Request] Data has been updated successfully on ID 399072904 
+2020-05-11 20:44:09,987 INFO  [TC_01_Post Request] -1322757332The expected id has get fetched 
+2020-05-11 20:44:09,993 INFO  [TC_01_Post Request] The expected status code matched with actual. 
+2020-05-11 20:44:09,999 INFO  [TC_01_Post Request] Successfully data has created with id 	:	-1322757332 
+2020-05-11 20:44:10,028 INFO  [TC_02_Get Request] The expected status code matched with actual. 
+2020-05-11 20:44:10,033 INFO  [TC_02_Get Request] -1322757332	:	Data has been fetched successfully 
+2020-05-11 20:44:10,065 INFO  [TC_03_PUT Request] The expected status code matched with actual. 
+2020-05-11 20:44:10,071 INFO  [TC_03_PUT Request] -1322757332	:	 ID Data has been modified successfully 
+2020-05-11 20:44:10,115 INFO  [TC_04_PATCH Request] The expected status code matched with actual. 
+2020-05-11 20:44:10,122 INFO  [TC_04_PATCH Request] Data has been updated successfully on ID -1322757332 
+2020-05-11 20:44:10,167 INFO  [TC_04_PATCH Request]  The expected status code matched with actual. 
+2020-05-11 20:44:10,176 INFO  [TC_05_Delete Request Data]  ID -1322757332Data has been successfully deleted 
+2020-05-11 20:44:10,209 INFO  [TC_08_CompareJSON] Both json file has compared 
+2020-05-11 20:44:10,317 INFO  [TC_06_Get ALL Data]  The expected status code matched with actual. 
+2020-05-11 20:44:10,322 INFO  [TC_06_Get ALL Data] All data has fetched from the given URL without any interruption 
+2020-05-11 20:44:10,334 INFO  [TC_07_ Get Data as per KEY] Data has been fetched as per given keys 

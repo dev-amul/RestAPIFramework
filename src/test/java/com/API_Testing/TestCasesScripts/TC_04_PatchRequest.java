@@ -37,10 +37,9 @@ public class TC_04_PatchRequest extends TC_03_PUTRequest {
 		Response res= patchMethods.patch_UpdateData(specificData.toString(), "baseURL", "endPointURI1", idValue);
 		System.out.println("##############---TC_04--PATCH REQUEST RESPONSE DATA----#############\n");
 		ResponseDataValidation.responseCodeValidation(200, res.statusCode());
-		
-		APILOGCapture.captureLog("TC_04_PATCH Request", "Status code matched");
+		APILOGCapture.captureLog("TC_04_PATCH Request", "The expected status code matched with actual.");
 		System.out.println(res.asString());
-		APILOGCapture.captureLog("TC_04_PATCH Request", "ID "+idValue+" hase been updated successfully");
+		APILOGCapture.captureLog("TC_04_PATCH Request", "Data has been updated successfully on ID "+idValue);
 
 	}
 }

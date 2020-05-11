@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 import org.json.JSONObject;
 import com.API_Testing.Payloads.AlltypeDataRead;
+import com.API_Testing.Utilites.APILOGCapture;
 import com.API_Testing.Utilites.JsonResourceFetch;
 
 /****Test case for fetch the data as per given key******/
@@ -25,10 +26,9 @@ public class TC_07_GetDatabyKey
 
 		System.out.println("##############---TC_08-Get Data key----#############\n");
 		
-		
 		//Print the desire data 
 		System.out.println("The Data is \t:\t"+JsonResourceFetch.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number"));
-		
+		APILOGCapture.captureLog("TC_07_ Get Data as per KEY", "Data has been fetched as per given keys");
 	}
 
 }
