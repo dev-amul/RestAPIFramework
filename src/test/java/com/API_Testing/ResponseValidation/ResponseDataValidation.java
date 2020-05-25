@@ -7,6 +7,8 @@
  */
 package com.API_Testing.ResponseValidation;
 
+import io.restassured.response.Response;
+
 public class ResponseDataValidation 
 {
 	/***Methods for compare the status codes and return the result. **/
@@ -24,5 +26,21 @@ public class ResponseDataValidation
 			System.out.println("Oopes your expected code is not matching with actual please check again");
 		}
 	}
+	
+	public static void responseTimeConfirmation (Response res)
+	{
+		long timeGet = res.getTime();
+		
+				if(timeGet>0)
+				{
+					System.out.println("Request Response time is"+timeGet);
+				}
+				else
+				{
+					System.out.println("Request response is not grreater than 0");
+				}
+	}
+	
+
 	
 }

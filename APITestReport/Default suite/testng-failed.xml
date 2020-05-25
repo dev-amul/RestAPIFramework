@@ -7,6 +7,7 @@
         <methods>
           <include name="createData"/>
           <include name="jsonBody"/>
+          <include name="TestStatus"/>
         </methods>
       </class> <!-- com.API_Testing.TestCasesScripts.TC_01_PostMethods -->
     </classes>

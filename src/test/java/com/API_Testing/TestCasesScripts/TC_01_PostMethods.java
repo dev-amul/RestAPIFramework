@@ -12,20 +12,30 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.Random;
 import org.json.JSONObject;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
 import com.API_Testing.Utilites.APILOGCapture;
 import com.API_Testing.Utilites.Load_PropertiestFile;
 import com.API_Testing.Utilites.ResponseDataparsing;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import io.restassured.response.Response;
 
 /***Test case for Create data ***/
-public class TC_01_PostMethods
+public class TC_01_PostMethods 
 {
+	
 	static String idValue; //Global Variable 
 	JSONObject body; //taking JSONObject for creating the body in json formate. 
+	Response getResponse; 
 	/***Create body to pass in post request***/
 	@BeforeMethod
 	public void jsonBody()
@@ -52,25 +62,25 @@ public class TC_01_PostMethods
 		//Load the properties file and pass in to variable. 
 		Properties pr = Load_PropertiestFile.getPropertyFile();
 		
+		
 		// Call the Main class. 
 		HTTP_Methods postMethod = new HTTP_Methods(pr);//call the method here 
 		
 		//Call the post method with help of HTTP_Methods class variable and pass the require paramerters.  
-		Response response = postMethod.post_Request(body.toString(), "baseURL", "endPointURI1");
+		getResponse = postMethod.post_Request(body.toString(), "baseURL", "endPointURI1");	
 		
-		//fetch the id for further use and store the id in global variable
-		idValue=ResponseDataparsing.responseDataParse(response, "id"); 
-		
-		APILOGCapture.captureLog("TC_01_Post Request", idValue+"The expected id has get fetched");
-		System.out.println("##############---TC_01-POST REQUEST RESPONSE DATA----#############\n");
-		//compare the status code
-		ResponseDataValidation.responseCodeValidation(201, response.getStatusCode());
-		APILOGCapture.captureLog("TC_01_Post Request", "The expected status code matched with actual.");
-		
-		//Print the created data. 
-		System.out.println("Response Data is \t:\t"+response.asString());
-		APILOGCapture.captureLog("TC_01_Post Request", "Successfully data has created with id \t:\t"+idValue);
-		
+		idValue=ResponseDataparsing.responseDataParse(getResponse, "id"); 
+		//	logTestStatus = reportLog.createTest("Id fetched has fetched");
+			APILOGCapture.captureLog("TC_01_Post Request", idValue+"The expected id has get fetched");
+			System.out.println("##############---TC_01-POST REQUEST RESPONSE DATA----#############\n");
+			//compare the status code
+			ResponseDataValidation.responseCodeValidation(201, getResponse.getStatusCode());
+			
+			APILOGCapture.captureLog("TC_01_Post Request", "The expected status code matched with actual.");
+			
+			//Print the created data. 
+			System.out.println("Response Data is \t:\t"+getResponse.asString());
+			APILOGCapture.captureLog("TC_01_Post Request", "Successfully data has created with id \t:\t"+idValue);
 	}
 
 }

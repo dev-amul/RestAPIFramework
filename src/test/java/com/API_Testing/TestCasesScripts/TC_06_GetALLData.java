@@ -32,10 +32,10 @@ public class TC_06_GetALLData
 		Response res= getAllData.get_Request("baseURL", "endPointURI1");
 		
 		ResponseDataValidation.responseCodeValidation(200, res.getStatusCode());
-		APILOGCapture.captureLog("TC_06_Get ALL Data", " The expected status code matched with actual.");
-		
+	//	APILOGCapture.captureLog("TC_06_Get ALL Data", " The expected status code matched with actual.");
 		System.out.println(res.asString());
 		
-		APILOGCapture.captureLog("TC_06_Get ALL Data", "All data has fetched from the given URL without any interruption");
+		ResponseDataValidation.responseTimeConfirmation(res);
+	//	APILOGCapture.captureLog("TC_06_Get ALL Data", "All data has fetched from the given URL without any interruption");
 	}
 }
