@@ -5,31 +5,12 @@
     <classes>
       <class name="com.API_Testing.TestCasesScripts.TC_05_DeleteRequestData">
         <methods>
-          <include name="deleteData"/>
-          <include name="createData"/>
           <include name="jsonBody"/>
-          <include name="getIDData"/>
-          <include name="updateRecord"/>
           <include name="dataForUpdateExisitingRecords"/>
           <include name="updateSpecificData"/>
           <include name="dataForUpdate"/>
         </methods>
       </class> <!-- com.API_Testing.TestCasesScripts.TC_05_DeleteRequestData -->
-      <class name="com.API_Testing.TestCasesScripts.TC_06_GetALLData">
-        <methods>
-          <include name="getAllRecords"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestCasesScripts.TC_06_GetALLData -->
-      <class name="com.API_Testing.TestCasesScripts.TC_04_PatchRequest">
-        <methods>
-          <include name="jsonBody"/>
-          <include name="getIDData"/>
-          <include name="updateRecord"/>
-          <include name="dataForUpdateExisitingRecords"/>
-          <include name="updateSpecificData"/>
-          <include name="dataForUpdate"/>
-        </methods>
-      </class> <!-- com.API_Testing.TestCasesScripts.TC_04_PatchRequest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -32,6 +32,7 @@ public class TC_02_GetPerticulerIddata extends TC_01_PostMethods
 	@Test
 	public  void getIDData() throws IOException
 	{
+		
 		 Properties getProperties= Load_PropertiestFile.getPropertyFile();
 		 
 		 HTTP_Methods getIdRequestMethod = new HTTP_Methods(getProperties);

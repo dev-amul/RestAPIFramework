@@ -22,9 +22,9 @@ public class HTTP_Methods
 		this.pr=pr;
 	}
 	
-	
 	public Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) //Post method for create record. Method required 3  parameters
 	{
+		
 		Response postRequestResponse = //Store all the response 
 				given() 
 				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format. 

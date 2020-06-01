@@ -12,21 +12,12 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.Random;
 import org.json.JSONObject;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
 import com.API_Testing.Utilites.APILOGCapture;
 import com.API_Testing.Utilites.Load_PropertiestFile;
 import com.API_Testing.Utilites.ResponseDataparsing;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
 import io.restassured.response.Response;
 
 /***Test case for Create data ***/
@@ -65,6 +56,7 @@ public class TC_01_PostMethods
 		
 		// Call the Main class. 
 		HTTP_Methods postMethod = new HTTP_Methods(pr);//call the method here 
+		
 		
 		//Call the post method with help of HTTP_Methods class variable and pass the require paramerters.  
 		getResponse = postMethod.post_Request(body.toString(), "baseURL", "endPointURI1");	
