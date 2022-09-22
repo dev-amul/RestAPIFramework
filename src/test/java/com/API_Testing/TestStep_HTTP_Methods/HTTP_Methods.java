@@ -12,8 +12,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 /**HTTP Method class responsible for all methods. **/
-public class HTTP_Methods 
-{
+public class HTTP_Methods {
 	//Properties variable to pass the properties file read data. 
 	Properties pr; 
 	//Creating constructor for pass the variable to all test cases. 
@@ -22,8 +21,7 @@ public class HTTP_Methods
 		this.pr=pr;
 	}
 	
-	public Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) //Post method for create record. Method required 3  parameters
-	{
+	public Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) { //Post method for create record. Method required 3  parameters
 		
 		Response postRequestResponse = //Store all the response 
 				given() 
