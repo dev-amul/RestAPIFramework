@@ -49,7 +49,7 @@ To run the project, complete the following setup:
     - Download: https://www.git-scm.com/downloads
 
 5. Clone the project using the following command
-   git clone https://gitlab.com/dev-amul/RestAPIFramework.git
+   git clone https://github.com/dev-amul/RestAPIFramework.git
 
 6. Open the project in your IDE and run Maven install via the POM file
 
