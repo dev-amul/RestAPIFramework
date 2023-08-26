@@ -72,8 +72,7 @@ public class HTTP_Methods {
 	}
 	
 	//Method for update the data as per given id or end point. 
-	public Response patch_UpdateData (String updateData, String baseuriForPut, String endURL, String expectedID)
-	{
+	public Response patch_UpdateData (String updateData, String baseuriForPut, String endURL, String expectedID){
 		 
 		Response res = 
 				given()
@@ -85,8 +84,7 @@ public class HTTP_Methods {
 	}
 	
 	//Method for delete the data from the given url. 
-	public Response delete_Request( String delete_BaseURI, String endURI, String id) 
-	{
+	public Response delete_Request( String delete_BaseURI, String endURI, String id) {
 		Response deleteRequest_response = 
 				given()
 				.contentType(ContentType.JSON)
