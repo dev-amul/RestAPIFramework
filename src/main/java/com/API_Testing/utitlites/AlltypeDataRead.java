@@ -46,7 +46,7 @@ public class AlltypeDataRead {
 			increaseData+=store;
 		}
 		JSONObject convertedJSOn = XML.toJSONObject(increaseData);
-		
+		getFileData.close();
 		return convertedJSOn;
 	}
 
