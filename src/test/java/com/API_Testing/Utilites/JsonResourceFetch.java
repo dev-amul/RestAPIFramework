@@ -8,13 +8,14 @@
 package com.API_Testing.Utilites;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 /************generic method for fetch the data as per pass key. **************/
 public class JsonResourceFetch
 {
 	//Method fetch data as per key from json file. JSON must be start from array. 
-	public static String fetchDatafromJSON(String jsonBody, String srcArrKey, String srhKey, String srhValue, String gtExtData) 
+	public static String fetchDatafromJSON(String jsonBody, String srcArrKey, String srhKey, String srhValue, String gtExtData) throws JSONException 
 	{
 		JSONObject jsonData = new JSONObject(jsonBody);				// Get the jSon body and store in jSon object 
 		JSONArray getArray = jsonData.getJSONArray(srcArrKey);		//Fetch the array value on behalf search key and store in array variable 

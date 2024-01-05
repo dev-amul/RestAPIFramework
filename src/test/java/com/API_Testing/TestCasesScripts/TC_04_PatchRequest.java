@@ -9,12 +9,12 @@ package com.API_Testing.TestCasesScripts;
 
 import java.io.IOException;
 import java.util.Properties;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.API_Testing.ResponseValidation.ResponseDataValidation;
 import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.Utilites.APILOGCapture;
 import com.API_Testing.Utilites.Load_PropertiestFile;
 
 import io.restassured.response.Response;
@@ -24,7 +24,7 @@ public class TC_04_PatchRequest extends TC_03_PUTRequest {
 	/*Specific data which we want to update*/
 	JSONObject specificData; 
 	@BeforeMethod
-	public void dataForUpdate()
+	public void dataForUpdate() throws JSONException
 	{
 		specificData = new JSONObject(); 
 		specificData.put("Age", "80");//data which we want to update	
@@ -37,9 +37,7 @@ public class TC_04_PatchRequest extends TC_03_PUTRequest {
 		Response res= patchMethods.patch_UpdateData(specificData.toString(), "baseURL", "endPointURI1", idValue);
 		System.out.println("##############---TC_04--PATCH REQUEST RESPONSE DATA----#############\n");
 		ResponseDataValidation.responseCodeValidation(200, res.statusCode());
-		APILOGCapture.captureLog("TC_04_PATCH Request", "The expected status code matched with actual.");
 		System.out.println(res.asString());
-		APILOGCapture.captureLog("TC_04_PATCH Request", "Data has been updated successfully on ID "+idValue);
 
 	}
 }
