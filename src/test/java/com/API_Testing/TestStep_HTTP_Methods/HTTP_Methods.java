@@ -8,13 +8,16 @@
 package com.API_Testing.TestStep_HTTP_Methods;
 
 import java.util.Properties;
+
+import com.API_Testing.Utilites.Load_PropertiestFile;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 /**HTTP Method class responsible for all methods. **/
 public class HTTP_Methods {
 	//Properties variable to pass the properties file read data. 
-	Properties pr; 
+	Properties pr= Load_PropertiestFile.getPropertyFile(); 
 	//Creating constructor for pass the variable to all test cases. 
 	public HTTP_Methods(Properties pr) {
 		
