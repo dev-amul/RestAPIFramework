@@ -12,8 +12,9 @@ import java.io.FileNotFoundException;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.API_Testing.Payloads.AlltypeDataRead;
-import com.API_Testing.Utilites.JsonResourceFetch;
+
+import com.API_Testing.commoncontrollers.JsonResourceFetch;
+import com.API_Testing.utitlites.AlltypeDataRead;
 
 /****Test case for fetch the data as per given key******/
 public class TC_07_GetDatabyKey {

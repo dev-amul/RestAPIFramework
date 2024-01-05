@@ -15,10 +15,12 @@ import java.util.Random;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
-import com.API_Testing.ResponseValidation.ResponseDataValidation;
-import com.API_Testing.TestStep_HTTP_Methods.HTTP_Methods;
-import com.API_Testing.Utilites.Load_PropertiestFile;
-import com.API_Testing.Utilites.ResponseDataparsing;
+
+import com.API_Testing.commoncontrollers.HTTP_Methods;
+import com.API_Testing.commoncontrollers.ResponseDataValidation;
+import com.API_Testing.commoncontrollers.ResponseDataparsing;
+import com.API_Testing.utitlites.Load_PropertiestFile;
+
 import io.restassured.response.Response;
 
 /***Test case for Create data ***/

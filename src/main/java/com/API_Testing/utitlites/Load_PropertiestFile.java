@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.Utilites;
+package com.API_Testing.utitlites;
 
 import java.io.File;
 import java.io.FileInputStream;

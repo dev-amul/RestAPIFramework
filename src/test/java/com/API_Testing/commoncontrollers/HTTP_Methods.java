@@ -5,11 +5,11 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.TestStep_HTTP_Methods;
+package com.API_Testing.commoncontrollers;
 
 import java.util.Properties;
 
-import com.API_Testing.Utilites.Load_PropertiestFile;
+import com.API_Testing.utitlites.Load_PropertiestFile;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

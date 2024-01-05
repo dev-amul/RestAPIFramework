@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.Payloads;
+package com.API_Testing.utitlites;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

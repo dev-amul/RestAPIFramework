@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 RestAPIFramework
  * 
  */
-package com.API_Testing.Utilites;
+package com.API_Testing.utitlites;
 
 import java.io.File;
 import java.util.Collection;

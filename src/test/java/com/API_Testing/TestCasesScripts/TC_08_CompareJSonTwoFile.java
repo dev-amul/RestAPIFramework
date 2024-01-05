@@ -8,7 +8,9 @@
 package com.API_Testing.TestCasesScripts;
 
 import org.testng.annotations.Test;
-import com.API_Testing.Payloads.AlltypeDataRead;
+
+import com.API_Testing.utitlites.AlltypeDataRead;
+
 import java.io.FileNotFoundException;
 import org.json.JSONException;
 import org.skyscreamer.jsonassert.JSONAssert;

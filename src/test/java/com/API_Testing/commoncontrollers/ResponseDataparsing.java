@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 restassuredautomation_framwork
  * 
  */
-package com.API_Testing.Utilites;
+package com.API_Testing.commoncontrollers;
 
 import io.restassured.response.Response;
 
