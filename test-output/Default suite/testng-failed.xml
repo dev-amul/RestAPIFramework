@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.API_Testing.TestCasesScripts.TC_01_PostMethods">
+      <class name="com.API_Testing.TestCasesScripts.TestingNG">
         <methods>
-          <include name="jsonBody"/>
           <include name="createData"/>
+          <include name="jsonBody"/>
         </methods>
-      </class> <!-- com.API_Testing.TestCasesScripts.TC_01_PostMethods -->
+      </class> <!-- com.API_Testing.TestCasesScripts.TestingNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

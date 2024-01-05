@@ -1,7 +1,7 @@
 /**
   * @author 			:	 sumitkumar
  *	DATE       		:	 15-Sep-2019
- *  FILE NAME  		: 	 HTTP_Methods.java
+ *  FILE NAME  		: 	 HTTP_MethodsControllers.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
@@ -15,16 +15,10 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 /**HTTP Method class responsible for all methods. **/
-public class HTTP_Methods {
+public class HTTP_MethodsControllers {
 	//Properties variable to pass the properties file read data. 
-	Properties pr= Load_PropertiestFile.getPropertyFile(); 
-	//Creating constructor for pass the variable to all test cases. 
-	public HTTP_Methods(Properties pr) {
-		
-		this.pr=pr;
-	}
-	
-	public Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) { //Post method for create record. Method required 3  parameters
+	public static Properties pr= Load_PropertiestFile.getPropertyFile(); 	
+	public static Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) { //Post method for create record. Method required 3  parameters
 		
 		Response postRequestResponse = //Store all the response 
 				given() 
@@ -38,7 +32,7 @@ public class HTTP_Methods {
 	}
 	
 	//Method for fetch the all data as per the given URL 
-	public Response get_Request(String baseURI, String gerFromURI) {
+	public static Response get_Request(String baseURI, String gerFromURI) {
 		
 		Response fetchDataFromURI = 
 				
@@ -51,7 +45,7 @@ public class HTTP_Methods {
 	}
 	
 	// Method for fetch the data as per given particular id or end url. 
-	public Response get_PerticularID_Request(String baseURI, String gerFromURI, String dataId) {
+	public static Response get_PerticularID_Request(String baseURI, String gerFromURI, String dataId) {
 		
 		Response fetchDataFromId = 
 				
@@ -63,7 +57,7 @@ public class HTTP_Methods {
 	}
 	
 	//Method for modify the existing data as per the given id or end url. 
-	public Response put_Request(String payLoad, String baseuriForPut, String endURL, String expectedID) {
+	public static Response put_Request(String payLoad, String baseuriForPut, String endURL, String expectedID) {
 		
 		Response putRequest_Respose = 
 				given()
@@ -75,7 +69,7 @@ public class HTTP_Methods {
 	}
 	
 	//Method for update the data as per given id or end point. 
-	public Response patch_UpdateData (String updateData, String baseuriForPut, String endURL, String expectedID){
+	public static Response patch_UpdateData (String updateData, String baseuriForPut, String endURL, String expectedID){
 		 
 		Response res = 
 				given()
@@ -87,7 +81,7 @@ public class HTTP_Methods {
 	}
 	
 	//Method for delete the data from the given url. 
-	public Response delete_Request( String delete_BaseURI, String endURI, String id) {
+	public static Response delete_Request( String delete_BaseURI, String endURI, String id) {
 		Response deleteRequest_response = 
 				given()
 				.contentType(ContentType.JSON)

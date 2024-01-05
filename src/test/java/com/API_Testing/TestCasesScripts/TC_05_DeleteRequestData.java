@@ -7,24 +7,21 @@
  */
 package com.API_Testing.TestCasesScripts;
 
-import org.testng.annotations.Test;
 import java.io.IOException;
-import java.util.Properties;
 
-import com.API_Testing.commoncontrollers.HTTP_Methods;
+import org.testng.annotations.Test;
+
+import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
 import com.API_Testing.commoncontrollers.ResponseDataValidation;
-import com.API_Testing.utitlites.Load_PropertiestFile;
 
 import io.restassured.response.Response;
 
 
 /**Test Case for delete the records**/
-public class TC_05_DeleteRequestData extends TC_04_PatchRequest{
+public class TC_05_DeleteRequestData extends HTTP_MethodsControllers{
 	@Test
 	public void deleteData() throws IOException {
-		Properties pr = Load_PropertiestFile.getPropertyFile();
-		HTTP_Methods deleteRequest = new HTTP_Methods(pr);
-		Response response= deleteRequest.delete_Request("baseURL", "endPointURI1", idValue);
+		Response response= delete_Request("baseURL", "endPointURI1", "");
 		System.out.println("##############---TC_05--DELETE REQUEST RESPONSE CODE----#############\n");
 		ResponseDataValidation.responseCodeValidation(200, response.getStatusCode());
 	}

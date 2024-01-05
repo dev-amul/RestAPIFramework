@@ -14,20 +14,20 @@ import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.API_Testing.commoncontrollers.HTTP_Methods;
+import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
 import com.API_Testing.commoncontrollers.ResponseDataValidation;
 import com.API_Testing.utitlites.Load_PropertiestFile;
 
 import io.restassured.response.Response;
 
 /***Test Case For Modify the records***/
-public class TC_03_PUTRequest extends TC_02_GetPerticulerIddata{
+public class TC_03_PUTRequest extends HTTP_MethodsControllers{
 	/**Data for modify the records**/
 	JSONObject updateData;
 	@BeforeMethod
 	public void dataForUpdateExisitingRecords() throws JSONException {
 		updateData = new JSONObject(); 
-		updateData.put("id", idValue);
+		updateData.put("id", "");
 		updateData.put("First Name", "Sumit");
 		updateData.put("Last Name", "Kumar Chaudhary"); //update name
 		updateData.put("Designation", "Software autmation");//update design
@@ -38,9 +38,7 @@ public class TC_03_PUTRequest extends TC_02_GetPerticulerIddata{
 	
 	@Test
 	public void updateRecord() throws IOException {
-		Properties properTies = Load_PropertiestFile.getPropertyFile();
-		HTTP_Methods putRequestMethod = new HTTP_Methods(properTies);		
-		Response updatedData = putRequestMethod.put_Request(updateData.toString(), "baseURL", "endPointURI1", idValue);
+		Response updatedData = put_Request(updateData.toString(), "baseURL", "endPointURI1", "");
 		System.out.println("##############---TC_03-PUT REQUEST RESPONSE CODE----#############\n");
 		ResponseDataValidation.responseCodeValidation(200, updatedData.getStatusCode());
 		System.out.println("##############----PUT REQUEST RESPONSE DATA----#############\n");

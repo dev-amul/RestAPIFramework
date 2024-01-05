@@ -7,14 +7,14 @@
  */
 package com.API_Testing.TestCasesScripts;
 
-import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import org.testng.annotations.Test;
 import com.API_Testing.commoncontrollers.JsonResourceFetch;
 import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.GetAbsolutePathByFileNameController;
 
 /****Test case for fetch the data as per given key******/
 public class TC_07_GetDatabyKey {
@@ -22,7 +22,7 @@ public class TC_07_GetDatabyKey {
 	@Test
 	public void fetchValuedata() throws FileNotFoundException, JSONException{
 		//call the json file static method from the ALLtpeDataRead class and pass the json file.
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../RestAPIFramework/Resources/dummyJsonForkey.json");
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile(GetAbsolutePathByFileNameController.getAbsolutPath("dummyJsonForkey.json"));
 		System.out.println("##############---TC_08-Get Data key----#############\n");
 		//Print the desire data 
 		System.out.println("The Data is \t:\t"+JsonResourceFetch.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number"));

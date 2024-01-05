@@ -14,14 +14,14 @@ import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.API_Testing.commoncontrollers.HTTP_Methods;
+import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
 import com.API_Testing.commoncontrollers.ResponseDataValidation;
 import com.API_Testing.utitlites.Load_PropertiestFile;
 
 import io.restassured.response.Response;
 
 /***Test Case for update specific record as per id ***/
-public class TC_04_PatchRequest extends TC_03_PUTRequest {
+public class TC_04_PatchRequest extends HTTP_MethodsControllers {
 	/*Specific data which we want to update*/
 	JSONObject specificData; 
 	@BeforeMethod
@@ -33,9 +33,7 @@ public class TC_04_PatchRequest extends TC_03_PUTRequest {
 	@Test
 	public void updateSpecificData() throws IOException
 	{
-		Properties pr = Load_PropertiestFile.getPropertyFile();
-		HTTP_Methods patchMethods = new HTTP_Methods(pr);
-		Response res= patchMethods.patch_UpdateData(specificData.toString(), "baseURL", "endPointURI1", idValue);
+		Response res= patch_UpdateData(specificData.toString(), "baseURL", "endPointURI1", "");
 		System.out.println("##############---TC_04--PATCH REQUEST RESPONSE DATA----#############\n");
 		ResponseDataValidation.responseCodeValidation(200, res.statusCode());
 		System.out.println(res.asString());
