@@ -2,16 +2,19 @@
  * Project Copyright:    Payworld
  * @author 			:	 Sumit Chaudhary
  *	DATE       		:	 06-Dec-2020
- *  FILE NAME  		: 	 PWAPI_DataGenerator.java
+ *  FILE NAME  		: 	 All_Type_DataGenerator.java
  *  PROJECT NAME 	:	 payworldapis
  * 	Time			:    10:11:25 PM
  */
 package com.API_Testing.utitlites;
 
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 
-public class PWAPI_DataGenerator {
+public class All_Type_DataGenerator {
 	static Random secureRnD;
 	public static String randomStringTypeData(int stringDataLength) {
 		secureRnD= new Random();
@@ -110,6 +113,29 @@ public class PWAPI_DataGenerator {
 		return engineTransNo;
 	}
 	
+	public static String removeCharAt(String s, int pos) {
+	      return s.substring(0, pos) + s.substring(pos + 1);
+	   }
+	
+	public static String getCurrentDateTime(){
+		SimpleDateFormat formatDate= new SimpleDateFormat("dd-MMM-yyyy hh:mm:ss a");
+		String currtDateTime=formatDate.format(new Date());
+		
+		return currtDateTime;
+	}
+	
+	public static String getCurrectTimeExcMeridiem() {
+		SimpleDateFormat formatDate= new SimpleDateFormat("ddMMyyhhmmss");
+		String currtDateTime=formatDate.format(new Date());
+		return currtDateTime;
+	}
+	public static String getRoundValue(int numberOfDigitsAfterDecimalPoint, String expectedValue) {
+		BigDecimal bDecimal = new BigDecimal(expectedValue);
+		bDecimal=bDecimal.setScale(numberOfDigitsAfterDecimalPoint, BigDecimal.ROUND_HALF_UP);
+		return bDecimal.toString();
+	}
+
+
 	
 }
 

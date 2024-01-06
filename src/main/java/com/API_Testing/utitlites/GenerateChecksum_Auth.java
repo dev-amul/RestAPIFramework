@@ -14,7 +14,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.commons.codec.binary.Hex;
 
-public class PWAPI_GenerateChecksum_Auth{
+public class GenerateChecksum_Auth{
 	public String checkSum;
 	public String unixTimeStamp;
 	
@@ -37,8 +37,8 @@ public class PWAPI_GenerateChecksum_Auth{
 		return clientSecret;
 	}
 	
-	public static PWAPI_GenerateChecksum_Auth fetchCheckSumAndTimeStamp() {
-		PWAPI_GenerateChecksum_Auth obj= new PWAPI_GenerateChecksum_Auth();
+	public static GenerateChecksum_Auth fetchCheckSumAndTimeStamp() {
+		GenerateChecksum_Auth obj= new GenerateChecksum_Auth();
 		try {
 			Mac sha256_HMAC = Mac.getInstance("HmacSHA256");
 			SecretKeySpec secret_key = new SecretKeySpec(getClientSecret().getBytes("UTF-8"), "HmacSHA256");
@@ -54,6 +54,6 @@ public class PWAPI_GenerateChecksum_Auth{
 	}
 	/*
 	public static void main(String[] args) {
-		System.out.println(PWAPI_GenerateChecksum_Auth.fetchCheckSumAndTimeStamp().getCheckSum());
+		System.out.println(GenerateChecksum_Auth.fetchCheckSumAndTimeStamp().getCheckSum());
 	}*/
 }
