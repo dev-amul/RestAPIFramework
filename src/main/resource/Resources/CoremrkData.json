@@ -1,0 +1,35 @@
+{
+	"Request":{
+		"formate": "Coremarkspeciality PaymentMessaging",
+		"ClientAppName":"SPIL",
+		"AppMsgID":"3578888",
+		"AppMsgIDType":"6011",
+		"MsgDateTimeStamp":"2019-08-05T23:00:41.000-05:00",
+		"NotificationList":[{
+					"keyValuePairList":[{
+									"key":"AmountDue",
+									"value":"1,060.00"
+					},
+					{
+									"key":"ZipCode",
+									"value":"15159"
+					},
+					{
+									"key":"messageType",
+									"value":"DNI"
+					},
+					{
+									"key":"RxPatientID",
+									"value":"MSGID357888"
+					},
+					{
+									"key":"MobilePhoneNumber",
+									"value":"4012437761"
+					}]
+		}],
+		"sourceID":"2040",
+		"chnnelID":"17",
+		"patientId":"8062162",
+		"orgCode":"ING"
+	}
+}

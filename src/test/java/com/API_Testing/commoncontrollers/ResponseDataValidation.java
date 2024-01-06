@@ -7,29 +7,27 @@
  */
 package com.API_Testing.commoncontrollers;
 
-import io.restassured.response.Response;
+import org.testng.Assert;
 
-public class ResponseDataValidation {
-	/***Methods for compare the status codes and return the result. **/
+public class ResponseDataValidation 
+{
+	
 	public static void responseCodeValidation (int expectedStatusCode, int actualStatusCode) {
 		
-		if (expectedStatusCode==actualStatusCode){
-			System.out.println("Expected Code is \t:\t "+expectedStatusCode);
-			System.out.println("Actual Code is   \t:\t "+actualStatusCode);
-			System.out.println("Expected Status code is successfully matching with actual");
-			
-		}else{
-			System.out.println("Oopes your expected code is not matching with actual please check again");
+		
+		if (expectedStatusCode==actualStatusCode)
+		{
+			System.out.println("Expected Status Code is similar to Actual Status code \t:\t"+actualStatusCode);
+		}
+		else
+		{
+			System.out.println("Expected code is not match with actual");
 		}
 	}
 	
-	public static void responseTimeConfirmation (Response res){
-		long timeGet = res.getTime();
+	public static void responseDataValidation (String expectedResponseData, int actualResponseData) {
 		
-				if(timeGet>0){
-					System.out.println("Request Response time is"+timeGet);
-				}else{
-					System.out.println("Request response is not grreater than 0");
-				}
+		
+		Assert.assertEquals(expectedResponseData, actualResponseData, "Data is not correct");
 	}
 }

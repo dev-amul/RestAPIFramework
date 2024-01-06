@@ -1,0 +1,21 @@
+
+  {
+    "firstName": "Sumit",
+    "lastName": "Kumar",
+    "address": {
+      "streetAddress": "UGR Plant",
+      "city": "Noida",
+      "postalCode": "201301"
+    },
+    "age": 28,
+    "phoneNumbers": [
+      {
+        "number": "991458090",
+        "type": "personal"
+      },
+      {
+        "number": "7982727693",
+        "type": "Office"
+      }
+    ]
+  }

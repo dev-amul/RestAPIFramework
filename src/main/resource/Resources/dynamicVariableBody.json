@@ -1,0 +1,9 @@
+{
+  "id": "{{id}}",
+  "First Name": "{{firstName}}",
+  "Last Name": "{{lastName}}",
+  "Gender": "{{gender}}",
+  "Age": "{{age}}",
+  "Designation": "{{designation}}",
+  "Experience": "{{experience}}"
+}
