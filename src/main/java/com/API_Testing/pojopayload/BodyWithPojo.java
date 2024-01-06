@@ -7,6 +7,7 @@
  *  Assignment		:	 22 June 2019
  */
 package com.API_Testing.pojopayload;
+
 public class BodyWithPojo 
 {
 	private int id ;

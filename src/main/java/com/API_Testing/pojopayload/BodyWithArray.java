@@ -6,6 +6,7 @@
  *  Time			:	 11:34:31 pm
  */
 package com.API_Testing.pojopayload;
+
 public class BodyWithArray 
 {
 	private int id ;

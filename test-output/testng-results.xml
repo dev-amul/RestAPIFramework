@@ -6,12 +6,12 @@
     <groups>
     </groups>
     <test started-at="2024-01-05T18:06:16 IST" name="Default test" finished-at="2024-01-05T18:06:16 IST" duration-ms="47">
-      <class name="com.API_Testing.TestCasesScripts.TC_07_GetDatabyKey">
-        <test-method signature="fetchValuedata()[pri:0, instance:com.API_Testing.TestCasesScripts.TC_07_GetDatabyKey@7f0eb4b4]" started-at="2024-01-05T18:06:16 IST" name="fetchValuedata" finished-at="2024-01-05T18:06:16 IST" duration-ms="25" status="PASS">
+      <class name="com.API_Testing.TestCasesScripts.testng.TC_07_GetDatabyKey">
+        <test-method signature="fetchValuedata()[pri:0, instance:com.API_Testing.TestCasesScripts.testng.TC_07_GetDatabyKey@7f0eb4b4]" started-at="2024-01-05T18:06:16 IST" name="fetchValuedata" finished-at="2024-01-05T18:06:16 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchValuedata -->
-      </class> <!-- com.API_Testing.TestCasesScripts.TC_07_GetDatabyKey -->
+      </class> <!-- com.API_Testing.TestCasesScripts.testng.TC_07_GetDatabyKey -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
