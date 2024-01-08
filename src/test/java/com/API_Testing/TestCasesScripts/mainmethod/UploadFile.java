@@ -9,12 +9,14 @@ package com.API_Testing.TestCasesScripts.mainmethod;
 
 import java.io.File;
 
+import com.API_Testing.utitlites.GetAbsolutePathByFileNameController;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class UploadFile {
 	public static void main(String[] args) {
-		File file=new File("../RestAPIBasicFunctionalities/src/test/java/com/InterviewPratice/Java_Projects_for_Beginners.jpg");
+		File file=new File(GetAbsolutePathByFileNameController.getAbsolutPath("Java_Projects_for_Beginners.jpg"));
 		//http://the-internet.herokuapp.com/upload
 		Response res=RestAssured
 				.given()
