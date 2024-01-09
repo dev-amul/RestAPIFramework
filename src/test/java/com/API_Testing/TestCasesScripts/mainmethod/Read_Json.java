@@ -7,18 +7,18 @@
  */
 package com.API_Testing.TestCasesScripts.mainmethod;
 
+import org.jose4j.json.internal.json_simple.parser.JSONParser;
+import org.jose4j.json.internal.json_simple.parser.ParseException;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.*;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.json.simple.JSONObject;
-import org.json.simple.parser.*;
-
 
 public class Read_Json 
 {
-	public static void main(String[] args) throws IOException, ParseException 
-	{
+	public static void main(String[] args) throws IOException, ParseException {
 		JSONParser jsoPars = new JSONParser();
 		
 		File filePath = new File("../ResAssuredProject/myDetails.json");

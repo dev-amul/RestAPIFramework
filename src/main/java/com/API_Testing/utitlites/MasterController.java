@@ -8,13 +8,64 @@
  */
 package com.API_Testing.utitlites;
 
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Random;
+import java.util.*;
 
-public class All_Type_DataGenerator {
+public class MasterController {
+	public static String getAbsolutPath(String fileName) {
+
+		String fileAbolutePath ="";
+		try {
+			boolean recursive = true;
+			//Collection method
+			Collection files = FileUtils.listFiles(new File(System.getProperty("user.dir")), null, recursive);
+			for (Iterator iterator = files.iterator(); iterator.hasNext();) {
+				File file = (File) iterator.next();
+				if (file.getName().equals(fileName))
+					fileAbolutePath=file.getAbsolutePath();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return fileAbolutePath;
+	}
+	/**
+	 * @author Sumit Kumar Chaudhary
+	 * PPAAS_PropertiesFileControler is class which contain fetchPropertyFileValueAsPerKey method that help
+	 * us to read the value from the properties file as per given key and return the value.
+	 *
+	 * fetchPropertyFileValueAsPerKey(String propertyFileName) method is parameter method that require property fileName with the
+	 * .properties extension. You know need to give full path of the file
+	 */
+
+
+	public static Properties loadProperties() {
+		Properties prop = new Properties();
+		String environment = System.getProperty("env");
+
+		if (environment == null) {
+			environment = "dev";
+			//mvn test -Pint
+		}
+
+		String filePath = environment + ".properties";
+		//System.out.println(filePath);
+
+		try (InputStream resourceAsStream = MasterController.class.getClassLoader().getResourceAsStream(filePath)) {
+			prop.load(resourceAsStream);
+		} catch (IOException e) {
+			System.err.println("Unable to load properties file : " + filePath);
+		}
+
+		return prop;
+	}
 	static Random secureRnD;
 	public static String randomStringTypeData(int stringDataLength) {
 		secureRnD= new Random();
@@ -135,7 +186,5 @@ public class All_Type_DataGenerator {
 		return bDecimal.toString();
 	}
 
-
-	
 }
 

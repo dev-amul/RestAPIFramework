@@ -14,7 +14,6 @@ import org.json.JSONObject;
 import org.testng.annotations.Test;
 import com.API_Testing.commoncontrollers.JsonResourceFetch;
 import com.API_Testing.utitlites.AlltypeDataRead;
-import com.API_Testing.utitlites.GetAbsolutePathByFileNameController;
 
 /****Test case for fetch the data as per given key******/
 public class TC_07_GetDatabyKey {

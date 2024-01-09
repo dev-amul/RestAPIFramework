@@ -10,7 +10,6 @@ package com.API_Testing.TestCasesScripts.testng;
 import org.testng.annotations.Test;
 
 import com.API_Testing.utitlites.AlltypeDataRead;
-import com.API_Testing.utitlites.GetAbsolutePathByFileNameController;
 
 import java.io.FileNotFoundException;
 import org.json.JSONException;

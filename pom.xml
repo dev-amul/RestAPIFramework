@@ -11,410 +11,306 @@
 	<name>RestAPI_Framework</name>
 	<url>http://maven.apache.org</url>
 
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
+		<maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+
+		<allure-cucumber6-jvm.version>2.13.10</allure-cucumber6-jvm.version>
+		<allure-maven.version>2.10.0</allure-maven.version>
+		<aspectj.version>1.9.4</aspectj.version>
+		<assertj-core.version>3.9.1</assertj-core.version>
+		<awaitility.version>4.1.0</awaitility.version>
+		<cucumber.version>6.11.0</cucumber.version>
+		<hamcrest-library.version>1.3</hamcrest-library.version>
+		<json-path-test.version>4.3.1</json-path-test.version>
+		<json-path.version>2.5.0</json-path.version>
+		<json-smart.version>2.3</json-smart.version>
+		<junit-jupiter.version>5.7.2</junit-jupiter.version>
+		<log4j.version>2.14.1</log4j.version>
+		<rest-assured.version>4.3.1</rest-assured.version>
+		<selenium-chrome-driver.version>3.141.59</selenium-chrome-driver.version>
+		<selenium-java.version>3.141.59</selenium-java.version>
+		<xml-path.version>4.3.1</xml-path.version>
+		<nimbus-jose-jwt.version>9.9.3</nimbus-jose-jwt.version>
 	</properties>
 
-	
 <dependencies>
+	<!-- https://mvnrepository.com/artifact/net.sf.jxls/jxls-reader -->
 	<dependency>
-	<groupId>junit</groupId>
-	<artifactId>junit</artifactId>
-	<version>4.11</version>
-	<scope>test</scope>
+		<groupId>net.sf.jxls</groupId>
+		<artifactId>jxls-reader</artifactId>
+		<version>1.0.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+		<version>7.9.0</version>
+		<scope>test</scope>
 	</dependency>
 
-	
-	<!-- https://mvnrepository.com/artifact/org.bitbucket.b_c/jose4j -->
-<dependency>
-    <groupId>org.bitbucket.b_c</groupId>
-    <artifactId>jose4j</artifactId>
-    <version>0.7.2</version>
-</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<!-- https://mvnrepository.com/artifact/org.json/json -->
 	<dependency>
-	<groupId>io.cucumber</groupId>
-	<artifactId>cucumber-java</artifactId>
-	<version>6.8.2</version>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20090211</version>
 	</dependency>
-	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
-<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-core</artifactId>
-    <version>2.12.0</version>
-</dependency>
-	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>2.12.0</version>
-</dependency>
-	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
-<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-annotations</artifactId>
-    <version>2.12.0</version>
-</dependency>
-	
-		
 	<dependency>
-	<groupId>com.google.code.gson</groupId>
-	<artifactId>gson</artifactId>
-	<version>2.3.1</version>
+		<groupId>javax</groupId>
+		<artifactId>javaee-api</artifactId>
+		<version>7.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
+	<dependency>
+		<groupId>com.github.scribejava</groupId>
+		<artifactId>scribejava-apis</artifactId>
+		<version>6.6.3</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+	<dependency>
+		<groupId>com.googlecode.json-simple</groupId>
+		<artifactId>json-simple</artifactId>
+		<version>1.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.scribe/scribe -->
+	<dependency>
+		<groupId>org.scribe</groupId>
+		<artifactId>scribe</artifactId>
+		<version>1.3.7</version>
 	</dependency>
 
 	<dependency>
-	<groupId>commons-io</groupId>
-	<artifactId>commons-io</artifactId>
-	<version>2.4</version>
+		<groupId>io.qameta.allure</groupId>
+		<artifactId>allure-rest-assured</artifactId>
+		<version>2.17.2</version>
 	</dependency>
-
-	<!-- JWT library -->
+	<!-- https://mvnrepository.com/artifact/org.json/json -->
 	<dependency>
-	<groupId>io.jsonwebtoken</groupId>
-	<artifactId>jjwt-api</artifactId>
-	<version>0.11.2</version>
-	</dependency>
-		
-	<dependency>
-	<groupId>io.jsonwebtoken</groupId>
-	<artifactId>jjwt-impl</artifactId>
-	<version>0.11.2</version>
-	<scope>runtime</scope>
-	</dependency>
-		
-	<dependency>
-	<groupId>io.jsonwebtoken</groupId>
-	<artifactId>jjwt-jackson</artifactId>
-	<version>0.11.2</version>
-	<scope>runtime</scope>
-	</dependency>
-	
-	<!-- Uncomment this next dependency if you are using JDK 10 or earlier 
-	and you also want to use RSASSA-PSS (PS256, PS384, PS512) algorithms. JDK 
-	11 or later does not require it for those algorithms: <dependency> <groupId>org.bouncycastle</groupId> 
-	<artifactId>bcprov-jdk15on</artifactId> <version>1.60</version> <scope>runtime</scope> 
-	</dependency> -->
-	<dependency>
-    <groupId>com.auth0</groupId>
-    <artifactId>java-jwt</artifactId>
-    <version>3.11.0</version>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20180813</version>
 	</dependency>
 	<dependency>
-	<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>18.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/net.sf.jxls/jxls-reader -->
-		<dependency>
-			<groupId>net.sf.jxls</groupId>
-			<artifactId>jxls-reader</artifactId>
-			<version>1.0.6</version>
-		</dependency>
-	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-<dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>5.0.6</version>
-</dependency>
-	
-		<dependency>
-			<groupId>net.sourceforge.tess4j</groupId>
-			<artifactId>tess4j</artifactId>
-			<version>4.2.1</version>
-		</dependency>
+		<groupId>com.auth0</groupId>
+		<artifactId>java-jwt</artifactId>
+		<version>4.4.0</version>
+	</dependency>
+	<dependency>
+		<groupId>org.bitbucket.b_c</groupId>
+		<artifactId>jose4j</artifactId>
+		<version>0.9.3</version>
+	</dependency>
+	<dependency>
+		<groupId>io.jsonwebtoken</groupId>
+		<artifactId>jjwt</artifactId>
+		<version>0.7.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
+	<dependency>
+		<groupId>com.nimbusds</groupId>
+		<artifactId>nimbus-jose-jwt</artifactId>
+		<version>9.31</version>
+	</dependency>
 
-		<dependency>
-			<groupId>com.relevantcodes</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>2.41.2</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sourceforge.jexcelapi</groupId>
-			<artifactId>jxl</artifactId>
-			<version>2.6</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.14.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.11</version>
-			<scope>compile</scope>
-		</dependency>
+	<dependency>
+		<groupId>org.hamcrest</groupId>
+		<artifactId>hamcrest-library</artifactId>
+		<version>${hamcrest-library.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.6</version>
+	</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.3.0</version>
-			<scope>test</scope>
-		</dependency>
 
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>4.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-scratchpad</artifactId>
-			<version>4.1.1</version>
-		</dependency>
+	<dependency>
+		<groupId>org.assertj</groupId>
+		<artifactId>assertj-core</artifactId>
+		<version>${assertj-core.version}</version>
+		<scope>test</scope>
+	</dependency>
 
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>openxml4j</artifactId>
-			<version>1.0-beta</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>4.1.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.20</version>
-		</dependency>
-		 <dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-api</artifactId>
-    <version>2.14.0</version>
-  </dependency>
-  <dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.14.0</version>
-  </dependency>
+	<dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter-engine</artifactId>
+		<version>${junit-jupiter.version}</version>
+		<scope>test</scope>
+	</dependency>
 
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-scratchpad</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>ooxml-schemas</artifactId>
-			<version>1.1</version>
-		</dependency>
+	<dependency>
+		<groupId>org.junit.vintage</groupId>
+		<artifactId>junit-vintage-engine</artifactId>
+		<version>${junit-jupiter.version}</version>
+		<scope>test</scope>
+	</dependency>
 
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>4.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>openxml4j</artifactId>
-			<version>1.0-beta</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-scratchpad</artifactId>
-			<version>3.9</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>ooxml-schemas</artifactId>
-			<version>1.1</version>
-		</dependency>
+	<dependency>
+		<groupId>io.rest-assured</groupId>
+		<artifactId>rest-assured</artifactId>
+		<version>${rest-assured.version}</version>
+		<scope>test</scope>
+	</dependency>
 
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>openxml4j</artifactId>
-			<version>1.0-beta</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
-		<dependency>
-			<groupId>com.relevantcodes</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>2.41.2</version>
-		</dependency>
+	<dependency>
+		<groupId>io.rest-assured</groupId>
+		<artifactId>xml-path</artifactId>
+		<version>${xml-path.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>com.jayway.jsonpath</groupId>
+		<artifactId>json-path</artifactId>
+		<version>${json-path.version}</version>
+		<scope>test</scope>
+	</dependency>
 
-		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.6</version>
-		</dependency>
+	<dependency>
+		<groupId>io.rest-assured</groupId>
+		<artifactId>json-path</artifactId>
+		<version>${json-path-test.version}</version>
+		<scope>test</scope>
+	</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
-		<dependency>
-			<groupId>com.relevantcodes</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>2.41.2</version>
-		</dependency>
+	<dependency>
+		<groupId>net.minidev</groupId>
+		<artifactId>json-smart</artifactId>
+		<version>${json-smart.version}</version>
+		<scope>test</scope>
+	</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.json.wso2/json -->
+	<dependency>
+		<groupId>org.awaitility</groupId>
+		<artifactId>awaitility</artifactId>
+		<version>${awaitility.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>1.7.32</version>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-simple</artifactId>
+		<version>1.7.30</version>
+	</dependency>
+</dependencies>
 
-		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>4.0.0</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/net.sf.jxls/jxls-reader -->
-		<dependency>
-			<groupId>net.sf.jxls</groupId>
-			<artifactId>jxls-reader</artifactId>
-			<version>1.0.6</version>
-		</dependency>
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<cucumber.filter.tags>@dev</cucumber.filter.tags>
+				<env>dev</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>int</id>
+			<properties>
+				<cucumber.filter.tags>@int</cucumber.filter.tags>
+				<env>int</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>demo</id>
+			<properties>
+				<cucumber.filter.tags>@demo</cucumber.filter.tags>
+				<env>demo</env>
+			</properties>
+		</profile>
+	</profiles>
 
-		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>json-path</artifactId>
-			<version>4.0.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>4.0.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>json-schema-validator</artifactId>
-			<version>4.0.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20180813</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20090211</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20140107</version>
-		</dependency>
-		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>7.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
-		<dependency>
-			<groupId>com.github.scribejava</groupId>
-			<artifactId>scribejava-apis</artifactId>
-			<version>6.6.3</version>
-		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.scribe/scribe -->
-		<dependency>
-			<groupId>org.scribe</groupId>
-			<artifactId>scribe</artifactId>
-			<version>1.3.7</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.scribe/scribe -->
-		<dependency>
-			<groupId>org.scribe</groupId>
-			<artifactId>scribe</artifactId>
-			<version>1.3.5</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
-		<dependency>
-			<groupId>com.github.scribejava</groupId>
-			<artifactId>scribejava-apis</artifactId>
-			<version>5.5.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
-		<dependency>
-			<groupId>com.jayway.restassured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>2.9.0</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/json-path -->
-		<dependency>
-			<groupId>com.jayway.restassured</groupId>
-			<artifactId>json-path</artifactId>
-			<version>2.9.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/json-schema-validator -->
-		<dependency>
-			<groupId>com.jayway.restassured</groupId>
-			<artifactId>json-schema-validator</artifactId>
-			<version>2.9.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/xml-path -->
-		<dependency>
-			<groupId>com.jayway.restassured</groupId>
-			<artifactId>xml-path</artifactId>
-			<version>2.9.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured-common -->
-		<dependency>
-			<groupId>com.jayway.restassured</groupId>
-			<artifactId>rest-assured-common</artifactId>
-			<version>2.9.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.skyscreamer/jsonassert -->
-		<dependency>
-			<groupId>org.skyscreamer</groupId>
-			<artifactId>jsonassert</artifactId>
-			<version>1.5.0</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/test/resources/env</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>${maven-shade-plugin.version}</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<transformer
+										implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>org.sonatype.haven.HavenCli</mainClass>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>${allure-maven.version}</version>
+				<configuration>
+					<reportVersion>2.10.0</reportVersion>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven-surefire-plugin.version}</version>
+
+				<configuration>
+
+					<systemProperties>
+						<property>
+							<name>allure.results.directory</name>
+							<value>${project.build.directory}/allure-results</value>
+						</property>
+					</systemProperties>
+					<argLine>
+						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+						-Dcucumber.plugin="io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"
+					</argLine>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.aspectj</groupId>
+						<artifactId>aspectjweaver</artifactId>
+						<version>${aspectj.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
