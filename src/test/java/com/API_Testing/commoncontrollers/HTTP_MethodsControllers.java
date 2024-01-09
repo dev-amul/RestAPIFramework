@@ -8,86 +8,58 @@
 package com.API_Testing.commoncontrollers;
 
 import java.util.Properties;
-
-import com.API_Testing.utitlites.Load_PropertiestFile;
-
+import com.API_Testing.utitlites.MasterController;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.*;
+
+
 /**HTTP Method class responsible for all methods. **/
 public class HTTP_MethodsControllers {
-	//Properties variable to pass the properties file read data. 
-	public static Properties pr= Load_PropertiestFile.getPropertyFile(); 	
-	public static Response post_Request(String dataForPost, String postBaseURI, String URIendpoint) { //Post method for create record. Method required 3  parameters
-		
-		Response postRequestResponse = //Store all the response 
-				given() 
-				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format. 
-				.body(dataForPost) // pass the expected data 
+	public static RequestSpecification reqSpec;
+	public static Response res;
+	public static ValidatableResponse valRes;
+	public static Properties pr= MasterController.loadProperties();
+
+	public static Response GET_Method(String endURL) {
+		return res=given().
+				baseUri(pr.getProperty("baseurl"))
+				.accept(ContentType.JSON)
 				.when()
-				.post(pr.getProperty(postBaseURI)+"/"+pr.getProperty(URIendpoint)); // method require the URL where we want to post the data. 
-		
-		return postRequestResponse;
-		
+				.get(endURL);
 	}
-	
-	//Method for fetch the all data as per the given URL 
-	public static Response get_Request(String baseURI, String gerFromURI) {
-		
-		Response fetchDataFromURI = 
-				
-				given()
-				.contentType(ContentType.JSON)
+
+	public static Response POST_Method(String requestBody, String endURL) {
+		return given()
+				.baseUri(pr.getProperty("baseurl"))
+				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
+				.body(requestBody) // pass the expected data
 				.when()
-				.get(pr.getProperty(baseURI)+"/"+pr.getProperty(gerFromURI));
-				
-				return fetchDataFromURI;
+				.post(endURL);
 	}
-	
-	// Method for fetch the data as per given particular id or end url. 
-	public static Response get_PerticularID_Request(String baseURI, String gerFromURI, String dataId) {
-		
-		Response fetchDataFromId = 
-				
-				given()
-				.contentType(ContentType.JSON)
+
+	public static Response PUT_Method(String requestBody, String endURL) {
+		return given()
+				.baseUri(pr.getProperty("baseurl"))
+				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
+				.body(requestBody) // pass the expected data
 				.when()
-				.get(pr.getProperty(baseURI)+"/"+pr.getProperty(gerFromURI)+"/"+dataId);
-				return fetchDataFromId;
+				.put(endURL);
 	}
-	
-	//Method for modify the existing data as per the given id or end url. 
-	public static Response put_Request(String payLoad, String baseuriForPut, String endURL, String expectedID) {
-		
-		Response putRequest_Respose = 
-				given()
-				.contentType(ContentType.JSON)
-				.body(payLoad)
+	public static Response PATCH_Method(String requestBody, String endURL) {
+		return given()
+				.baseUri(pr.getProperty("baseurl"))
+				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
+				.body(requestBody) // pass the expected data
 				.when()
-				.put(pr.getProperty(baseuriForPut)+"/"+pr.getProperty(endURL)+"/"+expectedID);
-				return putRequest_Respose;
+				.patch(endURL);
 	}
-	
-	//Method for update the data as per given id or end point. 
-	public static Response patch_UpdateData (String updateData, String baseuriForPut, String endURL, String expectedID){
-		 
-		Response res = 
-				given()
-				.contentType(ContentType.JSON)
+	public static Response DELETE_Method(String endURL) {
+		return given()
+				.baseUri(pr.getProperty("baseurl"))
 				.when()
-				.body(updateData.toString())
-				.patch(pr.getProperty(baseuriForPut)+"/"+pr.getProperty(endURL)+"/"+expectedID);
-		return res;
-	}
-	
-	//Method for delete the data from the given url. 
-	public static Response delete_Request( String delete_BaseURI, String endURI, String id) {
-		Response deleteRequest_response = 
-				given()
-				.contentType(ContentType.JSON)
-				.when()
-				.delete(pr.getProperty(delete_BaseURI)+"/"+pr.getProperty(endURI)+"/"+id);
-		
-				return deleteRequest_response; 	
+				.delete(endURL);
 	}
 }

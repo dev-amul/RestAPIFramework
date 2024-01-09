@@ -1,15 +1,12 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 06-Oct-2019
- *  FILE NAME  		: 	 TC_07_GetDatabyKey.java
+ *  FILE NAME  		: 	 TestGetValueByKeyFromJson.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
 package com.API_Testing.TestCasesScripts.testng;
 
-import java.io.FileNotFoundException;
-
-import com.API_Testing.utitlites.MasterController;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
@@ -17,14 +14,11 @@ import com.API_Testing.commoncontrollers.JsonResourceFetch;
 import com.API_Testing.utitlites.AlltypeDataRead;
 
 /****Test case for fetch the data as per given key******/
-public class TC_07_GetDatabyKey {
+public class TestGetValueByKeyFromJson {
 	
 	@Test
-	public void fetchValuedata() throws FileNotFoundException, JSONException{
-		//call the json file static method from the ALLtpeDataRead class and pass the json file.
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile(MasterController.getAbsolutPath("dummyJsonForkey.json"));
-		System.out.println("##############---TC_08-Get Data key----#############\n");
-		//Print the desire data 
+	public void fetchValuedata() throws JSONException {
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("dummyJsonForkey.json");
 		System.out.println("The Data is \t:\t"+JsonResourceFetch.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number"));
 	}
 

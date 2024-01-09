@@ -7,10 +7,10 @@
  */
 package com.API_Testing.TestCasesScripts.testng;
 
+import com.API_Testing.utitlites.MasterController;
 import org.testng.annotations.Test;
 
 import com.API_Testing.utitlites.AlltypeDataRead;
-import com.API_Testing.utitlites.GetAbsolutePathByFileNameController;
 
 import java.io.FileNotFoundException;
 import org.json.JSONException;
@@ -21,8 +21,8 @@ import org.skyscreamer.jsonassert.JSONCompareMode;
 public class TC_08_CompareJSonTwoFile {
 	@Test
 	public  void comparetoJson() throws FileNotFoundException, JSONException {
-		String expectedJson = AlltypeDataRead.readJsonFile(GetAbsolutePathByFileNameController.getAbsolutPath("JSONforCompare1.json")).toString();
-		String actualJson = AlltypeDataRead.readJsonFile(GetAbsolutePathByFileNameController.getAbsolutPath("JSONforCompare2.json")).toString();
+		String expectedJson = AlltypeDataRead.readJsonFile(MasterController.getAbsolutPath("JSONforCompare1.json")).toString();
+		String actualJson = AlltypeDataRead.readJsonFile(MasterController.getAbsolutPath("JSONforCompare2.json")).toString();
 		System.out.println("##############---TC_08 Compare json----#############\n");
 		JSONAssert.assertNotEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
 	}
