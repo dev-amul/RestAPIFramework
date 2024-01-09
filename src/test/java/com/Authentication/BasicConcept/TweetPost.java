@@ -7,11 +7,6 @@
  */
 package com.Authentication.BasicConcept;
 
-import static com.jayway.restassured.RestAssured.*;
-
-import com.jayway.restassured.RestAssured;
-import com.jayway.restassured.http.ContentType;
-import com.jayway.restassured.response.Response;
 
 
 public class TweetPost {
@@ -21,7 +16,7 @@ public class TweetPost {
 		String consumer_Secret = "kCiLXlABjoIbzulmTCvU6e0RVcuNCfl7phJNsyeHdNqa5FJG10";
 		String access_Token ="1152060055908315136-2JokFSnkDHIjowM1QS7ANzUbb01OsC";
 		String token_Secret ="JXHJ5YMGzJ6lJOfH4Ng7dBFGTb9Xfc5g57VhR7TATBVu9";
-	    		
+	   /*
 	    RestAssured.baseURI="https://api.twitter.com/1.1/statuses";
 			Response res=
 			given()
@@ -32,7 +27,7 @@ public class TweetPost {
 			.when()
 			.post("/update.json");
 		
-			System.out.println(res.asString());
+			System.out.println(res.asString());*/
 			
 		
 		}

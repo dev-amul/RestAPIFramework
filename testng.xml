@@ -9,7 +9,7 @@
       <class name="com.API_Testing.TestCasesScripts.TC_03_PUTRequest"/>
       <class name="com.API_Testing.TestCasesScripts.TestingNG"/>
       <class name="com.API_Testing.TestCasesScripts.TC_05_DeleteRequestData"/>
-      <class name="com.API_Testing.TestCasesScripts.testng.TC_08_CompareJSonTwoFile"/>
+      <class name="com.API_Testing.TestCasesScripts.testng.TestCompareTwoJsonFile"/>
       <class name="com.API_Testing.TestCasesScripts.TC_06_GetALLData"/>
       <class name="com.API_Testing.TestCasesScripts.testng.TC_07_GetDatabyKey"/>
     </classes>

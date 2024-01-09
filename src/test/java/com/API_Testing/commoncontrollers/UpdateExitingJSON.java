@@ -8,12 +8,12 @@
 package com.API_Testing.commoncontrollers;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class UpdateExitingJSON 
 {
-	public static String fetchAndUdateData(String jsonBody, String srcArrKey, String srhKey, String srhValue,String NewKey, String newValue) 
-	{
+	public static String fetchAndUdateData(String jsonBody, String srcArrKey, String srhKey, String srhValue,String NewKey, String newValue) throws JSONException {
 		// Get the jSon body and store in jSon object 
 		JSONObject jsonData = new JSONObject(jsonBody);
 		

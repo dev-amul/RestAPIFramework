@@ -8,16 +8,14 @@
 package com.API_Testing.commoncontrollers;
 
 import java.util.Properties;
-
 import com.API_Testing.utitlites.MasterController;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.SpecificationQuerier;
-
 import static io.restassured.RestAssured.*;
+
+
 /**HTTP Method class responsible for all methods. **/
 public class HTTP_MethodsControllers {
 	public static RequestSpecification reqSpec;
@@ -27,7 +25,7 @@ public class HTTP_MethodsControllers {
 
 	public static Response GET_Method(String endURL) {
 		return res=given().
-				baseUri(pr.getProperty("baseURL"))
+				baseUri(pr.getProperty("baseurl"))
 				.accept(ContentType.JSON)
 				.when()
 				.get(endURL);
@@ -35,7 +33,7 @@ public class HTTP_MethodsControllers {
 
 	public static Response POST_Method(String requestBody, String endURL) {
 		return given()
-				.baseUri(pr.getProperty("baseURL"))
+				.baseUri(pr.getProperty("baseurl"))
 				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
 				.body(requestBody) // pass the expected data
 				.when()
@@ -44,7 +42,7 @@ public class HTTP_MethodsControllers {
 
 	public static Response PUT_Method(String requestBody, String endURL) {
 		return given()
-				.baseUri(pr.getProperty("baseURL"))
+				.baseUri(pr.getProperty("baseurl"))
 				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
 				.body(requestBody) // pass the expected data
 				.when()
@@ -52,7 +50,7 @@ public class HTTP_MethodsControllers {
 	}
 	public static Response PATCH_Method(String requestBody, String endURL) {
 		return given()
-				.baseUri(pr.getProperty("baseURL"))
+				.baseUri(pr.getProperty("baseurl"))
 				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
 				.body(requestBody) // pass the expected data
 				.when()
@@ -60,7 +58,7 @@ public class HTTP_MethodsControllers {
 	}
 	public static Response DELETE_Method(String endURL) {
 		return given()
-				.baseUri(pr.getProperty("baseURL"))
+				.baseUri(pr.getProperty("baseurl"))
 				.when()
 				.delete(endURL);
 	}

@@ -11,14 +11,15 @@ import java.io.FileNotFoundException;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.regex.Pattern;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.API_Testing.utitlites.AlltypeDataRead;
 
 public class ReplaceVariablesValuesAsperkeys
 {
-	public static String replaceVariablesAsPerKeys(String jsonFileURL, String enterReplacementValues) throws FileNotFoundException
-	{
+	public static String replaceVariablesAsPerKeys(String jsonFileURL, String enterReplacementValues) throws FileNotFoundException, JSONException {
 		// Call the jSon file reader method 
 		JSONObject storeJsonobj= AlltypeDataRead.readJsonFile(jsonFileURL);		
 		//Get the keys from from jSon file and store in iterator Variable
