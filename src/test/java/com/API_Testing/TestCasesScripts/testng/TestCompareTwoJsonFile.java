@@ -20,7 +20,6 @@ public class TestCompareTwoJsonFile {
 	public  void comparetoJson() throws FileNotFoundException, JSONException {
 		String expectedJson = AlltypeDataRead.readJsonFile("JSONforCompare1.json").toString();
 		String actualJson = AlltypeDataRead.readJsonFile("JSONforCompare2.json").toString();
-
 		JSONAssert.assertNotEquals("Match", expectedJson, actualJson, JSONCompareMode.STRICT);
 	}
 }

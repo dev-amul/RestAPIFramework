@@ -19,9 +19,9 @@ import com.API_Testing.utitlites.AlltypeDataRead;
 
 public class ReplaceVariablesValuesAsperkeys
 {
-	public static String replaceVariablesAsPerKeys(String jsonFileURL, String enterReplacementValues) throws FileNotFoundException, JSONException {
+	public static String replaceVariablesAsPerKeys(String jsonFileName, String enterReplacementValues) throws FileNotFoundException, JSONException {
 		// Call the jSon file reader method 
-		JSONObject storeJsonobj= AlltypeDataRead.readJsonFile(jsonFileURL);		
+		JSONObject storeJsonobj= AlltypeDataRead.readJsonFile(jsonFileName);
 		//Get the keys from from jSon file and store in iterator Variable
 		Iterator getjSOnKeys= storeJsonobj.keys();
 		//Convert jSon data in string and store in variables.

@@ -10,18 +10,23 @@ package com.API_Testing.TestCasesScripts.testng;
 import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import io.restassured.response.Response;
 
-public class TestGETRequest extends HTTP_MethodsControllers{
+import static io.restassured.RestAssured.*;
+
+public class TestGETRequestSingleUserData extends HTTP_MethodsControllers {
 	Response res;
 	@Test
-	public void getUserData(){
-		res= GET_Method(pr.getProperty("endurl"));
-		res.prettyPrint();
+	public void getResponse(){
+		 res=GET_Method(pr.getProperty("endurl")+"/2");
 	}
+
 	@AfterMethod
-	public void validateStatusCode(){
+	public void validateGETResponseCode(){
+		res.prettyPrint();
 		Assert.assertEquals(res.getStatusCode(), 200);
 	}
 

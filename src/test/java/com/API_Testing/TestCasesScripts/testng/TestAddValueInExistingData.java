@@ -1,7 +1,7 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 06-Oct-2019
- *  FILE NAME  		: 	 TC_06_AddValueInExsitingData.java
+ *  FILE NAME  		: 	 TestAddValueInExistingData.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
@@ -15,20 +15,13 @@ import org.testng.annotations.Test;
 import com.API_Testing.commoncontrollers.UpdateExitingJSON;
 import com.API_Testing.utitlites.AlltypeDataRead;
 
-public class TC_06_AddValueInExsitingData 
-{
+public class TestAddValueInExistingData {
 	@Test
-	public void addValueExsitingData() throws FileNotFoundException {
+	public void addValueExistingData() throws FileNotFoundException {
 		
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("../RestAPI_Framework/DataFile/jsonBodydumm.json");
-		
+		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("jsondummybody.json");
 		String str= UpdateExitingJSON.fetchAndUdateData(jsondummydata.toString(), "phoneNumbers", "type", "home", "emailId", "dummy@gmai.com");
-		
 		System.out.println("#######Expected Data###########\n");
-		
 		System.out.println(str);
-		
-		
 	}
-
 }
