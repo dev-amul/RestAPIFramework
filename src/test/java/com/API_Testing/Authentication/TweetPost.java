@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 ResAssuredProject
  *  Time			:	 10:14:05 pm
  */
-package com.Authentication.BasicConcept;
+package com.API_Testing.Authentication;
 
 
 
