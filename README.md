@@ -39,6 +39,8 @@ Rest API Automation Project bring you to understand the feature of Restassured l
     ```
 
 3. Download the maven
+   ![alt text]( https://maven.apache.org/images/maven-logo-black-on-white.png?width=400?raw=true)
+
     https://maven.apache.org/download.cgi
     
 4. Set the path variable 
@@ -53,6 +55,7 @@ Rest API Automation Project bring you to understand the feature of Restassured l
     IntelliJ https://www.jetbrains.com/idea/download
 
 6. Download the git and set up the path
+   ![alt text](  https://git-scm.com/images/logo@2x.png?width=400?raw=true)
     https://www.git-scm.com/downloads 
 
 7. Clone the Project in you system 
