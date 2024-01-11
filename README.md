@@ -1,22 +1,70 @@
+
+# My Introduction
+Dear Friend,
+
+Firstly I would like to thank you to visit on this page.
+
+I would like to introduce my self before bring you to the API automation Journey. My name is Sumit Kumar, I'm working since 2017 and have experience in API, WEB, and Android Automation.
+I always keen to learn new from my community's friend like you. And share the knowledge with others.
+
+
+# Project 
+
+This project I have implemented during my learning days, I just updated according to new changes.
 Rest API Automation Project bring you to understand the feature of Restassured library. It's help you to perform CRUD operation easily. 
 
 
-**Prerequsties**
+# Prerequisites to run the project seamlessly 
 
-1.  Install java : 
-    https://www.oracle.com/java/technologies/downloads
-2.  Set the Environment path in the system 
-3.  Download the maven
+### Installation and Setup 
+
+
+
+1. Install java :
+
+   ![alt text]( https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/121px-Java_programming_language_logo.svg.png?width=400?raw=true)
+  
+  
+2. Set the Environment path in the system 
+
+    Open the command/ terminal and run the below command to check 
+    java is installed or not.
+
+    ```bash
+    java --version 
+    ```
+   and 
+    ```bash
+    javac --version 
+    ```
+
+3. Download the maven
     https://maven.apache.org/download.cgi
-4.  Set the path variable 
-5.  Download and isntall any IDE (Ecliplse or InteliJ) 
+    
+4. Set the path variable 
+    
+   Run the below command to check maven is installed or not properly. 
+    ```bash
+       mvn --version 
+    ```
+5. Download and install any IDE (Eclipse or IntelliJ) 
     Eclipse: https://www.eclipse.org/downloads/packages/
 
     IntelliJ https://www.jetbrains.com/idea/download
 
-7.  Download the git and setup the path
+6. Download the git and set up the path
     https://www.git-scm.com/downloads 
 
-8.  Clone the Project in you system 
-9.  Open the pom.xml file 
-10. Right click on it and select Run> Mavn install 
+7. Clone the Project in you system 
+
+      ```bash
+    git clone https://gitlab.com/sumitkchaudhary/RestAPIFramework.git 
+    ```
+8. Open the pom.xml file 
+9. Right click on it and select Run> Maven install 
+
+
+
+-------------------------------
+
+![alt text](https://gitlab.com/uploads/-/system/user/avatar/2301036/avatar.png?width=400?raw=true) 
