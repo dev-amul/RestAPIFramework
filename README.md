@@ -1,9 +1,4 @@
-<p align="center">
-<img src="https://yt3.googleusercontent.com/x1JWabKf0h0RKgFmFdhTM_2sq5yUsnQxd2Xqi085IkSgWAr1TJqNIal-QfPy67D8rAnILVaq=s900-c-k-c0x00ffffff-no-rj"  width="200" height="200"> 
-</p>
-<p align="center">
-<img src="https://www.towardsanalytic.com/wp-content/uploads/Best-API-Test-Automation-Tools.png"  width="800" height="250">
-</p>
+<img src="https://yt3.googleusercontent.com/x1JWabKf0h0RKgFmFdhTM_2sq5yUsnQxd2Xqi085IkSgWAr1TJqNIal-QfPy67D8rAnILVaq=s900-c-k-c0x00ffffff-no-rj"  width="200" height="200"> <img src="https://www.towardsanalytic.com/wp-content/uploads/Best-API-Test-Automation-Tools.png"  width="800" height="250">
 
 
 ## Table of Contents
