@@ -10,6 +10,7 @@ package com.API_Testing.commoncontrollers;
 import java.io.FileNotFoundException;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.API_Testing.utitlites.AlltypeDataRead;
@@ -20,28 +21,33 @@ public class FetchDataMethodFromJson {
 		JSONObject fetchedObject= jsonBody.getJSONObject(srhObj);//get the first Object value because jSon starting from jSon
 		JSONArray getOptionalArr= fetchedObject.optJSONArray(srhArray);//here i'm assume as array but get the key value  
 		JSONObject getNewObject = null; 
-		for(int i=0; i<getOptionalArr.length(); i++)
-		{
+		for(int i=0; i<getOptionalArr.length(); i++) {
 			JSONObject getNextObj = getOptionalArr.getJSONObject(i);
-			
-			JSONArray newArray = getNextObj.getJSONArray(srchArray);//get the next array which is under the previous  array
-				//System.out.println(newArray.toString());
-				
-				for(int j=0 ; j<newArray.length(); j++)
-				{
+			JSONArray newArray = getNextObj.getJSONArray(srchArray);
+				for(int j=0 ; j<newArray.length(); j++) {
 					 getNewObject = newArray.getJSONObject(j);
-					
-					if(getNewObject.get(srchKey).equals(srchValu))// enter the key and value so get the expected data 
-					{
+					if(getNewObject.get(srchKey).equals(srchValu)){
 						break; 
 					}
 				}
 		}
 		return  getNewObject.get(gtExtData).toString();
 	}
-	public static void main(String[] args) throws FileNotFoundException{
-		String expData= FetchDataMethodFromJson.getValueFromJson("Request", "NotificationList", "keyValuePairList", "key", "MobilePhoneNumber", "value");
-		
-		System.out.println(expData);
+	public static String fetchDatafromJSON(String jsonBody, String srcArrKey, String srhKey, String srhValue, String gtExtData) throws JSONException {
+		JSONObject jsonData = new JSONObject(jsonBody);
+		JSONArray getArray = jsonData.getJSONArray(srcArrKey);
+		JSONObject getObject=new JSONObject();
+		for (int i=0 ; i<getArray.length(); i++) {
+			getObject = getArray.getJSONObject(i);
+			for(int j=0; j<getObject.length(); j++){
+				if(getObject.get(srhKey).equals(srhValue)) {
+					break;
+				}
+			}
+
+		}
+		return  getObject.get(gtExtData).toString();
+
 	}
+
 }
