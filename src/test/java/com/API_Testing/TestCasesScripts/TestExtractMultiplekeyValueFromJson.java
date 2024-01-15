@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 ResAssuredProject
  *  Time			:	 9:29:00 am
  */
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
 
 import java.io.FileNotFoundException;
 

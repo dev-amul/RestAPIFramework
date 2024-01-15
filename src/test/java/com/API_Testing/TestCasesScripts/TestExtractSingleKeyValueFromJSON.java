@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 ResAssuredProject
  *  Time			:	 10:59:58 pm
  */
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
 
 import com.API_Testing.utitlites.AlltypeDataRead;
 import org.json.JSONArray;

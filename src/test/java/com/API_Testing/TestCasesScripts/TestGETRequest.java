@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 ResAssuredProject
  *  Time			:	 9:32:05 pm
  */
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
 
 import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
 import org.testng.Assert;

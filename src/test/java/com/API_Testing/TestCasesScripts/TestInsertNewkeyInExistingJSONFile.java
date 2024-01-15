@@ -1,26 +1,24 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 15-Sep-2019
- *  FILE NAME  		: 	 TestUpdateKeyValueexistingJsonData.java
+ *  FILE NAME  		: 	 TestInsertNewkeyInExistingJSONFile.java
  *  PROJECT NAME 	:	 ResAssuredProject
- *  Time			:	 10:09:05 am
+ *  Time			:	 9:56:07 am
  */
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
+
+import java.io.FileNotFoundException;
 
 import com.API_Testing.utitlites.AlltypeDataRead;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-public class TestUpdateKeyValueexistingJsonData {
-
+public class TestInsertNewkeyInExistingJSONFile {
 	@Test
-	public void testUpdateExistingJSONData(){
+	public  void testInsertNewKey() {
 		JSONObject getJSonData = AlltypeDataRead.readJsonFile("DataAppend.json");
 		JSONObject getkey =  getJSonData.getJSONObject("address");
-		JSONObject updatedata= getkey.put("streetAddress", "Sector 49 Noida");
+		JSONObject newData= getkey.put("State", "UP");
 		System.out.println(getJSonData);
-		}
-		
-	
-
+	}
 }

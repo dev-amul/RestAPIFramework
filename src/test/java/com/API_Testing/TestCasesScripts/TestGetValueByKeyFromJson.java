@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
 
 import com.API_Testing.commoncontrollers.FetchDataMethodFromJson;
 import org.json.JSONException;

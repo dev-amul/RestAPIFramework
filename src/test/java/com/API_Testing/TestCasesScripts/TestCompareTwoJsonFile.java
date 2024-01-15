@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.testng.annotations.Test;

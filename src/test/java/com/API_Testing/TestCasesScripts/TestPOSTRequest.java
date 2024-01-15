@@ -6,7 +6,7 @@
  *  Time			:	 9:43:46 pm
  *  Assignment 		:		22 June 2019
  */
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
 import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
 import com.API_Testing.utitlites.AlltypeDataRead;
 import org.junit.After;

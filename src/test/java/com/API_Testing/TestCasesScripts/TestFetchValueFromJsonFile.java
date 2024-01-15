@@ -1,4 +1,4 @@
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
 
 import com.API_Testing.commoncontrollers.FetchDataMethodFromJson;
 import org.testng.annotations.Test;

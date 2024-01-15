@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 RestAPIBasicFunctionalities
  *  Time			:	 8:14:00 pm
  */
-package com.API_Testing.TestCasesScripts.testng;
+package com.API_Testing.TestCasesScripts;
 
 import java.io.File;
 import com.API_Testing.utitlites.MasterController;
