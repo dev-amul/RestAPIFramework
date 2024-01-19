@@ -5,7 +5,7 @@
  *  PROJECT NAME 	:	 ResAssuredProject
  *  Time			:	 4:37:58 pm
  */
-package com.API_Testing.Authentication;
+package com.API_Testing.TestCasesScripts.Authentication;
 
 import static io.restassured.RestAssured.*;
 

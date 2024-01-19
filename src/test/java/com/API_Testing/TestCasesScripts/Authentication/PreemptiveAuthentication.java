@@ -1,4 +1,4 @@
-package com.API_Testing.Authentication;
+package com.API_Testing.TestCasesScripts.Authentication;
 
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
