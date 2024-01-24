@@ -1,22 +1,16 @@
-<img src="https://yt3.googleusercontent.com/x1JWabKf0h0RKgFmFdhTM_2sq5yUsnQxd2Xqi085IkSgWAr1TJqNIal-QfPy67D8rAnILVaq=s900-c-k-c0x00ffffff-no-rj"  width="200" height="200" class="centerAlign" >
 
-<img src="https://www.towardsanalytic.com/wp-content/uploads/Best-API-Test-Automation-Tools.png"  width="800" height="250">
+<table>
+  <tr>
+    <td><img src="https://yt3.googleusercontent.com/x1JWabKf0h0RKgFmFdhTM_2sq5yUsnQxd2Xqi085IkSgWAr1TJqNIal-QfPy67D8rAnILVaq=s900-c-k-c0x00ffffff-no-rj"  width="200" height="150"></td>
+    <td><img src="https://www.towardsanalytic.com/wp-content/uploads/Best-API-Test-Automation-Tools.png"  width="600" height="150"></td>
+  </tr>
+ </table>
 
 
 ## Table of Contents
-
-- [My Introduction](#My Introduction)
 - [Project](#project)
-- [Prerequistites](#prerequisites-to-run-the-project-seamlessly-)
-
-
-# My Introduction
-Dear Friend,
-
-Firstly I would like to thank you to visit on this page.
-
-I would like to introduce my self before bring you to the API automation Journey. My name is Sumit Kumar, I'm working since 2017 and have experience in API, WEB, and Android Automation.
-I always keen to learn new from my community's friend like you. And share the knowledge with others.
+- [Prerequisites](#prerequisites-to-run-the-project-seamlessly-)
+- [My Introduction](#My Introduction)
 
 
 # Project 
@@ -85,4 +79,13 @@ Rest API Automation Project bring you to understand the feature of Restassured l
 
 -------------------------------
 
-![alt text](https://gitlab.com/uploads/-/system/user/avatar/2301036/avatar.png?width=400?raw=true) 
+# My Introduction
+ 
+
+<table>
+  <tr>
+    <td><img src="https://gitlab.com/uploads/-/system/user/avatar/2301036/avatar.png" width=500 height=150> </td>
+    <td>Dear Friend, <br> <b>Thank you to visit on this page.</b> <br> My name is Sumit Kumar, I'm working since 2017 and have experience in API, Web, and Android Automation testing. I always keen to learn new from my community's friend like you. And share the knowledge with others.
+</td>
+  </tr>
+ </table>
