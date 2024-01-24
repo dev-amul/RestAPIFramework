@@ -15,8 +15,8 @@
 
 # Project 
 
-Rest API Automation Project bring you to understand the feature of Restassured library. It's help you to perform CRUD operation easily.
-I have added different types of test cases that help to validate functionality of restapi. 
+Rest API Automation Project bring you to understand the feature of Rest-assured library. With the help of Rest-assured library I try to demonstrate that how we can perform **CRUD** operation.
+I have added different types of test cases that help to validate possible functionality of Rest API. If you could suggest more then it would be more helpful.  
 
 
 # Prerequisites to run the project seamlessly 
@@ -106,9 +106,9 @@ and
  
 
 <table>
-  <tr>
+  <br>
     <td><img src="https://gitlab.com/uploads/-/system/user/avatar/2301036/avatar.png" width=450 height=150> </td>
-    <td>Dear Friend, <br> <b>Thank you to visit on this page.</b> <br> My name is Sumit Kumar, I'm working since 2017 and have experience in API, Web, and Android Automation testing. I always keen to learn new from my community's friend like you. And share the knowledge with others.
+   <td> Dear Friend, <br><b>First thank you to visit this page.</b> <br>I am Sumit Kumar - I have been involved in several automation projects which includes Web, API, and Android as Software QA Engineer.
 </td>
   </tr>
  </table>
