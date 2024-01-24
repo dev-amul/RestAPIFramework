@@ -1,8 +1,8 @@
 
 <table>
   <tr>
-    <td><img src="https://yt3.googleusercontent.com/x1JWabKf0h0RKgFmFdhTM_2sq5yUsnQxd2Xqi085IkSgWAr1TJqNIal-QfPy67D8rAnILVaq=s900-c-k-c0x00ffffff-no-rj"  width="200" height="150"></td>
-    <td><img src="https://www.towardsanalytic.com/wp-content/uploads/Best-API-Test-Automation-Tools.png"  width="600" height="150"></td>
+    <td><img src="https://yt3.googleusercontent.com/x1JWabKf0h0RKgFmFdhTM_2sq5yUsnQxd2Xqi085IkSgWAr1TJqNIal-QfPy67D8rAnILVaq=s900-c-k-c0x00ffffff-no-rj"  width="200" height="200"></td>
+    <td><img src="https://www.towardsanalytic.com/wp-content/uploads/Best-API-Test-Automation-Tools.png"  width="600" height="200"></td>
   </tr>
  </table>
 
@@ -29,7 +29,7 @@ I have added different types of test cases that help to validate functionality o
 
 <table>
    <tr>
-      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/121px-Java_programming_language_logo.svg.png" width="200" height="150"></td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/121px-Java_programming_language_logo.svg.png" width="100" height="150"></td>
       <td> 
          <ol>
             <li>Download Java from <a href="https://www.oracle.com/java/technologies/downloads/">download link</a></li>
@@ -59,7 +59,7 @@ and
 
 <table>
    <tr>
-      <td><img src="https://maven.apache.org/images/maven-logo-black-on-white.png" width="300" height="50"></td>
+      <td><img src="https://maven.apache.org/images/maven-logo-black-on-white.png" width="200" height="50"></td>
       <td> 
          <ol>
             <li>Download maven from <a href="  https://maven.apache.org/download.cgi">download link</a></li>
@@ -79,24 +79,24 @@ and
 
 
   
-5. Download and install any IDE (Eclipse or IntelliJ) 
+4. Download and install any IDE (Eclipse or IntelliJ) 
     Eclipse: https://www.eclipse.org/downloads/packages/
 
     IntelliJ https://www.jetbrains.com/idea/download
 
-6. Download the git and set up the path
+5. Download the git and set up the path
 
    ![alt text](  https://git-scm.com/images/logo@2x.png?width=400?raw=true)
     
     https://www.git-scm.com/downloads
 
-7. Clone the Project in you system 
+6. Clone the Project in you system 
 
       ```bash
     git clone https://gitlab.com/sumitkchaudhary/RestAPIFramework.git 
     ```
-8. Open the pom.xml file 
-9. Right click on it and select Run> Maven install 
+7. Open the pom.xml file 
+8. Right click on it and select Run> Maven install 
 
 
 
@@ -107,7 +107,7 @@ and
 
 <table>
   <tr>
-    <td><img src="https://gitlab.com/uploads/-/system/user/avatar/2301036/avatar.png" width=500 height=150> </td>
+    <td><img src="https://gitlab.com/uploads/-/system/user/avatar/2301036/avatar.png" width=250 height=150> </td>
     <td>Dear Friend, <br> <b>Thank you to visit on this page.</b> <br> My name is Sumit Kumar, I'm working since 2017 and have experience in API, Web, and Android Automation testing. I always keen to learn new from my community's friend like you. And share the knowledge with others.
 </td>
   </tr>
