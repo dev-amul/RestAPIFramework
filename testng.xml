@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+  <listeners>
+    <listener class-name ="com.qa.listeners.ExtentManager"/>
+  </listeners>
+
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.API_Testing.TestCasesScripts.TestAddValueInExistingData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestAddValueInExistingData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestAppendData_InJson"/>
-        <class name="com.API_Testing.TestCasesScripts.TestCompareTwoJsonFile"/>
-        <class name="com.API_Testing.TestCasesScripts.TestDeleteRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestExtractMultiplekeyValueFromJson"/>
-        <class name="com.API_Testing.TestCasesScripts.TestExtractSingleKeyValueFromJSON"/>
-        <class name="com.API_Testing.TestCasesScripts.TestFetchValueFromJsonFile"/>
-        <class name="com.API_Testing.TestCasesScripts.TestGETRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestGETRequestSingleUserData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestGetValueByKeyFromJson"/>
-        <class name="com.API_Testing.TestCasesScripts.TestInsertNewArrayDataInExistingJSONData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestInsertNewkeyInExistingJSONFile"/>
-        <class name="com.API_Testing.TestCasesScripts.TestInsertNewObjectINExistingJSONdata"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPATCHRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPayLoadDecryption"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPayloadEncrypt"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPOSTRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPUTRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestReplaceDynamicJSONVariables"/>
-        <class name="com.API_Testing.TestCasesScripts.TestUpdateKeyValueexistingJsonData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestUploadFileFunctionality"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.BasicAuthenticationTest"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.DigestAuthentication"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.OAuth2Authentication"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.OAuthAuthentication"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.PreemptiveAuthentication"/>
+      <class name="com.qa.TestCasesScripts.TestAddValueInExistingData"/>
+        <class name="com.qa.TestCasesScripts.TestAddValueInExistingData"/>
+        <class name="com.qa.TestCasesScripts.TestAppendData_InJson"/>
+        <class name="com.qa.TestCasesScripts.TestCompareTwoJsonFile"/>
+        <class name="com.qa.TestCasesScripts.TestDeleteRequest"/>
+        <class name="com.qa.TestCasesScripts.TestExtractMultiplekeyValueFromJson"/>
+        <class name="com.qa.TestCasesScripts.TestExtractSingleKeyValueFromJSON"/>
+        <class name="com.qa.TestCasesScripts.TestFetchValueFromJsonFile"/>
+        <class name="com.qa.TestCasesScripts.TestGETRequest"/>
+        <class name="com.qa.TestCasesScripts.TestGETRequestSingleUserData"/>
+        <class name="com.qa.TestCasesScripts.TestGetValueByKeyFromJson"/>
+        <class name="com.qa.TestCasesScripts.TestInsertNewArrayDataInExistingJSONData"/>
+        <class name="com.qa.TestCasesScripts.TestInsertNewkeyInExistingJSONFile"/>
+        <class name="com.qa.TestCasesScripts.TestInsertNewObjectINExistingJSONdata"/>
+        <class name="com.qa.TestCasesScripts.TestPATCHRequest"/>
+        <class name="com.qa.TestCasesScripts.TestPayLoadDecryption"/>
+        <class name="com.qa.TestCasesScripts.TestPayloadEncrypt"/>
+        <class name="com.qa.TestCasesScripts.TestPOSTRequest"/>
+        <class name="com.qa.TestCasesScripts.TestPUTRequest"/>
+        <class name="com.qa.TestCasesScripts.TestReplaceDynamicJSONVariables"/>
+        <class name="com.qa.TestCasesScripts.TestUpdateKeyValueexistingJsonData"/>
+        <class name="com.qa.TestCasesScripts.TestUploadFileFunctionality"/>
+      <class name="com.qa.TestCasesScripts.Authentication.BasicAuthenticationTest"/>
+      <class name="com.qa.TestCasesScripts.Authentication.DigestAuthentication"/>
+      <class name="com.qa.TestCasesScripts.Authentication.OAuth2Authentication"/>
+      <class name="com.qa.TestCasesScripts.Authentication.OAuthAuthentication"/>
+      <class name="com.qa.TestCasesScripts.Authentication.PreemptiveAuthentication"/>
 
     </classes>
   </test> <!-- Test -->
