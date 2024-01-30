@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <listeners>
-    <listener class-name ="com.qa.listeners.ExtentManager"/>
+    <listener class-name ="com.qa.listeners.TestNgListener"/>
   </listeners>
 
   <test thread-count="5" name="Test">
@@ -26,7 +26,6 @@
         <class name="com.qa.TestCasesScripts.TestPayloadEncrypt"/>
         <class name="com.qa.TestCasesScripts.TestPOSTRequest"/>
         <class name="com.qa.TestCasesScripts.TestPUTRequest"/>
-        <class name="com.qa.TestCasesScripts.TestReplaceDynamicJSONVariables"/>
         <class name="com.qa.TestCasesScripts.TestUpdateKeyValueexistingJsonData"/>
         <class name="com.qa.TestCasesScripts.TestUploadFileFunctionality"/>
       <class name="com.qa.TestCasesScripts.Authentication.BasicAuthenticationTest"/>
