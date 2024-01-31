@@ -7,6 +7,7 @@
  */
 package com.API_Testing.utitlites;
 
+import java.nio.charset.StandardCharsets;
 import java.time.Instant;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
@@ -28,21 +29,19 @@ public class GenerateChecksum_Auth{
 	public void setUnixTimeStamp(String unixTimeStamp) {
 		this.unixTimeStamp = unixTimeStamp;
 	}
-	
-	private static String clientSecret;
-	private static String getClientSecret() {
-		clientSecret="CwGju0QUdQ1ua6G6YrQQwoUl9WA5luFUDip9api9";
-		return clientSecret;
+
+    private static String getClientSecret() {
+        return "CwGju0QUdQ1ua6G6YrQQwoUl9WA5luFUDip9api9";
 	}
 	
 	public static GenerateChecksum_Auth fetchCheckSumAndTimeStamp() {
 		GenerateChecksum_Auth obj= new GenerateChecksum_Auth();
 		try {
 			Mac sha256_HMAC = Mac.getInstance("HmacSHA256");
-			SecretKeySpec secret_key = new SecretKeySpec(getClientSecret().getBytes("UTF-8"), "HmacSHA256");
+			SecretKeySpec secret_key = new SecretKeySpec(getClientSecret().getBytes(StandardCharsets.UTF_8), "HmacSHA256");
 			sha256_HMAC.init(secret_key);
 			String unixTime = String.valueOf(Instant.now().getEpochSecond());
-			obj.setCheckSum(Hex.encodeHexString(sha256_HMAC.doFinal(unixTime.getBytes("UTF-8"))));
+			obj.setCheckSum(Hex.encodeHexString(sha256_HMAC.doFinal(unixTime.getBytes(StandardCharsets.UTF_8))));
 			obj.setUnixTimeStamp(unixTime);
 		} catch (Exception e) {
 			e.getStackTrace();
