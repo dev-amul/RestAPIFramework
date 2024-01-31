@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+  <listeners>
+    <listener class-name="com.API_Testing.listeners.TestNgListener"/>
+  </listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.API_Testing.TestCasesScripts.TestAddValueInExistingData"/>
@@ -24,11 +27,11 @@
         <class name="com.API_Testing.TestCasesScripts.TestPUTRequest"/>
         <class name="com.API_Testing.TestCasesScripts.TestUpdateKeyValueexistingJsonData"/>
         <class name="com.API_Testing.TestCasesScripts.TestUploadFileFunctionality"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.BasicAuthenticationTest"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.DigestAuthentication"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.OAuth2Authentication"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.OAuthAuthentication"/>
-      <class name="com.API_Testing.TestCasesScripts.Authentication.PreemptiveAuthentication"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentication.BasicAuthenticationTest"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentication.DigestAuthentication"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentication.OAuth2Authentication"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentication.OAuthAuthentication"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentication.PreemptiveAuthentication"/>
 
     </classes>
   </test> <!-- Test -->

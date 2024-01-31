@@ -10,7 +10,6 @@ package com.API_Testing.utitlites;
 import java.time.Instant;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
-
 import org.apache.commons.codec.binary.Hex;
 
 public class GenerateChecksum_Auth{
@@ -43,7 +42,6 @@ public class GenerateChecksum_Auth{
 			SecretKeySpec secret_key = new SecretKeySpec(getClientSecret().getBytes("UTF-8"), "HmacSHA256");
 			sha256_HMAC.init(secret_key);
 			String unixTime = String.valueOf(Instant.now().getEpochSecond());
-			
 			obj.setCheckSum(Hex.encodeHexString(sha256_HMAC.doFinal(unixTime.getBytes("UTF-8"))));
 			obj.setUnixTimeStamp(unixTime);
 		} catch (Exception e) {
@@ -51,8 +49,5 @@ public class GenerateChecksum_Auth{
 		}
 		return obj;
 	}
-	/*
-	public static void main(String[] args) {
-		System.out.println(GenerateChecksum_Auth.fetchCheckSumAndTimeStamp().getCheckSum());
-	}*/
+
 }
