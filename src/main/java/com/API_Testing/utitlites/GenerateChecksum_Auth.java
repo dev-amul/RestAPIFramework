@@ -1,5 +1,4 @@
 /**
- * Project Copyright:    Payworld
  * @author 			:	 Sumit Chaudhary
  *	DATE       		:	 Aug 18, 2020
  *  FILE NAME  		: 	 Test.java

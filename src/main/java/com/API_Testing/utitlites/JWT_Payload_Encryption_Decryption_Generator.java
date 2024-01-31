@@ -1,5 +1,4 @@
 /**
- * Project Copyright:    Payworld
  * @author 			:	 Sumit Chaudhary
  *	DATE       		:	 04-Nov-2020
  *  FILE NAME  		: 	 JWT_Payload_Encryption_Decryption_Generator.java

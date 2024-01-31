@@ -1,5 +1,4 @@
 /**
- * Project Copyright:    Payworld
  * @author 			:	 Sumit Chaudhary
  *	DATE       		:	 06-Dec-2020
  *  FILE NAME  		: 	 All_Type_DataGenerator.java
