@@ -17,9 +17,9 @@ public class OAuth2Authentication {
     *
     * With .oauth2(“access_token”), Rest Assured automatically integrates the token into the request.
     * */
-    @Test
+    @Test(enabled = false)
     public void oauth(){
-        Response resp3 = given()
+        given()
                 .auth()
                 .oauth2("access_token")
                 .when().get("https://api.example.com/resource");

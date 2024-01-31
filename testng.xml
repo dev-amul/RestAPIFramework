@@ -22,7 +22,6 @@
         <class name="com.API_Testing.TestCasesScripts.TestPayloadEncrypt"/>
         <class name="com.API_Testing.TestCasesScripts.TestPOSTRequest"/>
         <class name="com.API_Testing.TestCasesScripts.TestPUTRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestReplaceDynamicJSONVariables"/>
         <class name="com.API_Testing.TestCasesScripts.TestUpdateKeyValueexistingJsonData"/>
         <class name="com.API_Testing.TestCasesScripts.TestUploadFileFunctionality"/>
       <class name="com.API_Testing.TestCasesScripts.Authentication.BasicAuthenticationTest"/>

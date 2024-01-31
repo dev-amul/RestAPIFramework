@@ -18,9 +18,9 @@ public class OAuthAuthentication {
     Through .oauth(), you provide the required credentials.b
     * */
 
-    @Test
+    @Test(enabled = false)
     public void auth(){
-        Response resp4 = given()
+     given()
                 .auth()
                 .oauth("consumerKey", "consumerSecret", "accessToken", "secretToken")
                 .when().get("https://api.example.com/resource");

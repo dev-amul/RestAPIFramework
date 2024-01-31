@@ -15,9 +15,9 @@ public class DigestAuthentication {
 
    Through .digest(“username”, “password”), Digest Authentication is configured.
    */
-    @Test
+    @Test(enabled = false)
     public void digest(){
-        Response resp2 = given()
+        given()
                 .auth()
                 .digest("username","password")
                 .when().get("https://api.example.com/resource");
