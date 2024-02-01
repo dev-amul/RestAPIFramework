@@ -11,21 +11,12 @@ import static io.restassured.RestAssured.*;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import io.restassured.response.Response;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class BasicAuthenticationTest {
 	Response res;
-	String creds [];
-	@BeforeMethod
-	public void credential(){
-		creds= new String[]{"postman", "password"};
-
-	}
 	/*
 	* Basic Authentication, a straightforward method employed in web apps and APIs, entails sending credentials
 	* (username and password) with every request to validate the requester’s identity. This approach, widely supported
@@ -38,7 +29,7 @@ public class BasicAuthenticationTest {
 		res=
 				given()
 				.auth()
-						.basic(creds[0],creds[1])
+						.basic("postman", "password")
 						.get("https://postman-echo.com/basic-auth");
 
 		res.prettyPrint();
