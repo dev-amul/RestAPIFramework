@@ -6,11 +6,11 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
 public class ExtentReportManager {
 
     public static ExtentReports createExtentReport(String filePath,String reportName,String documentTitle,String Author) throws UnknownHostException {
@@ -32,8 +32,7 @@ public class ExtentReportManager {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss");
         LocalDateTime localDateTime = LocalDateTime.now();
         String formattedTime = dateTimeFormatter.format(localDateTime);
-        String reportName = "TestReport" + formattedTime + ".html";
-        return reportName;
+        return "TestReport" + formattedTime + ".html";
     }
 
     //test case detail logging

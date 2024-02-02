@@ -15,6 +15,7 @@ public class DigestAuthentication {
 
    Through .digest(“username”, “password”), Digest Authentication is configured.
    */
+
     @Test(enabled = false)
     public void digest(){
         given()
