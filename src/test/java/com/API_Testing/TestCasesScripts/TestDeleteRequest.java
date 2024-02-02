@@ -7,12 +7,8 @@
  */
 package com.API_Testing.TestCasesScripts;
 
-import static io.restassured.RestAssured.*;
-
 import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.After;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;

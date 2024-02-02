@@ -7,9 +7,9 @@
  *  Assignment 		:		22 June 2019
  */
 package com.API_Testing.TestCasesScripts;
+
 import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
 import com.API_Testing.utitlites.AlltypeDataRead;
-import org.junit.After;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

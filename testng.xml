@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.API_Testing.listeners.TestNgListener"/>
   </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test">x
     <classes>
       <class name="com.API_Testing.TestCasesScripts.TestAddValueInExistingData"/>
         <class name="com.API_Testing.TestCasesScripts.TestAddValueInExistingData"/>
