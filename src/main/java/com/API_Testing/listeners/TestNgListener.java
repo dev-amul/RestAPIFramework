@@ -5,61 +5,43 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
 import java.io.File;
-import java.net.UnknownHostException;
 
 public class TestNgListener implements ITestListener {
 
-    ExtentReports reports;
-    //  ExtentTest test;
-
-    public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+    ExtentReports extent;
+    ExtentTest test;
 
     @Override
     public void onTestStart(ITestResult result) {
-        ExtentTest test = reports.createTest("Test Name " + result.getTestClass().getName() + " -- " + result.getMethod().getMethodName());
-        extentTest.set(test);
+        test = extent.createTest("Test Name " + result.getTestClass().getName() + " -- " + result.getMethod().getMethodName());
     }
-
-
-  /*  @Override
-    public void onTestSuccess(ITestResult result) {
-        test = reports.createTest(result.getName());
-        test.log(Status.PASS, MarkupHelper.createLabel("PASS TEST CASE IS : " + result.getName(), ExtentColor.GREEN));
-        // ITestListener.super.onTestSuccess(result);
-    }*/
 
     @Override
     public void onTestFailure(ITestResult result) {
-        ExtentReportManager.logFailureDetails(result.getThrowable().getMessage());
-      /*  test.log(Status.FAIL, MarkupHelper.createLabel("FAILED TEST CASE IS : " + result.getName(), ExtentColor.RED));
+        test.log(Status.FAIL, MarkupHelper.createLabel("FAILED TEST CASE IS : " + result.getName(), ExtentColor.RED));
         test.log(Status.FAIL, "Failure Reason: " + result.getThrowable().getMessage());
-        //ITestListener.super.onTestFailure(result);*/
     }
-
-   /* @Override
-    public void onTestSkipped(ITestResult result) {
-        test = reports.createTest(result.getName());
-        test.log(Status.SKIP, MarkupHelper.createLabel("SKIPPED TEST CASE IS : " + result.getName(), ExtentColor.YELLOW));
-        //ITestListener.super.onTestSkipped(result);
-    }*/
 
     @Override
     public void onStart(ITestContext context) {
-        String fileName = ExtentReportManager.getReportNameWithTimeStamp();
-        String fullReportPath = System.getProperty("user.dir") + File.separator+"src"+File.separator+"test"+File.separator+"reports"+File.separator+ fileName;
-        reports = ExtentReportManager.createExtentReport(fullReportPath, "Rest API Testing Learning Project", "REST ASSURED FRAMEWORK", "Sumit Kumar Chaudhary ");
-        // configExtentReport();
-
+        String fileName = "extent-report.html";
+        String filePath = System.getProperty("user.dir") + File.separator + "test-output" + File.separator + fileName;
+        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(filePath);
+        extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
     }
 
     @Override
     public void onFinish(ITestContext context) {
-        if (reports != null)
-            reports.flush();
+        if (extent != null)
+            extent.flush();
     }
-    //  ITestListener.super.onFinish(context);
+
+    // Other methods like onTestSuccess, onTestSkipped can be implemented similarly
 }
