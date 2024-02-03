@@ -6,10 +6,19 @@
   </tr>
  </table>
 
+# API Testing Framework with RestAssured, TestNG, Maven, and Extent Report
+
+Welcome to API testing framework that leverages RestAssured, TestNG, Maven, and Extent Report to automate API testing. This framework allows you to easily understand, run, and report on your API tests, ensuring the reliability and functionality of your web services.
 
 ## Table of Contents
 - [Project](#project)
-- [Prerequisites](#prerequisites-to-run-the-project-seamlessly-)
+- [Prerequisites](#prerequisites)
+- [Adding Dependencies](#adding-dependencies)
+- [Writing API Tests](#writing-api-tests)
+- [Generating Extent Reports](#generating-extent-reports)
+- [Test Cases](#test-cases)
+- [Running Tests](#running-tests)
+- [Viewing Extent Reports](#viewing-extent-reports)
 - [My Introduction](#My Introduction)
 
 
@@ -98,6 +107,242 @@ and
 7. Open the pom.xml file 
 8. Right click on it and select Run> Maven install 
 
+
+## Open the project in your preferred IDE for further development.
+
+## Adding Dependencies
+In your pom.xml file, you should add the necessary dependencies for RestAssured, TestNG, and Extent Report. Run mvn clean install to download these dependencies.
+
+## Writing API Tests
+You can write your API tests in Java using RestAssured. We've provided a sample test case in the Writing API Tests section of the blog post.
+
+## Generating Extent Reports
+To create HTML reports for your tests, use the Extent Report library. We've included a utility class in the blog post to facilitate report generation.
+
+## Test cases
+
+<table>
+<tr>
+<th>Test Cases</th>
+<th>Classes</th>
+</tr>
+<tr>
+<th>
+
+1. Create new user record using POST Request:  </th>
+<td>
+
+[TestPOSTRequest.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestPOSTRequest.java)</td>
+</tr>
+<tr>
+<th>
+
+2. Get user list using GET Request </th>
+<td>
+
+[TestGETRequest.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestGETRequest.java)</td>
+</tr>
+<tr>
+<th>
+
+3. Get specific user detail by id using GET Request </th>
+<td>
+
+[TestGETRequestSingleUserData.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestGETRequestSingleUserData.java)</td>
+</tr>
+<tr>
+<th>
+
+4. Update specific user detail using PUT Request</th>
+<td>
+
+[TestPUTRequest.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestPUTRequest.java)</td>
+</tr>
+<tr>
+<th>
+
+5. Update specific user detail using PATCH request</th>
+<td>
+
+[TestPATCHRequest.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestPATCHRequest.java)</td>
+</tr>
+<tr>
+<th>
+
+6. Delete the user by id using DELETE request</th>
+<td>
+
+[TestDeleteRequest.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestDeleteRequest.java)</td>
+</tr>
+<tr>
+<th>
+
+7. API Authentication types</th>
+
+</tr>
+<tr>
+<th>   
+
+- Basic Authentication </th>
+<td>
+
+[BasicAuthenticationTest.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FAuthentication%2FBasicAuthenticationTest.java)</td>
+</tr>
+<tr>
+<th>   
+
+- Digest Authentication </th>
+<td>
+
+[DigestAuthentication.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FAuthentication%2FDigestAuthentication.java)</td>
+</tr>
+<tr>
+<th>   
+
+- O Auth 2 Authentication </th>
+<td>
+
+[OAuth2Authentication.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FAuthentication%2FOAuth2Authentication.java)</td>
+</tr>
+<tr>
+<th> 
+
+- 0 Auth Authentication</th>
+<td> 
+
+[OAuthAuthentication.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FAuthentication%2FOAuthAuthentication.java)</td>
+</tr>
+<tr>
+<th>   - Preemptive Authentication</th>
+<td>        
+
+[PreemptiveAuthentication.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FAuthentication%2FPreemptiveAuthentication.java)</td>
+</tr>
+<tr>
+<th>
+
+8. Add value in the existing json file </th>
+<td> 
+
+[TestAddValueInExistingData.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestAddValueInExistingData.java)</td>
+</tr>
+<tr>
+<th>
+
+9. Append data in the json </th>
+<td>
+
+[TestAppendData_InJson.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestAppendData_InJson.java)</td>
+</tr>
+<tr>
+<th>
+
+10. Compare two different json file</th>
+<td> 
+
+[TestCompareTwoJsonFile.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestCompareTwoJsonFile.java)</td>
+</tr>
+<tr>
+<th>
+
+11. Extract single value from the json data. a)</th>
+<td>
+
+[TestExtractSingleKeyValueFromJSON.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestExtractSingleKeyValueFromJSON.java)</td>
+</tr>
+<tr>
+<th>
+
+12. Extract multiple value from the json data. )</th>
+<td>
+
+[TestExtractMultiplekeyValueFromJson.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestExtractMultiplekeyValueFromJson.java)</td>
+
+</tr>
+<tr>
+<th>
+
+13. Fetch value from json file. </th>
+<td>
+
+[TestFetchValueFromJsonFile.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestFetchValueFromJsonFile.java)</td>
+</tr>
+<tr>
+<th>
+
+14. Fetch value in key form </th>
+<td>
+
+[TestGetValueByKeyFromJson.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestGetValueByKeyFromJson.java)</td>
+</tr>
+<tr>
+<th>
+
+15. Add array data in the json data. </th>
+<td>
+
+[TestInsertNewArrayDataInExistingJSONData.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestInsertNewArrayDataInExistingJSONData.java)</td>
+</tr>
+<tr>
+<th>
+
+16. Replace existing value in json. </th>
+<td>
+
+[TestInsertNewkeyInExistingJSONFile.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestInsertNewkeyInExistingJSONFile.java)</td>
+</tr>
+<tr>
+<th>
+
+17. Add object data in the json data. </th>
+<td>
+
+[TestInsertNewObjectINExistingJSONdata.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestInsertNewObjectINExistingJSONdata.java)</td>
+</tr>
+<tr>
+<th>
+
+18. Decrypt the json data. </th>
+<td>
+
+[TestPayLoadDecryption.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestPayLoadDecryption.java)</td>
+</tr>
+<tr>
+<th>
+
+19. Encrypt the json data.</th>
+<td> 
+
+[TestPayloadEncrypt.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestPayloadEncrypt.java)</td>
+</tr>
+<tr>
+<th>
+
+20. Update key and value on json data.</th>
+<td> 
+
+[TestUpdateKeyValueexistingJsonData.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestUpdateKeyValueexistingJsonData.java)</td>
+</tr>
+<tr>
+<th>
+
+21. File upload functionality. </th>
+<td>
+
+[TestUploadFileFunctionality.java](src%2Ftest%2Fjava%2Fcom%2FAPI_Testing%2FTestCasesScripts%2FTestUploadFileFunctionality.java)</td>
+</tr>
+</table>
+
+## Running Tests
+
+You can run your API tests using Maven:
+```bash
+mvn clean test
+```
+
+## Viewing Extent Reports
+
+After running your tests, you can find the Extent Report HTML file in the reports directory. Open it in your browser to view the test results.
 
 
 -------------------------------
