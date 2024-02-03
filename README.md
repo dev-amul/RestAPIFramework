@@ -344,6 +344,7 @@ mvn clean test
 
 After running your tests, you can find the Extent Report HTML file in the reports directory. Open it in your browser to view the test results.
 
+![img_1.png](img_1.png)
 
 -------------------------------
 
