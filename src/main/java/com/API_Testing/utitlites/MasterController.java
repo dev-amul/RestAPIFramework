@@ -50,7 +50,7 @@ public class MasterController {
 		String environment = System.getProperty("env");
 
 		if (environment == null) {
-			environment = "dev";
+			environment = "testEnv";
 			//mvn test -Pint
 		}
 
