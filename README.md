@@ -397,8 +397,7 @@ Or you can run another command
 ```
 ***NOTE: Above command is more advance but run from the directory allure json result has saved***
 
-![img_2.png](img_2.png)![img_1.png](img_1.png)
-
+![img_2.png](img_2.png)
 -------------------------------
 
 # My Introduction
