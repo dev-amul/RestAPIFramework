@@ -3,32 +3,32 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.API_Testing.TestCasesScripts.TestAddValueInExistingData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestAddValueInExistingData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestAppendData_InJson"/>
-        <class name="com.API_Testing.TestCasesScripts.TestCompareTwoJsonFile"/>
-        <class name="com.API_Testing.TestCasesScripts.TestDeleteRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestExtractMultiplekeyValueFromJson"/>
-        <class name="com.API_Testing.TestCasesScripts.TestExtractSingleKeyValueFromJSON"/>
-        <class name="com.API_Testing.TestCasesScripts.TestFetchValueFromJsonFile"/>
-        <class name="com.API_Testing.TestCasesScripts.TestGETRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestGETRequestSingleUserData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestGetValueByKeyFromJson"/>
-        <class name="com.API_Testing.TestCasesScripts.TestInsertNewArrayDataInExistingJSONData"/>
-        <class name="com.API_Testing.TestCasesScripts.TestInsertNewkeyInExistingJSONFile"/>
-        <class name="com.API_Testing.TestCasesScripts.TestInsertNewObjectINExistingJSONdata"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPATCHRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPayLoadDecryption"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPayloadEncrypt"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPOSTRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestPUTRequest"/>
-        <class name="com.API_Testing.TestCasesScripts.TestUpdateKeyValueexistingJsonData"/>
+      <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestAddValueInExistingData"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestAddValueInExistingData"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestAppendData_InJson"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestCompareTwoJsonFile"/>
+        <class name="com.API_Testing.TestCasesScripts.CRUDOperation.TestDeleteRequest"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestExtractMultiplekeyValueFromJson"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestExtractSingleKeyValueFromJSON"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestFetchValueFromJsonFile"/>
+        <class name="com.API_Testing.TestCasesScripts.CRUDOperation.TestGETRequest"/>
+        <class name="com.API_Testing.TestCasesScripts.CRUDOperation.TestGETRequestSingleUserData"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestGetValueByKeyFromJson"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestInsertNewArrayDataInExistingJSONData"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestInsertNewkeyInExistingJSONFile"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestInsertNewObjectINExistingJSONdata"/>
+        <class name="com.API_Testing.TestCasesScripts.CRUDOperation.TestPATCHRequest"/>
+        <class name="com.API_Testing.TestCasesScripts.DataEncryptionDecryption.TestPayLoadDecryption"/>
+        <class name="com.API_Testing.TestCasesScripts.DataEncryptionDecryption.TestPayloadEncrypt"/>
+        <class name="com.API_Testing.TestCasesScripts.CRUDOperation.TestPOSTRequest"/>
+        <class name="com.API_Testing.TestCasesScripts.CRUDOperation.TestPUTRequest"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestUpdateKeyValueexistingJsonData"/>
         <class name="com.API_Testing.TestCasesScripts.TestUploadFileFunctionality"/>
-        <class name="com.API_Testing.TestCasesScripts.Authentication.BasicAuthenticationTest"/>
-        <class name="com.API_Testing.TestCasesScripts.Authentication.DigestAuthentication"/>
-        <class name="com.API_Testing.TestCasesScripts.Authentication.OAuth2Authentication"/>
-        <class name="com.API_Testing.TestCasesScripts.Authentication.OAuthAuthentication"/>
-        <class name="com.API_Testing.TestCasesScripts.Authentication.PreemptiveAuthentication"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentications.BasicAuthenticationTest"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentications.DigestAuthentication"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentications.OAuth2Authentication"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentications.OAuthAuthentication"/>
+        <class name="com.API_Testing.TestCasesScripts.Authentications.PreemptiveAuthentication"/>
 
     </classes>
   </test> <!-- Test -->

@@ -21,43 +21,43 @@ public class HTTP_MethodsControllers {
 	public static Response res;
 	public static Properties pr= MasterController.loadProperties();
 
-	private static RequestSpecification getRequestSpec() {
-		return given().baseUri(pr.getProperty("baseurl"));
+	protected static RequestSpecification getRequestSpec() {
+		return given().baseUri(pr.getProperty("base_URL"));
 	}
 
-	public static Response GET_Method(String endURL) {
+	public static Response GET_Method(String end_URL) {
 		return res=getRequestSpec()
 				.accept(ContentType.JSON)
 				.when()
-				.get(endURL);
+				.get(end_URL);
 	}
 
-	public static Response POST_Method(String requestBody, String endURL) {
+	public static Response POST_Method(String requestBody, String end_URL) {
 		res=getRequestSpec()
 				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
 				.body(requestBody) // pass the expected data
 				.when()
-				.post(endURL);
+				.post(end_URL);
 		return  res;
 	}
 
-	public static Response PUT_Method(String requestBody, String endURL) {
+	public static Response PUT_Method(String requestBody, String end_URL) {
 		return res=getRequestSpec()
 				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
 				.body(requestBody) // pass the expected data
 				.when()
-				.put(endURL);
+				.put(end_URL);
 	}
-	public static Response PATCH_Method(String requestBody, String endURL) {
+	public static Response PATCH_Method(String requestBody, String end_URL) {
 		return res=getRequestSpec()
 				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
 				.body(requestBody) // pass the expected data
 				.when()
-				.patch(endURL);
+				.patch(end_URL);
 	}
-	public static Response DELETE_Method(String endURL) {
+	public static Response DELETE_Method(String end_URL) {
 		return res=getRequestSpec()
 				.when()
-				.delete(endURL);
+				.delete(end_URL);
 	}
 }

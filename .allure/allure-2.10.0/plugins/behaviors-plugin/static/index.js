@@ -93,7 +93,7 @@ allure.api.addTab('behaviors', {
             testResult: testResult,
             testResultTab: testResultTab,
             tabName: 'tab.behaviors.name',
-            baseUrl: 'behaviors',
+            base_URL: 'behaviors',
             url: 'data/behaviors.json',
             csvUrl: 'data/behaviors.csv'
         });
@@ -103,6 +103,6 @@ allure.api.addTab('behaviors', {
 allure.api.addWidget('widgets', 'behaviors', allure.components.WidgetStatusView.extend({
     rowTag: 'a',
     title: 'widget.behaviors.name',
-    baseUrl: 'behaviors',
+    base_URL: 'behaviors',
     showLinks: true
 }));

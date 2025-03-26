@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 public class TestUploadFileFunctionality {
 	File file;
-	Response res;
+	int res;
 	@BeforeMethod
 	public void loadImageFile(){
 		file=new File(MasterController.getAbsolutPath("Java_Projects_for_Beginners.jpg"));
@@ -29,11 +29,12 @@ public class TestUploadFileFunctionality {
 				.given()
 				.multiPart("file", file, "multipart/form-data")
 				.post("https://the-internet.herokuapp.com/upload")
-				.thenReturn();
+				.thenReturn()
+				.statusCode();
 	}
 	@AfterMethod
 	public void validateUploadFileResponseStatusCode(){
-		Assert.assertEquals(res.getStatusCode(),200);
+		Assert.assertEquals(res,200);
 	}
 
 }

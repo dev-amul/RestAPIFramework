@@ -57,7 +57,7 @@ allure.api.addTab('packages', {
             testResult: testResult,
             testResultTab: testResultTab,
             tabName: 'tab.packages.name',
-            baseUrl: 'packages',
+            base_URL: 'packages',
             url: 'data/packages.json'
         });
     })
