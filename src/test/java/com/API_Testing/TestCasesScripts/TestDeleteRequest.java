@@ -14,10 +14,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class TestDeleteRequest extends HTTP_MethodsControllers {
-	Response res;
+
 	@Test
 	public void runDeleteRequest() {
-		res= DELETE_Method(pr.getProperty("endurl")+"/2");
+		res=DELETE_Method(pr.getProperty("endurl")+"/2");
 	}
 
 	@AfterMethod
@@ -25,7 +25,7 @@ public class TestDeleteRequest extends HTTP_MethodsControllers {
 		Assert.assertEquals(res.getStatusCode(),204);
 
 	}
-	
+
 	
 
 }

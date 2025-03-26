@@ -6,26 +6,31 @@
   </tr>
  </table>
 
-# API Testing Framework with RestAssured, TestNG, Maven, and Extent Report
+# API Testing Framework with RestAssured, TestNG, Maven, and Allure Report
 
-Welcome to API testing framework that leverages RestAssured, TestNG, Maven, and Extent Report to automate API testing. This framework allows you to easily understand, run, and report on your API tests, ensuring the reliability and functionality of your web services.
+Welcome to an API testing framework that leverages RestAssured,
+TestNG, Maven, and Allure Report to automate API testing.
+This framework allows you to easily understand, run, and report on your API tests,
+ensuring the reliability and functionality of your web services.
 
 ## Table of Contents
 - [Project](#project)
 - [Prerequisites](#prerequisites)
 - [Adding Dependencies](#adding-dependencies)
 - [Writing API Tests](#writing-api-tests)
-- [Generating Extent Reports](#generating-extent-reports)
+- [Generating Allure Report Reports](#generating-Allure Report-reports)
 - [Test Cases](#test-cases)
 - [Running Tests](#running-tests)
-- [Viewing Extent Reports](#viewing-extent-reports)
+- [Viewing Allure Report Reports](#viewing-Allure Report-reports)
 - [My Introduction](#My Introduction)
 
 
 # Project 
 
-Rest API Automation Project bring you to understand the feature of Rest-assured library. With the help of Rest-assured library I try to demonstrate that how we can perform **CRUD** operation.
-I have added different types of test cases that help to validate possible functionality of Rest API. If you could suggest more then it would be more helpful.  
+Rest API Automation Project brings you to understand the feature of Rest-assured library.
+With the help of Rest-assured library, I try to demonstrate that how we can perform **CRUD** operation.
+I have added different types of test cases that help to validate possible functionality of Rest API.
+If you could suggest more than it would be more helpful.  
 
 
 # Prerequisites to run the project seamlessly 
@@ -88,36 +93,68 @@ and
 
 
   
-4. Download and install any IDE (Eclipse or IntelliJ) 
+1. Download and install any IDE (Eclipse or IntelliJ) 
     Eclipse: https://www.eclipse.org/downloads/packages/
 
     IntelliJ https://www.jetbrains.com/idea/download
 
-5. Download the git and set up the path
+2. Download the git and set up the path
 
    ![alt text](  https://git-scm.com/images/logo@2x.png?width=400?raw=true)
     
     https://www.git-scm.com/downloads
 
-6. Clone the Project in you system 
+3. Clone the Project in your system 
 
       ```bash
     git clone https://gitlab.com/sumitkchaudhary/RestAPIFramework.git 
     ```
-7. Open the pom.xml file 
-8. Right click on it and select Run> Maven install 
+4. Open the pom.xml file 
+5. Right click on it and select Run> Maven installs 
 
 
 ## Open the project in your preferred IDE for further development.
 
 ## Adding Dependencies
-In your pom.xml file, you should add the necessary dependencies for RestAssured, TestNG, and Extent Report. Run mvn clean install to download these dependencies.
+In your pom.xml file, you should add the necessary dependencies for RestAssured, TestNG, and Allure Report.
+Run mvn clean install to download these dependencies.
 
 ## Writing API Tests
-You can write your API tests in Java using RestAssured. We've provided a sample test case in the Writing API Tests section of the blog post.
+You can write your API tests in Java using RestAssured.
+We've provided a sample test case in the Writing API Tests section of the blog post.
 
-## Generating Extent Reports
-To create HTML reports for your tests, use the Extent Report library. We've included a utility class in the blog post to facilitate report generation.
+## Generating Allure Report Reports
+To create HTML reports for tests, we are using the Allure Report library.
+To generate the report, you have to set up allure command line in your system
+
+## Follow the below instruction to set up allure command line in a Window system
+
+First Install scoop
+https://scoop.sh/
+
+
+Below command helps to install scoop
+````
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+````
+After that run second command to get scoop
+
+````
+    scoop install nodejs 
+````
+
+After that run below command to install allure command line
+
+````dtd
+    scoop install allure
+````
+
+for more information, you can visit
+
+![img_4.png](img_4.png)
+
+https://allurereport.org/docs/gettingstarted-installation/
+
 
 ## Test cases
 
@@ -340,11 +377,27 @@ You can run your API tests using Maven:
 mvn clean test
 ```
 
-## Viewing Extent Reports
+## Viewing Allure Reports
+As soon
+as we run the TestNg.xml file
+where our test cases as integrated, then we get an allure result in json format in the target folder
 
-After running your tests, you can find the Extent Report HTML file in the reports directory. Open it in your browser to view the test results.
+To convert an allure json result into an HTML format run below command
 
-![img_1.png](img_1.png)
+
+```text
+    allure serve F:\Sumit_Project_Works\RestAPIFramework\target\allure-results 
+```
+***NOTE: Above command has directory path, so change it according to your system***
+
+Or you can run another command
+
+```text
+    mvn allure:serve
+```
+***NOTE: Above command is more advance but run from the directory allure json result has saved***
+
+![img_2.png](img_2.png)![img_1.png](img_1.png)
 
 -------------------------------
 
@@ -354,7 +407,7 @@ After running your tests, you can find the Extent Report HTML file in the report
 <table>
   <br>
     <td><img src="https://gitlab.com/uploads/-/system/user/avatar/2301036/avatar.png" width=450 height=150> </td>
-   <td> Dear Friend, <br><b>First thank you to visit this page.</b> <br>I am Sumit Kumar - I have been involved in several automation projects which includes Web, API, and Android as Software QA Engineer.
+   <td> Dear Friend, <br><b> First, thank you to visit this page.</b> <br>I am Sumit Kumar - I have been involved in several automation projects which includes Web, API, and Android as Software QA Engineer.
 </td>
   </tr>
  </table>

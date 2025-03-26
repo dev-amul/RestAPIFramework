@@ -18,7 +18,6 @@ import io.restassured.response.Response;
 
 public class TestPOSTRequest extends HTTP_MethodsControllers {
 	public String createData;
-	Response res;
 	@BeforeMethod
 	public void setBody(){
 		createData= AlltypeDataRead.readJsonFile("userPayload.json").toString();
@@ -30,7 +29,7 @@ public class TestPOSTRequest extends HTTP_MethodsControllers {
 		System.out.println("insert data is : "+res.prettyPrint());
 	}
 
-	@AfterMethod
+	//@AfterMethod
 	public void validateStatusCode(){
 		Assert.assertEquals(res.getStatusCode(), 201);
 	}

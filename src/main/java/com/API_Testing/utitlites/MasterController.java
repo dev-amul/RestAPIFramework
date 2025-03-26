@@ -7,6 +7,10 @@
  */
 package com.API_Testing.utitlites;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -17,6 +21,13 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class MasterController {
+
+	public static void convertStringJsonIntoJsonFormat(String jsonString){
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		JsonObject jsonObject = JsonParser.parseString(jsonString).getAsJsonObject();
+		String prettyJson = gson.toJson(jsonObject);
+		System.out.printf(prettyJson);
+	}
 	public static String getAbsolutPath(String fileName) {
 
 		String fileAbolutePath ="";
