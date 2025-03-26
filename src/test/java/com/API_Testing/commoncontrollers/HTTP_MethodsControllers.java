@@ -26,15 +26,16 @@ public class HTTP_MethodsControllers {
 	}
 
 	public static Response GET_Method(String end_URL) {
-		return res=getRequestSpec()
+		 res=getRequestSpec()
 				.accept(ContentType.JSON)
 				.when()
 				.get(end_URL);
+		 return res;
 	}
 
 	public static Response POST_Method(String requestBody, String end_URL) {
 		res=getRequestSpec()
-				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
+				.contentType(ContentType.JSON) // Taking JSON because pass the data in JSON format.
 				.body(requestBody) // pass the expected data
 				.when()
 				.post(end_URL);
@@ -43,14 +44,14 @@ public class HTTP_MethodsControllers {
 
 	public static Response PUT_Method(String requestBody, String end_URL) {
 		return res=getRequestSpec()
-				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
+				.contentType(ContentType.JSON) // Taking JSON because pass the data in JSON format.
 				.body(requestBody) // pass the expected data
 				.when()
 				.put(end_URL);
 	}
 	public static Response PATCH_Method(String requestBody, String end_URL) {
 		return res=getRequestSpec()
-				.contentType(ContentType.JSON) // Taking JSon because pass the data in JSon format.
+				.contentType(ContentType.JSON) // Taking JSON because pass the data in JSON format.
 				.body(requestBody) // pass the expected data
 				.when()
 				.patch(end_URL);

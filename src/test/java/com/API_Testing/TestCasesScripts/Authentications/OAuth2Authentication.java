@@ -10,7 +10,7 @@ public class OAuth2Authentication {
     * and resources without exposing the user’s credentials.
     * OAuth2 involves various roles, including the resource owner (user), client application (third-party app),
     * authorization server (handles authentication and issues access tokens), and resource server (holds the protected resources).
-    * The process revolves around obtaining an access token, which serves as a temporary authorization token that allows the
+    * The process revolves around getting an access token, which serves as a temporary authorization token that allows the
     * client application to access specific resources on behalf of the user.
     *
     *

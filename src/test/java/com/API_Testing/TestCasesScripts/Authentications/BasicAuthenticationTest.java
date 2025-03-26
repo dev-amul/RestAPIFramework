@@ -18,11 +18,11 @@ import io.restassured.response.Response;
 public class BasicAuthenticationTest {
 	Response res;
 	/*
-	* Basic Authentications, a straightforward method employed in web apps and APIs, entails sending credentials
+	* Basic Authentications, a straightforward method used in web apps and APIs, entails sending credentials
 	* (username and password) with every request to validate the requester’s identity. This approach, widely supported
 	* and easy to implement, is often used to secure resources. It’s preferred when simplicity and efficiency are paramount.
 	*
-	* Through .auth().basic(“username”, “password”), Rest Assured configures the request with your credentials.
+	* Through .auth().basic(“username”, “password”), Rest Assuredly configure the request with your credentials.
 	* */
 	@Test
 	public void basicAuth() {
@@ -33,7 +33,6 @@ public class BasicAuthenticationTest {
 						.get("https://postman-echo.com/basic-auth");
 
 		res.prettyPrint();
-		System.out.println(res.getStatusCode());
 	}
 
 	@AfterMethod

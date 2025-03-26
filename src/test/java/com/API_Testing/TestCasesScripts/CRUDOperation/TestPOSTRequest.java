@@ -11,6 +11,7 @@ package com.API_Testing.TestCasesScripts.CRUDOperation;
 import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
 import com.API_Testing.utitlites.AlltypeDataRead;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -22,12 +23,12 @@ public class TestPOSTRequest extends HTTP_MethodsControllers {
 	}
 	@Test
 	public void postData(){
-		res= POST_Method(createData, pr.getProperty("end_URL"));
+		POST_Method(createData, pr.getProperty("end_URL"));
 
 		System.out.println("insert data is : "+res.prettyPrint());
 	}
 
-	//@AfterMethod
+	@AfterMethod
 	public void validateStatusCode(){
 		Assert.assertEquals(res.getStatusCode(), 201);
 	}

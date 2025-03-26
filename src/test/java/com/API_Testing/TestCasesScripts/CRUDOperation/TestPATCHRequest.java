@@ -17,7 +17,6 @@ import org.testng.annotations.Test;
 
 public class TestPATCHRequest extends HTTP_MethodsControllers {
 	String requestBody;
-	Response res;
 	@BeforeMethod
 	public void putData () {
 		requestBody= AlltypeDataRead.readJsonFile("userPayload.json").toString();
@@ -25,7 +24,7 @@ public class TestPATCHRequest extends HTTP_MethodsControllers {
 	
 	@Test
 	public void updateData() {
-		res=PATCH_Method(requestBody,pr.getProperty("end_URL")+"/2");
+		PATCH_Method(requestBody,pr.getProperty("end_URL")+"/2");
 	}
 	@AfterMethod
 	public void validatePATCHStatusResponseCode(){

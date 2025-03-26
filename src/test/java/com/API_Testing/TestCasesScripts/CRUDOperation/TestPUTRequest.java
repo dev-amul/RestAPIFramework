@@ -17,7 +17,6 @@ import io.restassured.response.Response;
 
 public class TestPUTRequest extends HTTP_MethodsControllers {
 	
-	Response res;
 	String requestBody;
 	@BeforeMethod
 	public void putData (){
@@ -25,7 +24,7 @@ public class TestPUTRequest extends HTTP_MethodsControllers {
 	}
 	@Test
 	public void updateData (){
-		res=PUT_Method(requestBody,pr.getProperty("end_URL")+"/2");
+		PUT_Method(requestBody,pr.getProperty("end_URL")+"/2");
 	}
 	@AfterMethod
 	public void validatePUTStatusCode(){

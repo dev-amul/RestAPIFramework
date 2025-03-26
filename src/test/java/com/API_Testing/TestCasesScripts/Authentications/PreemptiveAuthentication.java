@@ -15,7 +15,7 @@ public class PreemptiveAuthentication {
    By using .preemptive() before .basic(), Rest Assured takes the initiative in including the credentials.
    * */
     @Test (enabled = false)
-    public void preemtive(){
+    public void preemptive(){
         given()
                 .auth()
                 .preemptive().basic("username","password" )
