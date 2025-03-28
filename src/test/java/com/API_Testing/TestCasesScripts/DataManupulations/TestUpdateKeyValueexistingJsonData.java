@@ -18,7 +18,7 @@ public class TestUpdateKeyValueexistingJsonData {
 		JSONObject getJSonData = AlltypeDataRead.readJsonFile("DataAppend.json");
 		JSONObject getkey =  getJSonData.getJSONObject("address");
 		JSONObject updatedata= getkey.put("streetAddress", "Sector 49 Noida");
-		System.out.println(getJSonData);
+		System.out.println(updatedata);
 		}
 		
 	

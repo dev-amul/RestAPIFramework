@@ -55,7 +55,7 @@
 			<version>2.12.1</version>
 		</dependency>
 
-		<!--Using for comparing json file-->
+		<!--Using for comparing JSON file-->
 		<dependency>
 			<groupId>org.skyscreamer</groupId>
 			<artifactId>jsonassert</artifactId>
@@ -70,7 +70,7 @@
 			<version>2.29.1</version>
 		</dependency>
 
-		<!--Using for JWT encryption and dcryption data-->
+		<!--Using for JWT encryption and decryption data-->
 		<dependency>
 			<groupId>org.bitbucket.b_c</groupId>
 			<artifactId>jose4j</artifactId>

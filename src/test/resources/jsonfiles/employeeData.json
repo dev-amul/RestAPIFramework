@@ -31,7 +31,7 @@
     {
       "Other Informaiton": {
         "Interest": "Explore New Things",
-        "Contact Number": "+91-9971458090",
+        "Contact Number": "+91-7985668912",
         "Experience": "2.6",
         "Marital Status": "Un Married",
         "Hobbies": "I Fond of play Cricket & Badminton"
@@ -39,7 +39,6 @@
       "Basic Informaiton": {
         "Profession": "Software Tester",
         "id": "Emp1",
-        "Father's Name": "Lt. Sri Rameshwer Prasad",
         "Age": "28",
         "Name": "Sumit Kumar Chaudahry"
       },
@@ -58,7 +57,7 @@
       "Personal Details": {
         "Other Informaiton": {
           "Interest": "Explore New Things",
-          "Contact Number": "+91-9971458090",
+          "Contact Number": "+91-7859654556",
           "Experience": "2.6",
           "Marital Status": "Un Married",
           "Hobbies": "I Fond of play Cricket & Badminton"
@@ -73,7 +72,6 @@
         }
       },
       "id": "Emp1",
-      "Father's Name": "Lt. Sri Rameshwer Prasad",
       "Age": "28",
       "Name": "Sumit Kumar Chaudahry"
     }
@@ -82,7 +80,7 @@
     {
       "User Details": {
         "add": "Sector 50 Noida UP ",
-        "Contact Number": "9971458090",
+        "Contact Number": "7458569658",
         "Order Items List": [
           {
             "Cake Details": {

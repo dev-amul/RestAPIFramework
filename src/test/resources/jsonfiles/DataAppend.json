@@ -3,18 +3,18 @@
     "firstName": "Sumit",
     "lastName": "Kumar",
     "address": {
-      "streetAddress": "UGR Plant",
+      "streetAddress": "Sector 62",
       "city": "Noida",
       "postalCode": "201301"
     },
     "age": 28,
     "phoneNumbers": [
       {
-        "number": "9958758596",
+        "number": "8587485858",
         "type": "personal"
       },
       {
-        "number": "7845858578",
+        "number": "8587485858",
         "type": "Office"
       }
     ]

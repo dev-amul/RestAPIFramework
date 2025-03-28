@@ -28,7 +28,7 @@ public class TestInsertNewArrayDataInExistingJSONData {
 		educationInfo.put("Passout ", "2019");
 		educationInfo.put("Certification", "JAVA Core & Advance");
 		
-		// Add both object value to array object 
+		// Add both object values to an array object
 		newArrayData.put(myVehicle);
 		newArrayData.put(educationInfo);
 
