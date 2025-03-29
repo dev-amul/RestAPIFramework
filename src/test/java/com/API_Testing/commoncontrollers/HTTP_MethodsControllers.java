@@ -7,6 +7,7 @@
  */
 package com.API_Testing.commoncontrollers;
 
+import java.util.HashMap;
 import java.util.Properties;
 import com.API_Testing.utitlites.MasterController;
 import io.restassured.http.ContentType;
@@ -29,8 +30,18 @@ public class HTTP_MethodsControllers {
 		 res=getRequestSpec()
 				.accept(ContentType.JSON)
 				.when()
-				.get(end_URL);
+				.get(pr.getProperty(end_URL));
 		 return res;
+	}
+	public static HashMap<String, String> queryWithKey =new  HashMap<>();
+
+	public static Response GET_Request_With_QuaryParam(String end_URL, HashMap<String, String> queryWithKey){
+		res=getRequestSpec()
+				.accept(ContentType.JSON)
+				.queryParams(queryWithKey)
+				.when()
+				.get(pr.getProperty(end_URL));
+		return res;
 	}
 
 	public static Response POST_Method(String requestBody, String end_URL) {
