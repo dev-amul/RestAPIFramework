@@ -7,7 +7,7 @@
  */
 package com.API_Testing.TestCasesScripts.DataManupulations;
 
-import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.AllTypeDataRead;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -26,7 +26,7 @@ public class TestInsertNewObjectINExistingJSONdata {
 	}
 	@Test
 	public void testInsertObjectAddFlow() {
-		JSONObject getExistingJSonData = AlltypeDataRead.readJsonFile("DataAppend.json");
+		JSONObject getExistingJSonData = AllTypeDataRead.readJsonFile("DataAppend.json");
 		JSONObject newInfo = newInformation;
 		JSONObject addData= getExistingJSonData.put("Other Important Information ", newInfo);
 		System.out.println(getExistingJSonData);

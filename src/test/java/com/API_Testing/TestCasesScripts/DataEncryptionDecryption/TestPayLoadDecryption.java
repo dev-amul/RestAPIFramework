@@ -1,6 +1,6 @@
 package com.API_Testing.TestCasesScripts.DataEncryptionDecryption;
 
-import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.AllTypeDataRead;
 import com.API_Testing.utitlites.GenerateChecksum_Auth;
 import com.API_Testing.utitlites.JWT_Payload_Encryption_Decryption_Generator;
 import org.jose4j.lang.JoseException;
@@ -14,7 +14,7 @@ public class TestPayLoadDecryption {
     JSONObject jsonPayload;
     @BeforeMethod
     public void generateJsonPayload(){
-        jsonPayload= AlltypeDataRead.readJsonFile("employeeData.json");
+        jsonPayload= AllTypeDataRead.readJsonFile("dummyJsonForKey.json");
     }
     @Test
     public void generateDecryption() throws JoseException, UnsupportedEncodingException {

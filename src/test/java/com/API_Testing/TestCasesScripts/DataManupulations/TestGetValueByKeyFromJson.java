@@ -8,17 +8,17 @@
 package com.API_Testing.TestCasesScripts.DataManupulations;
 
 import com.API_Testing.commoncontrollers.FetchDataMethodFromJson;
+import com.API_Testing.utitlites.AllTypeDataRead;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
-import com.API_Testing.utitlites.AlltypeDataRead;
 
 /****Test case for fetch the data as per given key******/
 public class TestGetValueByKeyFromJson {
 	
 	@Test
 	public void fetchValuedata() throws JSONException {
-		JSONObject jsondummydata= AlltypeDataRead.readJsonFile("dummyJsonForkey.json");
+		JSONObject jsondummydata= AllTypeDataRead.readJsonFile("dummyJsonForKey.json");
 		System.out.println("The Data is \t:\t"+ FetchDataMethodFromJson.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number"));
 	}
 

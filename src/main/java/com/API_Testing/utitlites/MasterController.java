@@ -34,8 +34,8 @@ public class MasterController {
 		try {
 			boolean recursive = true;
 			//Collection method
-			Collection files = FileUtils.listFiles(new File(System.getProperty("user.dir")), null, recursive);
-			for (Iterator iterator = files.iterator(); iterator.hasNext();) {
+			Collection<File> files = FileUtils.listFiles(new File(System.getProperty("user.dir")), null, recursive);
+			for (Iterator<File> iterator = files.iterator(); iterator.hasNext();) {
 				File file = (File) iterator.next();
 				if (file.getName().equals(fileName))
 					fileAbolutePath=file.getAbsolutePath();

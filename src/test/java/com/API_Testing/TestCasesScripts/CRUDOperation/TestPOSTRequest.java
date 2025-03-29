@@ -9,7 +9,7 @@
 package com.API_Testing.TestCasesScripts.CRUDOperation;
 
 import com.API_Testing.commoncontrollers.HTTP_MethodsControllers;
-import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.AllTypeDataRead;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +19,7 @@ public class TestPOSTRequest extends HTTP_MethodsControllers {
 	public String createData;
 	@BeforeMethod
 	public void setBody(){
-		createData= AlltypeDataRead.readJsonFile("userPayload.json").toString();
+		createData= AllTypeDataRead.readJsonFile("dummyJsonForKey.json").toString();
 	}
 	@Test
 	public void postData(){

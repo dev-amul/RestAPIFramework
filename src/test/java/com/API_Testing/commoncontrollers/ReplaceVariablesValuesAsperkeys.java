@@ -15,13 +15,13 @@ import java.util.regex.Pattern;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.AllTypeDataRead;
 
 public class ReplaceVariablesValuesAsperkeys
 {
 	public static String replaceVariablesAsPerKeys(String jsonFileName, String enterReplacementValues) throws FileNotFoundException, JSONException {
 		// Call the jSon file reader method 
-		JSONObject storeJsonobj= AlltypeDataRead.readJsonFile(jsonFileName);
+		JSONObject storeJsonobj= AllTypeDataRead.readJsonFile(jsonFileName);
 		//Get the keys from from jSon file and store in iterator Variable
 		Iterator getjSOnKeys= storeJsonobj.keys();
 		//Convert jSon data in string and store in variables.

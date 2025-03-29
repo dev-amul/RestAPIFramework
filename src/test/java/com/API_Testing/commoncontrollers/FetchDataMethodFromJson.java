@@ -13,11 +13,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.AllTypeDataRead;
 
 public class FetchDataMethodFromJson {
 	public static String getValueFromJson(String srhObj, String srhArray, String srchArray, String srchKey, String srchValu, String gtExtData) throws FileNotFoundException{
-		JSONObject jsonBody = AlltypeDataRead.readJsonFile("CoremrkData.json");
+		JSONObject jsonBody = AllTypeDataRead.readJsonFile("CoremrkData.json");
 		JSONObject fetchedObject= jsonBody.getJSONObject(srhObj);//get the first Object value because jSon starting from jSon
 		JSONArray getOptionalArr= fetchedObject.optJSONArray(srhArray);//here i'm assume as array but get the key value  
 		JSONObject getNewObject = null; 

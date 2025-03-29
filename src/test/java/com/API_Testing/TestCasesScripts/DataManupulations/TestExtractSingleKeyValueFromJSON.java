@@ -7,7 +7,7 @@
  */
 package com.API_Testing.TestCasesScripts.DataManupulations;
 
-import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.AllTypeDataRead;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -20,7 +20,7 @@ public class TestExtractSingleKeyValueFromJSON {
 	String expectedValue;
 	@BeforeMethod
 	public void readJsonFile(){
-		jsonFileData = AlltypeDataRead.readJsonFile("DataAppend.json");
+		jsonFileData = AllTypeDataRead.readJsonFile("DataAppend.json");
 
 	}
 	@Test

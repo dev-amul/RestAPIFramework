@@ -22,7 +22,7 @@
         <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestInsertNewObjectINExistingJSONdata"/>
         <class name="com.API_Testing.TestCasesScripts.DataEncryptionDecryption.TestPayLoadDecryption"/>
         <class name="com.API_Testing.TestCasesScripts.DataEncryptionDecryption.TestPayloadEncrypt"/>
-        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestUpdateKeyValueexistingJsonData"/>
+        <class name="com.API_Testing.TestCasesScripts.DataManupulations.TestUpdateKeyValueExistingJsonData"/>
         <class name="com.API_Testing.TestCasesScripts.TestUploadFileFunctionality"/>
         <class name="com.API_Testing.TestCasesScripts.Authentications.BasicAuthenticationTest"/>
         <class name="com.API_Testing.TestCasesScripts.Authentications.DigestAuthentication"/>

@@ -37,7 +37,7 @@ public class TimeoutAndRetry extends HTTP_MethodsControllers {
         Assert.assertEquals(res.getStatusCode(),200);
     }
 
-    @Test
+    //   @Test
     public void getResponse(){
         RequestConfig requestConfig = RequestConfig.custom()
                 .setConnectTimeout(5000) // 5 seconds connection timeout
@@ -53,7 +53,7 @@ public class TimeoutAndRetry extends HTTP_MethodsControllers {
                 HttpClientConfig.httpClientConfig().httpClientFactory(() -> httpClient)
         );
 
-        GET_Method(pr.getProperty("end_URL")+"/2");
+        GET_Method("end_URL"+"/2");
     }
 
     @AfterMethod

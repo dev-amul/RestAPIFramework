@@ -7,7 +7,7 @@
  */
 package com.API_Testing.TestCasesScripts.DataManupulations;
 
-import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.AllTypeDataRead;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class TestAppendData_InJson {
 	@Test
 	public void addNewData() {
-		JSONArray phoneNumbers= AlltypeDataRead.readJsonFile("DataAppend.json").getJSONArray("phoneNumbers");
+		JSONArray phoneNumbers= AllTypeDataRead.readJsonFile("dummyJsonForKey.json").getJSONArray("phoneNumbers");
 		JSONObject phoneNumber= phoneNumbers.getJSONObject(1);
 		phoneNumber.put("Mobile_number", "12345678910");
 		/*

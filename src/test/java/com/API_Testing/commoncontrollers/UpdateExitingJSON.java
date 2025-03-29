@@ -13,14 +13,14 @@ import org.json.JSONObject;
 
 public class UpdateExitingJSON 
 {
-	public static String fetchAndUdateData(String jsonBody, String srcArrKey, String srhKey, String srhValue,String NewKey, String newValue) throws JSONException {
-		// Get the jSon body and store in jSon object 
+	public static String fetchAndUpdateData(String jsonBody, String srcArrKey, String srhKey, String srhValue, String NewKey, String newValue) throws JSONException {
+		// Get the JSON body and store in JSON object
 		JSONObject jsonData = new JSONObject(jsonBody);
 		
-		//Fetch the array value on behalf search key and store in array variable 
+		//Fetch the array value on a behalf search key and store in array variable
 		JSONArray getArray = jsonData.getJSONArray(srcArrKey);
 		
-		//Taking here one more jSON Object variable for further use
+		//Taking here one more JSON Object variable for further use
 		
 		JSONObject getObject=null;
 		//run the loop end of the array length

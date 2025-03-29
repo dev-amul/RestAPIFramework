@@ -9,7 +9,14 @@ public class TestFetchValueFromJsonFile {
 
     @Test
     public void testFetch() throws FileNotFoundException {
-        String expData= FetchDataMethodFromJson.getValueFromJson("Request", "NotificationList", "keyValuePairList", "key", "MobilePhoneNumber", "value");
+        String expData=
+                FetchDataMethodFromJson
+                        .getValueFromJson("Request",
+                                "NotificationList",
+                                "keyValuePairList",
+                                "key",
+                                "MobilePhoneNumber",
+                                "value");
 
         System.out.println(expData);
     }

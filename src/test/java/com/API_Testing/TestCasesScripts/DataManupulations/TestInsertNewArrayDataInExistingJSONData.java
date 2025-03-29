@@ -7,7 +7,7 @@
  */
 package com.API_Testing.TestCasesScripts.DataManupulations;
 
-import com.API_Testing.utitlites.AlltypeDataRead;
+import com.API_Testing.utitlites.AllTypeDataRead;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
@@ -35,7 +35,7 @@ public class TestInsertNewArrayDataInExistingJSONData {
 	}
 	@Test
 	public void appendArrayInExistingJSON(){
-		JSONObject getExistingJSonData = AlltypeDataRead.readJsonFile("DataAppend.json");
+		JSONObject getExistingJSonData = AllTypeDataRead.readJsonFile("DataAppend.json");
 		System.out.println(getExistingJSonData);
 		JSONArray newInfo =  newArrayData;
 		JSONObject addedData= getExistingJSonData.put("user personal things ", newInfo);

@@ -16,7 +16,7 @@ import io.restassured.response.Response;
 public class TestGETRequest extends HTTP_MethodsControllers{
 	@Test
 	public void getUserData(){
-		GET_Method(pr.getProperty("end_URL"));
+		GET_Method("end_URL");
 		res.prettyPrint();
 	}
 	@AfterMethod

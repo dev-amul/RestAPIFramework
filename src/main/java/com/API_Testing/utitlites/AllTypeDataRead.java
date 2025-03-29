@@ -1,7 +1,7 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 06-Oct-2019
- *  FILE NAME  		: 	 AlltypeDataRead.java
+ *  FILE NAME  		: 	 AllTypeDataRead.java
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
@@ -15,8 +15,8 @@ import org.json.JSONTokener;
 import org.json.XML;
 
 
-public class AlltypeDataRead {
-	//Methods for read json file 
+public class AllTypeDataRead {
+	//Methods for read JSON file
 	public static JSONObject readJsonFile (String fileName) {
         try {
 			JSONTokener parseFileToJSOn = new JSONTokener(new FileReader(MasterController.getAbsolutPath(fileName)));//parse the string data in to json format. Because file get the data in string format.
