@@ -26,7 +26,7 @@ public class MasterController {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		JsonObject jsonObject = JsonParser.parseString(jsonString).getAsJsonObject();
 		String prettyJson = gson.toJson(jsonObject);
-		System.out.printf(prettyJson);
+		System.out.println(prettyJson);
 	}
 	public static String getAbsolutPath(String fileName) {
 

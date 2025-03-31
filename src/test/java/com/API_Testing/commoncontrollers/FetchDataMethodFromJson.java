@@ -19,7 +19,7 @@ public class FetchDataMethodFromJson {
 	public static String getValueFromJson(String srhObj, String srhArray, String srchArray, String srchKey, String srchValu, String gtExtData) throws FileNotFoundException{
 		JSONObject jsonBody = AllTypeDataRead.readJsonFile("CoremrkData.json");
 		JSONObject fetchedObject= jsonBody.getJSONObject(srhObj);//get the first Object value because jSon starting from jSon
-		JSONArray getOptionalArr= fetchedObject.optJSONArray(srhArray);//here i'm assume as array but get the key value  
+		JSONArray getOptionalArr= fetchedObject.optJSONArray(srhArray);//here I'm assumed as an array but get the key value
 		JSONObject getNewObject = null; 
 		for(int i=0; i<getOptionalArr.length(); i++) {
 			JSONObject getNextObj = getOptionalArr.getJSONObject(i);

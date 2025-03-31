@@ -12,12 +12,11 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import io.restassured.response.Response;
-
 public class TestGETRequestSingleUserData extends HTTP_MethodsControllers {
 	@Test
-	public void getResponse(){
-		 GET_Method("end_URL"+"/2");
+	public void getUserResponseById(){
+		queryWithKey.put("id","2");
+		res=GET_Request_With_QuaryParam("end_URL",queryWithKey);
 	}
 
 	@AfterMethod

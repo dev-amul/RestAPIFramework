@@ -25,6 +25,4 @@ public class TestDeleteRequest extends HTTP_MethodsControllers {
 
 	}
 
-	
-
 }
