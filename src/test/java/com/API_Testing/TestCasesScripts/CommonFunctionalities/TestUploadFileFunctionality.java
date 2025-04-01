@@ -8,7 +8,7 @@
 package com.API_Testing.TestCasesScripts.CommonFunctionalities;
 
 import java.io.File;
-import com.API_Testing.utitlites.MasterController;
+import com.API_Testing.utilities.MasterController;
 import io.restassured.RestAssured;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;

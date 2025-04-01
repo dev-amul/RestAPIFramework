@@ -5,9 +5,9 @@
  *  PROJECT NAME 	:	 ResAssuredProject
  *  Time			:	 10:09:05 am
  */
-package com.API_Testing.TestCasesScripts.DataManupulations;
+package com.API_Testing.TestCasesScripts.CommonFunctionalities;
 
-import com.API_Testing.utitlites.AllTypeDataRead;
+import com.API_Testing.utilities.MasterController;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
@@ -15,7 +15,7 @@ public class TestUpdateKeyValueExistingJsonData {
 
 	@Test
 	public void testUpdateExistingJSONData(){
-		JSONObject getJSonData = AllTypeDataRead.readJsonFile("dummyJsonForKey.json");
+		JSONObject getJSonData = MasterController.readJsonFile("dummyJsonForKey.json");
 		JSONObject getkey =  getJSonData.getJSONObject("address");
 		JSONObject updateData = getkey.put("streetAddress", "Sector 49 Noida");
 		System.out.println(updateData);

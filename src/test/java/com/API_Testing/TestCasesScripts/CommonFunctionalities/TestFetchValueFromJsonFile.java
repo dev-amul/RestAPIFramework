@@ -1,6 +1,6 @@
-package com.API_Testing.TestCasesScripts.DataManupulations;
+package com.API_Testing.TestCasesScripts.CommonFunctionalities;
 
-import com.API_Testing.commoncontrollers.FetchDataMethodFromJson;
+import com.API_Testing.utilities.MasterController;
 import org.testng.annotations.Test;
 
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ public class TestFetchValueFromJsonFile {
     @Test
     public void testFetch() throws FileNotFoundException {
         String expData=
-                FetchDataMethodFromJson
+                MasterController
                         .getValueFromJson("Request",
                                 "NotificationList",
                                 "keyValuePairList",

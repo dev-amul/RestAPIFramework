@@ -5,9 +5,9 @@
  *  PROJECT NAME 	:	 ResAssuredProject
  *  Time			:	 10:59:58 pm
  */
-package com.API_Testing.TestCasesScripts.DataManupulations;
+package com.API_Testing.TestCasesScripts.CommonFunctionalities;
 
-import com.API_Testing.utitlites.AllTypeDataRead;
+import com.API_Testing.utilities.MasterController;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -20,7 +20,7 @@ public class TestExtractSingleKeyValueFromJSON {
 	String expectedValue;
 	@BeforeMethod
 	public void readJsonFile(){
-		jsonFileData = AllTypeDataRead.readJsonFile("DataAppend.json");
+		jsonFileData = MasterController.readJsonFile("DataAppend.json");
 
 	}
 	@Test

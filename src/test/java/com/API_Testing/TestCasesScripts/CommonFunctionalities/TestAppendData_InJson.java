@@ -5,9 +5,9 @@
  *  PROJECT NAME 	:	 ResAssuredProject
  *  Time			:	 2:43:57 pm
  */
-package com.API_Testing.TestCasesScripts.DataManupulations;
+package com.API_Testing.TestCasesScripts.CommonFunctionalities;
 
-import com.API_Testing.utitlites.AllTypeDataRead;
+import com.API_Testing.utilities.MasterController;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class TestAppendData_InJson {
 	@Test
 	public void addNewData() {
-		JSONArray phoneNumbers= AllTypeDataRead.readJsonFile("dummyJsonForKey.json").getJSONArray("phoneNumbers");
+		JSONArray phoneNumbers= MasterController.readJsonFile("dummyJsonForKey.json").getJSONArray("phoneNumbers");
 		JSONObject phoneNumber= phoneNumbers.getJSONObject(1);
 		phoneNumber.put("Mobile_number", "12345678910");
 		/*

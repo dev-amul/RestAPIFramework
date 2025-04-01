@@ -5,26 +5,23 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.TestCasesScripts.DataManupulations;
+package com.API_Testing.TestCasesScripts.CommonFunctionalities;
 
 import java.io.FileNotFoundException;
 
-import com.API_Testing.utitlites.MasterController;
+import com.API_Testing.utilities.MasterController;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
-
-import com.API_Testing.commoncontrollers.UpdateExitingJSON;
-import com.API_Testing.utitlites.AllTypeDataRead;
 
 public class TestAddValueInExistingData {
 	@Test
 	public void addValueExistingData() throws FileNotFoundException {
 		
-		JSONObject jsondummydata= AllTypeDataRead.readJsonFile("dummyJsonForKey.json");
+		JSONObject jsondummydata= MasterController.readJsonFile("dummyJsonForKey.json");
 		System.out.println("####### Json file data before adding any data ###########\n");
 
 		MasterController.convertStringJsonIntoJsonFormat(jsondummydata.toString());
-		String str= UpdateExitingJSON.fetchAndUpdateData(jsondummydata.toString(), "phoneNumbers", "type", "home", "emailId", "dummy@gmai.com");
+		String str= MasterController.fetchAndUpdateData(jsondummydata.toString(), "phoneNumbers", "type", "home", "emailId", "dummy@gmai.com");
 		System.out.println("#######Expected Data###########\n");
 		MasterController.convertStringJsonIntoJsonFormat(str);
 	}

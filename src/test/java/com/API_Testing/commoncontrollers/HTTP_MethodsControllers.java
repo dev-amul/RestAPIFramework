@@ -9,10 +9,9 @@ package com.API_Testing.commoncontrollers;
 
 import java.util.HashMap;
 import java.util.Properties;
-import com.API_Testing.utitlites.MasterController;
+import com.API_Testing.utilities.MasterController;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.*;
 

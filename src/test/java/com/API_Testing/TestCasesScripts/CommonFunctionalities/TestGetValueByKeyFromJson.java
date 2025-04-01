@@ -5,10 +5,9 @@
  *  PROJECT NAME 	:	 RestAPI_Framework
  * 
  */
-package com.API_Testing.TestCasesScripts.DataManupulations;
+package com.API_Testing.TestCasesScripts.CommonFunctionalities;
 
-import com.API_Testing.commoncontrollers.FetchDataMethodFromJson;
-import com.API_Testing.utitlites.AllTypeDataRead;
+import com.API_Testing.utilities.MasterController;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
@@ -18,8 +17,8 @@ public class TestGetValueByKeyFromJson {
 	
 	@Test
 	public void fetchValuedata() throws JSONException {
-		JSONObject jsondummydata= AllTypeDataRead.readJsonFile("dummyJsonForKey.json");
-		System.out.println("The Data is \t:\t"+ FetchDataMethodFromJson.fetchDatafromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number"));
+		JSONObject jsondummydata= MasterController.readJsonFile("dummyJsonForKey.json");
+		System.out.println("The Data is \t:\t"+ MasterController.fetchDataFromJSON(jsondummydata.toString(), "phoneNumbers", "type", "iPhone", "number"));
 	}
 
 }
