@@ -2,7 +2,7 @@
 
 This is a comprehensive framework for automating REST API testing using Java-based tools and libraries like RestAssured, TestNG, Maven, and Allure Report. The framework is designed to validate API endpoints through functional and security testing while also generating interactive and detailed reports.
 
-## Overview
+# Overview
 
 This API Testing project:
 - Demonstrates how to perform CRUD operations with REST APIs
@@ -11,7 +11,7 @@ This API Testing project:
 - Integrates Allure Report for advanced test reporting
 - Enables scalable and maintainable test structure
 
-## Architecture
+# Architecture
 
 The framework includes:
 - A test suite powered by TestNG
@@ -20,7 +20,7 @@ The framework includes:
 - Configuration through Maven POM
 - Reporting mechanism via Allure Report CLI
 
-## Tech Stack
+# Tech Stack
 
 - Programming Language: Java
 - Testing Library: RestAssured
@@ -31,7 +31,7 @@ The framework includes:
 - Version Control: Git
 - OS Compatibility: Windows
 
-## Setup Instructions
+# Setup Instructions
 
 To run the project, complete the following setup:
 
@@ -53,7 +53,7 @@ To run the project, complete the following setup:
 
 6. Open the project in your IDE and run Maven install via the POM file
 
-## Allure Report Setup
+# Allure Report Setup
 
 To generate HTML reports:
 
@@ -69,12 +69,12 @@ To generate HTML reports:
 
 4. Verify installation and check https://allurereport.org/docs/gettingstarted-installation for help
 
-## Running the Tests
+# Running the Tests
 
 Use Maven to run the test cases
 mvn clean test
 
-## Generating and Viewing Allure Reports
+# Generating and Viewing Allure Reports
 
 After running tests, Allure generates results in the target/allure-results directory.
 
@@ -86,7 +86,7 @@ mvn allure:serve
 
 Note: Ensure you update the path as per your local project directory.
 
-## Features
+# Features
 
 - Supports CRUD operations on APIs
 - Demonstrates multiple authentication types
@@ -96,7 +96,7 @@ Note: Ensure you update the path as per your local project directory.
 - Data encryption and decryption tests
 - Easy integration and configuration via Maven
 
-## Test Coverage
+# Test Coverage
 
 The framework includes test cases for:
 
